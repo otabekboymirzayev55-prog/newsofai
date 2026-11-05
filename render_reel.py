@@ -7,7 +7,7 @@ import subprocess
 import tempfile
 import textwrap
 
-from instagram import validate_pack
+from instagram import instagram_handle, validate_pack
 
 
 def render(pack_dir, output, voice=None, music=None, font=None):
@@ -36,6 +36,10 @@ def render(pack_dir, output, voice=None, music=None, font=None):
         (work / 'label.txt').write_text(label, encoding='utf-8')
         filters = ['drawbox=x=80:y=280:w=920:h=8:color=0x40dfba:t=fill',
                    "drawtext=fontfile=font.ttf:textfile=label.txt:expansion=none:fontsize=30:fontcolor=0x40dfba:x=80:y=210"]
+        if 'account' in metadata:
+            (work / 'account.txt').write_text(instagram_handle(metadata['account']), encoding='utf-8')
+            filters.append('drawtext=fontfile=font.ttf:textfile=account.txt:expansion=none:'
+                           'fontsize=36:fontcolor=0x40dfba:x=80:y=1550')
         start = 0
         for i, scene in enumerate(pack['scenes']):
             end = start + scene['duration']

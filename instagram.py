@@ -4,6 +4,7 @@ from datetime import datetime, timedelta, timezone
 import json
 import os
 from pathlib import Path
+import re
 import shutil
 import tempfile
 import urllib.parse
@@ -32,6 +33,16 @@ Faqat JSON: {"title":"...", "scenes":[{"duration":2,"screen":"...",
 "voiceover":"...","visual":"..."}], "caption":"...", "carousel":["..."],
 "stories":["..."], "music":{"mood":"...","search_terms":"...","reason":"..."},
 "checks":["..."]}."""
+
+
+def instagram_handle(value=None):
+    value = os.environ.get('INSTAGRAM_HANDLE', 'safeguard_on') if value is None else value
+    if not isinstance(value, str):
+        raise ValueError('Invalid Instagram handle')
+    value = value.removeprefix('@')
+    if not re.fullmatch(r'[A-Za-z0-9_][A-Za-z0-9_.]{0,29}', value):
+        raise ValueError('Invalid Instagram handle')
+    return '@' + value.lower()
 
 
 def text_value(value, limit):
@@ -85,6 +96,7 @@ def validate_pack(data):
 
 
 def generate_pack(article):
+    account = instagram_handle()
     key = os.environ.get('GEMINI_API_KEY')
     model = os.environ.get('GEMINI_MODEL', 'gemini-2.5-flash')
     if not key:
@@ -92,7 +104,12 @@ def generate_pack(article):
     if not model.replace('-', '').replace('.', '').isalnum():
         raise RuntimeError('Invalid GEMINI_MODEL')
     raw = request(f'https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent', {
-        'contents': [{'parts': [{'text': PROMPT + '\nMANBA JSON:\n' + json.dumps({
+        'contents': [{'parts': [{'text': PROMPT + '\nSahifa: ' + account +
+            '\nAuditoriya: texnologiyaga qiziqqan o‘zbek talabalar, mutaxassislar va kichik biznes egalari. '
+            'Ohang: sodda, dalilli, amaliy; qo‘rqitish va shov-shuvsiz. '
+            'Har postda yangilik yoki vositaning bitta aniq foydasi va cheklovini tushuntiring. '
+            'Sahifa nomidan foydalanib kiberxavfsizlikka aloqasiz da’vo qo‘shmang.'
+            '\nMANBA JSON:\n' + json.dumps({
             'title': article.title, 'summary': article.summary,
         }, ensure_ascii=False)}]}],
         'generationConfig': {'temperature': 0.4, 'maxOutputTokens': 8192,
@@ -150,6 +167,7 @@ def srt(pack):
 
 def save_pack(root, article, pack, demo=False):
     pack = validate_pack(pack)
+    account = instagram_handle()
     if len(pack['caption'] + '\n\nManba: ' + article.url) > 2200:
         raise ValueError('Caption including source exceeds Instagram limit')
     root = Path(root)
@@ -161,6 +179,7 @@ def save_pack(root, article, pack, demo=False):
     staging = Path(tempfile.mkdtemp(prefix='.draft-', dir=root))
     try:
         metadata = {'schema_version': 1, 'status': 'needs_review', 'demo': demo,
+                    'account': account,
                     'created_at': datetime.now(timezone.utc).isoformat(),
                     'source': {'title': article.title, 'url': article.url,
                                'published': article.published.isoformat()}, **pack}
@@ -168,7 +187,8 @@ def save_pack(root, article, pack, demo=False):
         (staging / 'subtitles.srt').write_text(srt(pack), encoding='utf-8')
         (staging / 'caption.txt').write_text(pack['caption'] + '\n\nManba: ' + article.url + '\n', encoding='utf-8')
         (staging / 'voiceover.txt').write_text('\n'.join(s['voiceover'] for s in pack['scenes']) + '\n', encoding='utf-8')
-        review = ['# ' + pack['title'], '', '**Ko‘rib chiqish kerak.** ' + ('DEMO: haqiqiy yangilik emas.' if demo else ''),
+        review = ['# ' + pack['title'], '', 'Sahifa: ' + account, '',
+                  '**Ko‘rib chiqish kerak.** ' + ('DEMO: haqiqiy yangilik emas.' if demo else ''),
                   '', 'Manba: ' + article.url, 'Sana: ' + article.published.isoformat(), '',
                   '## Reels — kadrlar va ovoz', '']
         for i, scene in enumerate(pack['scenes'], 1):

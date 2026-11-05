@@ -1,5 +1,10 @@
 # O‘zbek texnologiya auditoriyasi uchun Instagram
 
+Sahifa: **@safeguard_on**. Profil matni va 14 kunlik boshlang‘ich reja:
+[SAFEGUARD_ON.md](SAFEGUARD_ON.md). Qoralama, Gemini ko‘rsatmasi va yangi video
+ko‘rinishlarida shu username ishlatiladi. Boshqa akkaunt uchun process environment’da
+`INSTAGRAM_HANDLE`ni o‘zgartiring. Bu sozlama Instagram’ga kirish huquqini bermaydi.
+
 Telegram yangilik botiga qo‘shimcha tahririy oqim. Gemini RSS yangiligidan Reels
 ssenariysi, ovoz matni, vaqtli SRT subtitr, caption, 5 slaydli karusel, 3 Stories
 va musiqa qidiruv tavsiyasini tayyorlaydi. Bu versiya Instagram’ga yubormaydi;

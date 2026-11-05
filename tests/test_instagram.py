@@ -22,6 +22,7 @@ class InstagramTests(unittest.TestCase):
             target = instagram.save_pack(tmp, self.article, self.pack, demo=True)
             saved = json.loads((target / 'pack.json').read_text(encoding='utf-8'))
             self.assertEqual(saved['status'], 'needs_review')
+            self.assertEqual(saved['account'], instagram.instagram_handle())
             self.assertTrue(saved['demo'])
             self.assertEqual(saved['source']['url'], self.article.url)
             self.assertIn(self.article.url, (target / 'caption.txt').read_text(encoding='utf-8'))
@@ -59,6 +60,7 @@ class InstagramTests(unittest.TestCase):
             generated = instagram.generate_pack(self.article)
             self.assertEqual(generated['title'], self.pack['title'])
             self.assertEqual(req.call_args.args[1]['generationConfig']['responseMimeType'], 'application/json')
+            self.assertIn(instagram.instagram_handle(), req.call_args.args[1]['contents'][0]['parts'][0]['text'])
             response['candidates'][0]['finishReason'] = 'MAX_TOKENS'
             req.return_value = json.dumps(response).encode()
             with self.assertRaises(RuntimeError):
@@ -86,6 +88,15 @@ class InstagramTests(unittest.TestCase):
         pack['caption'] = 'x' * 1200
         with tempfile.TemporaryDirectory() as tmp, self.assertRaises(ValueError):
             instagram.save_pack(tmp, article, pack)
+
+    def test_account_configuration_and_invalid_values(self):
+        with patch.dict(os.environ, {'INSTAGRAM_HANDLE': '@Safeguard_On'}):
+            self.assertEqual(instagram.instagram_handle(), '@safeguard_on')
+        for value in ['bad/name', 'bad\nhandle', '', 'a' * 31, None]:
+            if value is None:
+                continue
+            with self.subTest(value=value), self.assertRaises(ValueError):
+                instagram.instagram_handle(value)
 
 
 if __name__ == '__main__':
