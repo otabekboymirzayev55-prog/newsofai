@@ -13,6 +13,21 @@
       "local_media": "media/safeguard-on-intro.mp4",
       "narration": "none",
       "music": "original procedural instrumental"
+    },
+    {
+      "source_url": "https://techcrunch.com/2026/11/05/meta-says-us-users-can-now-video-chat-with-their-muse-ai-avatar/",
+      "primary_source_url": "https://about.fb.com/news/2026/11/introducing-muse-ai-voice-expressive-avatars/",
+      "topic": "Meta Muse voice and expressive avatars",
+      "title": "AI bilan yuzma-yuz suhbat? Meta Muse avatariga ovoz berdi.",
+      "scheduled_for": "2026-11-07T10:00:00+05:00",
+      "timezone": "Asia/Tashkent",
+      "status": "scheduled",
+      "metricool_post_id": "418267504",
+      "metricool_post_uuid": "-1073533182792875628",
+      "local_media": "media/posts/ce33817e4026d3a9fdfa52a7/muse-voice.mp4",
+      "narration": "Gemini TTS from supplied VPS preview",
+      "music": "preserved from supplied preview",
+      "audio_audition_verified": false
     }
   ]
 }

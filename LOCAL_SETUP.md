@@ -7,7 +7,12 @@ Meta klienti va final videolar jadvali kodi bor. Metricool akkaunt ulanishi tasd
 2026-11-05 tekshiruvida birinchi matnli, original musiqali tanishtiruv Reels
 2026-11-06 10:00 Asia/Tashkent uchun Metricool’da autoPublish=true, PENDING
 holatida saqlangan; bu hali nashr bo‘ldi degani emas. Video Metricool serveriga ko‘chirilgan.
-Gemini TTS va Oracle ARM64 ijtimoiy oqimi hali jonli sinovdan o‘tmagan.
+2026-11-06 foydalanuvchi yuborgan hisobotda ARM64 ijtimoiy image, 29 test va
+jonli Gemini TTS muvaffaqiyatli tekshirilgani qayd etilgan. Tafsilotlar:
+`VPS_SOCIAL_STATUS.md`. Bu bulut sessiyasi serverdagi sinovni qayta bajarmagan.
+Yuborilgan ovozli Muse videosi 2026-11-07 10:00 Asia/Tashkent uchun Metricool’da
+rejalashtirildi; holati PENDING, AI belgisi yoqilgan. VPS’dan tayyor videolarni
+Metricool’ga doimiy avtomatik uzatish hali o‘rnatilmagan.
 
 Doimiy Instagram matn+musiqa oqimi Codex’da `Safeguard On Reels` nomli
 avtomatsiya sifatida yoqilgan. Boshlanishi 2026-11-08; dushanba, seshanba,
