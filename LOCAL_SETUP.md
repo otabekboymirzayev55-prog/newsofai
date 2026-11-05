@@ -3,8 +3,11 @@
 Instagram tahririy oqimi ham qo‘shildi: `INSTAGRAM.md`ni o‘qing.
 `python prepare_reel.py --demo` tarmoqsiz musiqali vertikal video yaratadi (FFmpeg kerak).
 Haqiqiy yangilik va ovoz uchun mavjud Gemini environment sozlamalaridan foydalaniladi.
-Meta klienti va final videolar jadvali kodi bor; akkaunt hali ulanmagan.
-Instagram’da haqiqiy nashr, Gemini TTS va Oracle ARM64 ijtimoiy oqimi hali sinovdan o‘tmagan.
+Meta klienti va final videolar jadvali kodi bor. Metricool akkaunt ulanishi tasdiqlangan.
+2026-11-05 tekshiruvida birinchi matnli, original musiqali tanishtiruv Reels
+2026-11-06 10:00 Asia/Tashkent uchun Metricool’da autoPublish=true, PENDING
+holatida saqlangan; bu hali nashr bo‘ldi degani emas. Video Metricool serveriga ko‘chirilgan.
+Gemini TTS va Oracle ARM64 ijtimoiy oqimi hali jonli sinovdan o‘tmagan.
 
 Codex’da ushbu loyiha papkasini oching va yangi chatda quyidagini yozing:
 

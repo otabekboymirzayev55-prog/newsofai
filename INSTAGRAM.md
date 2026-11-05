@@ -1,7 +1,9 @@
 # @safeguard_on — Instagram oqimi
 
 Profil bio’si va 14 kunlik reja: [SAFEGUARD_ON.md](SAFEGUARD_ON.md).
-Kod Telegram holat bazasini o‘zgartirmaydi. Haqiqiy akkaunt hali ulanmagan.
+Kod Telegram holat bazasini o‘zgartirmaydi. Metricool’dagi akkaunt ulanishi
+tasdiqlandi; birinchi tanishtiruv Reels 2026-11-06 10:00 Asia/Tashkent uchun
+rejalashtirilgan (2026-11-05 tekshiruvida PENDING). Bu jonli nashr tasdig‘i emas.
 
 ## Bir buyruqda musiqali demo
 
