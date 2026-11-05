@@ -69,6 +69,9 @@ Renderer matnli video yaratadi; mahsulotning haqiqiy ekran yozuvi yoki AI tasvir
 yaratmaydi. Kerakli demo kadrlarini alohida yozing. Video H.264 24 fps, ovoz AAC
 48 kHz. Matnli video ham ishlatilishi mumkin; talaffuz va faktlarni tekshiring.
 
+Ovozsiz matnli tanishtiruv uchun `render_reel.py --final --text-only` bilan
+original fon musiqasini qo‘shish mumkin. Demo baribir final sifatida rad etiladi.
+
 ## Instagram’ga ulanish
 
 Metricool orqali akkauntni ulab final video va caption’ni rejalashtirish mumkin.

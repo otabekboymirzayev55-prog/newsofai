@@ -11,12 +11,14 @@ import textwrap
 from instagram import instagram_handle, validate_pack
 
 
-def render(pack_dir, output, voice=None, music=None, font=None, final=False):
+def render(pack_dir, output, voice=None, music=None, font=None, final=False, text_only=False):
     pack_dir, output = Path(pack_dir).resolve(), Path(output).resolve()
     metadata = json.loads((pack_dir / 'pack.json').read_text(encoding='utf-8'))
     pack = validate_pack(metadata)
-    if final and (metadata.get('demo') or not voice):
-        raise ValueError('Final video requires a real source and narration')
+    if final and (metadata.get('demo') or (not voice and not text_only)):
+        raise ValueError('Final video requires real content and narration or explicit text-only mode')
+    if text_only and voice:
+        raise ValueError('Choose narration or text-only mode')
     if output.exists():
         raise ValueError('Output exists; choose a new path')
     ffmpeg = shutil.which('ffmpeg')
@@ -82,7 +84,7 @@ def render(pack_dir, output, voice=None, music=None, font=None, final=False):
         with (work / 'preview.mp4').open('rb') as src, output.open('xb') as dst:
             shutil.copyfileobj(src, dst)
     if final:
-        manifest = {'final': True, 'video_sha256': hashlib.sha256(output.read_bytes()).hexdigest(),
+        manifest = {'final': True, 'text_only': text_only, 'video_sha256': hashlib.sha256(output.read_bytes()).hexdigest(),
                     'pack_sha256': hashlib.sha256((pack_dir / 'pack.json').read_bytes()).hexdigest(),
                     'caption_sha256': hashlib.sha256((pack_dir / 'caption.txt').read_bytes()).hexdigest()}
         output.with_suffix(output.suffix + '.manifest.json').write_text(json.dumps(manifest) + '\n', encoding='utf-8')
@@ -97,11 +99,12 @@ def main():
     parser.add_argument('--music', help='Local instrumental you have rights to use')
     parser.add_argument('--font', help='Local Unicode .ttf font')
     parser.add_argument('--final', action='store_true', help='Publication version of checked real content with narration')
+    parser.add_argument('--text-only', action='store_true', help='Explicit text-card publication without narration')
     args = parser.parse_args()
     try:
-        result = render(args.pack_dir, args.output, args.voice, args.music, args.font, args.final)
+        result = render(args.pack_dir, args.output, args.voice, args.music, args.font, args.final, args.text_only)
         print(f'Review video ready: {result}')
-        if not args.voice:
+        if not args.voice and not args.text_only:
             print('No narration supplied. Record voiceover.txt before publishing.')
         return 0
     except (OSError, ValueError, RuntimeError, subprocess.SubprocessError):
