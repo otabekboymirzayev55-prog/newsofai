@@ -9,6 +9,15 @@ Meta klienti va final videolar jadvali kodi bor. Metricool akkaunt ulanishi tasd
 holatida saqlangan; bu hali nashr bo‘ldi degani emas. Video Metricool serveriga ko‘chirilgan.
 Gemini TTS va Oracle ARM64 ijtimoiy oqimi hali jonli sinovdan o‘tmagan.
 
+Doimiy Instagram matn+musiqa oqimi Codex’da `Safeguard On Reels` nomli
+avtomatsiya sifatida yoqilgan. Boshlanishi 2026-11-08; dushanba, seshanba,
+payshanba, juma va yakshanba tongida Asia/Tashkent bo‘yicha bajariladi.
+Vazifa yangi manbani tekshirib, modelning o‘zi o‘zbekcha ssenariy yozadi,
+matnli vertikal video va original musiqa tayyorlab, Metricool’da rejalashtiradi.
+Bu yo‘l Gemini kalitini talab qilmaydi va VPS joylangan degani emas.
+Avtomatsiyaning birinchi ishga tushishi hali tasdiqlanmagan; manba/post holati
+`media/publication-index.json`da saqlanadi. O‘tgan nashrlar holatini ham tekshiradi.
+
 Codex’da ushbu loyiha papkasini oching va yangi chatda quyidagini yozing:
 
 > LOCAL_SETUP.md, README.md va DEPLOY.md ni o‘qi. Bu Telegram kanalga tabiiy

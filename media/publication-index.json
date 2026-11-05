@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "posts": [
+    {
+      "source_url": "https://www.instagram.com/safeguard_on/",
+      "topic": "Safeguard On page introduction",
+      "title": "AI yangiliklari ko‘p. Lekin qaysi biri sizga kerak?",
+      "scheduled_for": "2026-11-06T10:00:00+05:00",
+      "timezone": "Asia/Tashkent",
+      "status": "scheduled",
+      "metricool_post_id": "418101365",
+      "metricool_post_uuid": "1136567647410604543",
+      "local_media": "media/safeguard-on-intro.mp4",
+      "narration": "none",
+      "music": "original procedural instrumental"
+    }
+  ]
+}

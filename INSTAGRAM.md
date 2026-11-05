@@ -5,6 +5,18 @@ Kod Telegram holat bazasini o‘zgartirmaydi. Metricool’dagi akkaunt ulanishi
 tasdiqlandi; birinchi tanishtiruv Reels 2026-11-06 10:00 Asia/Tashkent uchun
 rejalashtirilgan (2026-11-05 tekshiruvida PENDING). Bu jonli nashr tasdig‘i emas.
 
+## Hozir yoqilgan avtomatsiya
+
+`Safeguard On Reels` Codex vazifasi 2026-11-08 dan boshlab haftasiga besh marta
+(dushanba, seshanba, payshanba, juma, yakshanba) Toshkent tongida ishlashga
+sozlangan. Har ishga tushishda ko‘pi bilan bitta yangi, tekshirilgan yangilikdan
+matnli va original musiqali Reels tayyorlash, Metricool’da kelajak vaqtga qo‘yish,
+manba/post indeksini saqlash va o‘tgan nashr holatini tekshirish topshirilgan.
+Kalitsiz yo‘lda ssenariyni avtomatsiyada ishlayotgan model yozadi; bu Gemini TTS
+yoki VPS’da worker ishga tushganini anglatmaydi. Hali birinchi rejalashtirilgan
+ishga tushish natijasi yo‘q. Xato yoki kerakli harakat bo‘lsa xabar beradi;
+odatdagi muvaffaqiyatlar uchun alohida bildirishnoma yubormaydi.
+
 ## Bir buyruqda musiqali demo
 
 Python 3.12+, FFmpeg (libx264/drawtext) va Unicode TrueType font kerak.
