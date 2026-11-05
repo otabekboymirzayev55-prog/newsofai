@@ -58,9 +58,10 @@ def render(pack_dir, output, voice=None, music=None, font=None, final=False, tex
         clip_windows = []
         for i, scene in enumerate(pack['scenes']):
             end = start + scene['duration']
-            for kind, width, size, y, color in [('screen', 27, 58, 330, 'white')]:
+            for kind, width, size, y, color in [('screen', 22, 54, 330, 'white')]:
                 filename = f'{kind}{i}.txt'
-                (work / filename).write_text(textwrap.fill(scene[kind], width=width), encoding='utf-8')
+                (work / filename).write_text(textwrap.fill(scene[kind], width=width, max_lines=3,
+                                                          placeholder='…'), encoding='utf-8')
                 filters.append(f"drawtext=fontfile=font.ttf:textfile={filename}:expansion=none:fontsize={size}:"
                                f"fontcolor={color}:line_spacing=18:x=80:y={y}:enable='gte(t,{start})*lt(t,{end})'")
             filters.append(f"drawtext=fontfile=font.ttf:text='{i+1:02} / {len(pack['scenes']):02}':"
