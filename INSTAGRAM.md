@@ -1,5 +1,14 @@
 # @safeguard_on — Instagram oqimi
 
+## 18 soniyalik original 3D Reels
+
+`media/studio/safeguard-javob-ortida.mp4` — AI savodxonligi mavzusidagi alohida
+to‘rt sahnali film. Titan chip, ajraluvchi qatlamlar, signal tarmog‘i, kameralar,
+matn, musiqa va o‘tish effektlari original yaratilgan. Muqova va caption ham shu
+papkada. Manbalar caption’da; tasvir konseptual ekani videoda yozilgan.
+Blender sahna va montaj kodi: `studio_reel/README.md`. Bu film avtomatik
+nashrga yoki VPS ishchisiga ulanmagan; mavjud postlar jadvali o‘zgartirilmagan.
+
 ## Original animatsiya namunasi
 
 `concept_animation.py` sakkiz soniyalik mustaqil konseptual klip yaratadi:
