@@ -1,9 +1,10 @@
 # NewsofAI
 
-Instagram uchun Reels, subtitr, karusel, Stories va musiqa tavsiyalarini
-tayyorlash qo‘shildi. Kalitsiz sinov: `python instagram.py --demo`.
-To‘liq yo‘riqnoma: [INSTAGRAM.md](INSTAGRAM.md). Bu oqim materiallarni ko‘rib
-chiqish uchun saqlaydi, avtomatik Instagram nashrini bajarmaydi.
+Instagram uchun Reels ssenariysi, subtitr, karusel/Stories matni, Gemini ovozi,
+original instrumental, vertikal video va tanlangan final videolarni nashr qilish
+oqimi bor. Kalitsiz musiqali sinov: `python prepare_reel.py --demo` (FFmpeg kerak).
+To‘liq yo‘riqnoma: [INSTAGRAM.md](INSTAGRAM.md). Nashr uchun Instagram ulanishi,
+final media hosting va alohida `--publish` buyrug‘i kerak.
 
 AI yangiliklarini RSS manbalaridan oladi, Gemini orqali tabiiy o‘zbek tilida
 qisqartirib yozadi va Telegram kanalga joylaydi. Python 3.12+ kerak;

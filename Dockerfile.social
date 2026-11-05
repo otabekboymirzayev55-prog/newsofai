@@ -1,0 +1,13 @@
+# syntax=docker/dockerfile:1
+FROM python:3.12-slim-bookworm
+RUN --mount=type=secret,id=proxy_ca \
+    if [ -f /run/secrets/proxy_ca ]; then printf 'Acquire::https::CaInfo "/run/secrets/proxy_ca";\n' >/tmp/proxy-apt.conf; else touch /tmp/proxy-apt.conf; fi; \
+    apt-get -c /tmp/proxy-apt.conf update && apt-get -c /tmp/proxy-apt.conf install -y --no-install-recommends ffmpeg fonts-dejavu-core \
+    && rm -f /tmp/proxy-apt.conf \
+    && rm -rf /var/lib/apt/lists/*
+WORKDIR /app
+ENV PYTHONUNBUFFERED=1 PYTHONDONTWRITEBYTECODE=1
+COPY bot.py instagram.py render_reel.py reel_audio.py prepare_reel.py publish_instagram.py run_social_queue.py social_config.py configure_social.py /app/
+COPY examples /app/examples
+VOLUME ["/data"]
+CMD ["python", "prepare_reel.py", "--demo", "--out", "/data/reels"]

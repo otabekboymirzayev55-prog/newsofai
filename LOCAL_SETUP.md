@@ -1,9 +1,10 @@
 # Mahalliy Codex’da davom ettirish
 
 Instagram tahririy oqimi ham qo‘shildi: `INSTAGRAM.md`ni o‘qing.
-`python instagram.py --demo` tarmoqsiz Reels/karusel/Stories materialini yaratadi.
-Haqiqiy yangilik uchun mavjud Gemini environment sozlamalaridan foydalaniladi.
-Meta akkaunt hali ulanmagan; Instagram’ga avtomatik post yuborilmaydi.
+`python prepare_reel.py --demo` tarmoqsiz musiqali vertikal video yaratadi (FFmpeg kerak).
+Haqiqiy yangilik va ovoz uchun mavjud Gemini environment sozlamalaridan foydalaniladi.
+Meta klienti va final videolar jadvali kodi bor; akkaunt hali ulanmagan.
+Instagram’da haqiqiy nashr, Gemini TTS va Oracle ARM64 ijtimoiy oqimi hali sinovdan o‘tmagan.
 
 Codex’da ushbu loyiha papkasini oching va yangi chatda quyidagini yozing:
 

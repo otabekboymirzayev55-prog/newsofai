@@ -1,107 +1,161 @@
-# O‘zbek texnologiya auditoriyasi uchun Instagram
+# @safeguard_on — Instagram oqimi
 
-Sahifa: **@safeguard_on**. Profil matni va 14 kunlik boshlang‘ich reja:
-[SAFEGUARD_ON.md](SAFEGUARD_ON.md). Qoralama, Gemini ko‘rsatmasi va yangi video
-ko‘rinishlarida shu username ishlatiladi. Boshqa akkaunt uchun process environment’da
-`INSTAGRAM_HANDLE`ni o‘zgartiring. Bu sozlama Instagram’ga kirish huquqini bermaydi.
+Profil bio’si va 14 kunlik reja: [SAFEGUARD_ON.md](SAFEGUARD_ON.md).
+Kod Telegram holat bazasini o‘zgartirmaydi. Haqiqiy akkaunt hali ulanmagan.
 
-Telegram yangilik botiga qo‘shimcha tahririy oqim. Gemini RSS yangiligidan Reels
-ssenariysi, ovoz matni, vaqtli SRT subtitr, caption, 5 slaydli karusel, 3 Stories
-va musiqa qidiruv tavsiyasini tayyorlaydi. Bu versiya Instagram’ga yubormaydi;
-Meta tokeni talab qilinmaydi. Asl manbani o‘qish va nashrdan oldin tekshirish zarur.
-AI yozgan faktlar va subtitr vaqtlari avtomatik tasdiqlangan hisoblanmaydi.
+## Bir buyruqda musiqali demo
 
-## Kalitsiz sinash
-
-Python 3.12+ bilan, loyiha papkasida:
+Python 3.12+, FFmpeg (libx264/drawtext) va Unicode TrueType font kerak.
 
 ```sh
-python instagram.py --demo
+python prepare_reel.py --demo
 ```
 
-`.local/instagram/demo-.../` ichida `review.md`, `pack.json`, `caption.txt`,
-`voiceover.txt` va `subtitles.srt` yaratiladi. Namuna haqiqiy yangilik emas;
-DEMO belgisini olib tashlab yangilik sifatida tarqatmang. Qayta bajarish mavjud
-fayllarni almashtirmaydi; boshqa `--out` papkasi bilan yangi nusxa olish mumkin.
+`.local/reels/demo-.../preview.mp4` — original sintezlangan fon musiqasi bilan
+1080×1920, 26 soniyalik matnli namuna. Shu papkada review.md, pack.json,
+caption.txt, voiceover.txt va subtitles.srt bor. Demo haqiqiy yangilik emas,
+AI ovozi yo‘q va uni final post sifatida nashr qilib bo‘lmaydi. Mavjud videolar
+almashtirilmaydi; boshqa --out bilan yangi nusxa oling.
 
-## Haqiqiy manbadan tayyorlash
+## Maxfiy sozlamalar va haqiqiy video
 
-Mavjud `GEMINI_API_KEY` process environment orqali beriladi, `.env` avtomatik
-o‘qilmaydi. Tokenni buyruq yoki chatga yozmang. Standart RSS manbalari, `FEED_URLS`
-va `GEMINI_MODEL` Telegram botidagi kabi. Bu buyruq bitta yangi material yaratadi:
+Kalitlar process environment yoki aniq --env-file orqali beriladi. .env fayli
+avtomatik o‘qilmaydi. Mavjud Windows .env faylingizni saqlang. Mahalliy interaktiv
+terminalda mavjud kalitlarni yashirin kiritish uchun:
 
 ```sh
-python instagram.py
+python configure_social.py
+python prepare_reel.py --env-file .local/social.env
 ```
 
-Faqat so‘nggi 3 kunlik yangiliklar olinadi. Shu manba uchun papka bo‘lsa, keyingi
-yangilik tanlanadi. Bu himoya URL bo‘yicha; turli URL’dagi bir mavzuni muharrir
-tekshiradi. Gemini so‘rovi pulli bo‘lishi mumkin. Natija noto‘g‘ri formatda bo‘lsa,
-hech qanday chala pack saqlanmaydi. Avtomatik pulli qayta so‘rov yo‘q.
+Sozlash yordamchisi .local/social.env yaratadi (Linux’da 600), mavjud faylni
+almashtirmaydi. Windows’da papka huquqlarini cheklang. Kalitlarni chatga yoki
+Git’ga yubormang. Process environment qiymatlari env-fayldan ustun.
 
-Tekshirilgan mahalliy manba bilan:
+Oqim: so‘nggi 3 kundagi RSS → Gemini ssenariysi → sahnama-sahna ovoz → original
+instrumental → vertikal MP4. GEMINI_API_KEY kerak; TTS modeli standarti
+gemini-2.5-flash-preview-tts, ovoz Kore. GEMINI_TTS_MODEL va GEMINI_TTS_VOICE bilan
+almashtiriladi. Model mavjudligi va o‘zbekcha talaffuz jonli hisobda tekshirilishi
+kerak. Har sahna alohida pulli so‘rov; tugallangan sahnalar keshlanadi.
+Juda uzun/qisqa ovozda jarayon to‘xtaydi, so‘zlar kesib tashlanmaydi.
+--music-style upbeat ritmli, standart calm sokin instrumental yaratadi.
+Bu trend musiqani qidirish xizmati emas. Instagram kutubxonasi audiosi uchun
+akkaunt va foydalanish huquqini tekshiring.
+
+Tayyor materialni qo‘shimcha yangilik/ssenariy so‘rovisiz davom ettirish:
 
 ```sh
-python instagram.py --source-json examples/instagram-source.json --out .local/source-review
+python prepare_reel.py --env-file .local/social.env --pack-dir PATH_TO_PACK
 ```
 
-Bu misol fayli DEMO manbadir; haqiqiy ishda uni o‘zingiz tekshirgan `title`, `url`,
-`summary`, timezone bilan `published` maydonli JSON bilan almashtiring. Mahalliy
-JSON uchun sana filtri qo‘llanmaydi — eski materialni qayta tahrirlash ham mumkin.
-URL uchun sahifa yuklanmaydi; berilgan summary modelning yagona fakt manbasidir.
+Matn o‘zgarsa eski narration.wav’ni alohida saqlab, pack’dan olib tashlang.
+Yangi matn uchun yangi ovoz olinadi, o‘zgarmagan sahnalar cache’dan ishlatiladi.
+Karusel va Stories bu bosqichda matn loyihalari, tayyor rasm emas.
 
-## 9:16 video ko‘rinishi
-
-FFmpeg (drawtext va libx264 bilan) hamda Unicode TrueType font talab qilinadi.
-Windows’da mavjud bo‘lmasa FFmpeg o‘rnating va PATH’ga qo‘shing. Renderer 1080×1920
-MP4 matnli qoralama yaratadi; haqiqiy mahsulot tasviri yoki AI ovozini yaratmaydi.
+Fakt, manba, caption, ovoz va subtitrni tekshirgandan keyin:
 
 ```sh
-python render_reel.py .local/instagram/demo-0873f3f3e6de3f9cea7bdb9c --output .local/demo-preview.mp4
+python prepare_reel.py --env-file .local/social.env --pack-dir PATH_TO_PACK --final
 ```
 
-O‘zingiz yozgan o‘zbekcha ovoz va foydalanishga huquqingiz bo‘lgan mahalliy musiqa bilan:
+final.mp4 va .manifest.json yaratiladi. Rasmiy ovoz yozuvingiz bilan ham:
 
 ```sh
-python render_reel.py PATH_TO_PACK --output .local/review-with-audio.mp4 --voice PATH_TO_VOICE.wav --music PATH_TO_MUSIC.mp3
+python render_reel.py PATH_TO_PACK --output PATH_TO_PACK/final.mp4 --voice PATH_TO_VOICE.wav --music PATH_TO_MUSIC.wav --final
 ```
 
-`PATH_TO_...` qismlarini haqiqiy yo‘llar bilan almashtiring; bo‘sh joyli yo‘llarni
-qo‘shtirnoqqa oling. Musiqa 10% ovozda aralashtiriladi, ammo eshitib tekshiring.
-Video uzunligi ssenariydan olinadi; uzun audio kesiladi. Ovoz va subtitrni sahna
-vaqtlariga moslang. Qoralama belgisi saqlanadi. Nashr uchun haqiqiy demo kadrlarini
-video muharrirda qo‘shib, tekshirilgan yakuniy videoni eksport qiling.
+PATH_TO_... qismlarini almashtiring, bo‘sh joyli yo‘llarni qo‘shtirnoqqa oling.
+Renderer matnli video yaratadi; mahsulotning haqiqiy ekran yozuvi yoki AI tasvirini
+yaratmaydi. Kerakli demo kadrlarini alohida yozing. Video H.264 24 fps, ovoz AAC
+48 kHz. Matnli video ham ishlatilishi mumkin; talaffuz va faktlarni tekshiring.
 
-Bot trend audio topilganini yoki musiqa huquqi tekshirilganini da’vo qilmaydi.
-Instagram ichida akkauntingizga ruxsat etilgan audio yoki mos litsenziyali trekni
-tanlang. Trend musiqaning Meta API orqali mavjudligi kafolatlanmaydi.
+## Instagram’ga ulanish
 
-## VPS va Docker
+Metricool orqali akkauntni ulab final video va caption’ni rejalashtirish mumkin.
+Codex’dagi ulanish tasdiqlangach, uning mavjud imkoniyatlari bilan davom etiladi.
 
-Telegram xizmati avvalgidek ishlaydi. Installer uni avtomatik Instagram oqimiga
-almashtirmaydi yoki mavjud xizmatni yangilamaydi. Yangi image ichida qoralama CLI
-bor; doimiy `/data` diskini saqlang va o‘sha mavjud volume’dan foydalaning:
+VPS uchun to‘g‘ridan-to‘g‘ri klient ham bor: Instagram Business yoki Creator
+akkaunti, Instagram Login tokeni, instagram_business_basic va
+instagram_business_content_publish ruxsatlari kerak. Facebook Login tokeni
+bu klientga mos emas. Meta app review/access level va token muddati tekshirilsin.
+Tokenni avtomatik olish/yangilash hali bajarilmaydi.
+
+INSTAGRAM_ACCESS_TOKEN, raqamli INSTAGRAM_USER_ID va qo‘llab-quvvatlanadigan
+INSTAGRAM_GRAPH_VERSION (masalan v25.0, Meta ilovasida tekshiring)ni sozlang.
 
 ```sh
-podman run --rm --env-file /etc/newsofai/bot.env -v newsofai-data:/data localhost/newsofai:latest python instagram.py --out /data/instagram
+python publish_instagram.py --env-file .local/social.env --check-account
 ```
 
-Bu buyruq faqat yangilangan image uchun. `/data/posts.sqlite3` o‘zgartirilmaydi.
-`/data/instagram`ni ham saqlang: mavjud qoralama va tahrirlar shu yerda. Docker
-image’da FFmpeg yo‘q; video ko‘rinishini FFmpeg o‘rnatilgan kompyuterda tayyorlang.
+Haqiqiy username @safeguard_on’ga mosligi tekshiriladi. Meta videoni o‘zi yuklab
+oladi: aynan final MP4’ni ommaviy HTTPS manziliga joylang. Hosting/HTTPS’ni
+repozitoriy avtomatik tashkil qilmaydi. Masofadagi video mahalliy final bilan
+bir xil bo‘lishini ta’minlang; manifest mahalliy fayllarnigina tekshiradi.
 
-## Dastlabki ikki hafta
+Avval tarmoqsiz mahalliy tekshiruv:
 
-- Haftasiga 4–5 Reels: qisqa yangilik, amaliy vosita namoyishi, AI savodxonligi.
-- Haftasiga 1–2 karusel: saqlashga arziydigan qadamlar yoki taqqoslash.
-- Stories: so‘rovnoma, savol-javob, auditoriya taklif qilgan vosita sinovi.
-- Instagram’da yangi auditoriya bilan tanishing; Telegram’da batafsil manbalar
-  va muhokama taklif qiling. Caption havolalari bosilmaydi.
+```sh
+python publish_instagram.py --pack-dir PATH_TO_PACK --video PATH_TO_PACK/final.mp4
+```
 
-Har material uchun URL, mavzu, format, hook, musiqa, vaqt va 24/72 soatlik
-natijalarni yozing: reach, o‘rtacha ko‘rish vaqti, ulashishlar, saqlashlar va
-obunalar. Faqat ko‘rish soniga qarab xulosa qilmang. Musiqa yoki hook variantlarini
-navbatdagi o‘xshash mavzularda sinang; tavsiyalarga chiqish kafolatlanmaydi.
+Haqiqiy nashr:
 
-Avtomatik Instagram nashri keyingi bosqich: akkaunt turi, Meta ruxsatlari,
-tasdiqlangan media va saqlanadigan nashr holati alohida ulanadi.
+```sh
+python publish_instagram.py --env-file .local/social.env --pack-dir PATH_TO_PACK --video PATH_TO_PACK/final.mp4 --video-url https://YOUR_MEDIA_HOST/final.mp4 --publish
+```
+
+Standart buyruq yubormaydi; faqat --publish nashr qiladi. Demo, boshqa akkaunt
+uchun pack yoki finaldan keyin o‘zgargan fayllar rad etiladi. processing bo‘lsa
+kamida bir daqiqadan keyin --env-file bilan quyidagini bajaring:
+
+```sh
+python publish_instagram.py --resume https://SOURCE_ARTICLE_URL
+```
+
+creating yoki publishing — noaniq natija: akkauntni tekshirmasdan qayta yubormang.
+Kod bunday holatni avtomatik takrorlamaydi. --state bazasini doimiy diskda saqlang;
+standart .local/instagram-publications.sqlite3. Toshkent kuni uchun 15 urinish
+limiti pending holatlarni ham sanaydi. Baza Telegram bazasidan alohida.
+
+## Vaqtli jadval
+
+.local/queue.json misoli (yo‘llar shu JSON papkasiga nisbatan):
+
+```json
+[
+  {
+    "publish_at": "2026-11-10T19:00:00+05:00",
+    "pack_dir": "reels/PACK_ID",
+    "video": "reels/PACK_ID/final.mp4",
+    "video_url": "https://YOUR_MEDIA_HOST/final.mp4"
+  }
+]
+```
+
+Sana va yo‘llarni haqiqiy rejangizga almashtiring. Timezone majburiy.
+
+```sh
+python run_social_queue.py .local/queue.json
+```
+
+Bu faqat vaqti kelgan final fayllarni tekshiradi. --env-file .local/social.env
+--publish bilan nashr yoqiladi. Cron/systemd yoki Windows Task Scheduler orqali
+har 5 daqiqada chaqiring. Bazadagi published yozuvlar takrorlanmaydi.
+Scheduler xizmati avtomatik o‘rnatilmaydi. Noaniq holat xato kodi bilan tugaydi.
+
+## Docker va Oracle Linux ARM64
+
+```sh
+podman build -f Dockerfile.social -t localhost/newsofai-social:latest .
+podman run --rm --env-file /etc/newsofai/social.env -v newsofai-data:/data localhost/newsofai-social:latest python prepare_reel.py --out /data/reels
+```
+
+Social image FFmpeg va fontlarni o‘z ichiga oladi. Telegram image alohida.
+Mavjud xizmatni almashtirmang. /data/posts.sqlite3 va /data/reels saqlansin.
+Queue ishlatilsa --state /data/instagram-publications.sqlite3 bering.
+Serverdagi /etc/newsofai/social.env huquqi 600 bo‘lsin. Oracle ARM64 joylash,
+jonli Gemini TTS, Instagram nashri va masofaviy media hosting alohida tekshiriladi.
+
+Manbalar: [Gemini speech generation](https://ai.google.dev/gemini-api/docs/generate-content/speech-generation),
+[Meta content publishing](https://developers.facebook.com/docs/instagram-platform/instagram-api-with-instagram-login/content-publishing),
+[Meta Reels media specifications](https://www.postman.com/meta/instagram/folder/830j7my/reels-publishing).
