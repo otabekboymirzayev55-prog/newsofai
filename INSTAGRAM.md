@@ -1,5 +1,22 @@
 # @safeguard_on — Instagram oqimi
 
+## Original animatsiya namunasi
+
+`concept_animation.py` sakkiz soniyalik mustaqil konseptual klip yaratadi:
+perspektivada harakatlanuvchi telefon, yorug‘lik zarralari, sfera ko‘rinishidagi
+stilizatsiyalangan avatar va original instrumental. Hech qanday model API’si,
+stock video, real odam qiyofasi yoki mahsulot interfeysi ishlatilmaydi.
+
+```sh
+python -m pip install -r requirements-motion.txt
+python concept_animation.py --output .local/concept-animation.mp4
+```
+
+FFmpeg va Unicode font ham kerak. Natija 1080×1920 H.264/AAC; bu original
+grafik animatsiya namunasi, haqiqiy mahsulot imkoniyatining demosini anglatmaydi.
+Optional Pillow/NumPy faqat shu skript uchun; mavjud bot image’lariga hali
+qo‘shilmagan. Bu klip avtomatik nashrga yoki navbatdagi Reels’ga ulanmagan.
+
 ## Yangi video shabloni
 
 Renderer endi yirik sarlavha, sahna hisoblagichi va uzun xatboshi o‘rniga
