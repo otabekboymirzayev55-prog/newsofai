@@ -19,7 +19,9 @@ fi
 dnf install -y podman
 install -d -m 700 "$appdir" /etc/newsofai
 touch "$appdir/.newsofai-installer"
-install -m 600 bot.py Dockerfile .dockerignore "$appdir/"
+install -m 600 bot.py instagram.py render_reel.py Dockerfile .dockerignore "$appdir/"
+install -d -m 700 "$appdir/examples"
+install -m 600 examples/*.json "$appdir/examples/"
 podman build -t localhost/newsofai:latest "$appdir"
 # Run the functional unit tests in the same image used for the service.
 podman run --rm --network none -v "$PWD/tests:/tests:ro,Z" \

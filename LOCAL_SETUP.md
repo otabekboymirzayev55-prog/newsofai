@@ -1,5 +1,10 @@
 # Mahalliy Codex’da davom ettirish
 
+Instagram tahririy oqimi ham qo‘shildi: `INSTAGRAM.md`ni o‘qing.
+`python instagram.py --demo` tarmoqsiz Reels/karusel/Stories materialini yaratadi.
+Haqiqiy yangilik uchun mavjud Gemini environment sozlamalaridan foydalaniladi.
+Meta akkaunt hali ulanmagan; Instagram’ga avtomatik post yuborilmaydi.
+
 Codex’da ushbu loyiha papkasini oching va yangi chatda quyidagini yozing:
 
 > LOCAL_SETUP.md, README.md va DEPLOY.md ni o‘qi. Bu Telegram kanalga tabiiy

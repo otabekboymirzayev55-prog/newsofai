@@ -4,6 +4,8 @@ ENV PYTHONUNBUFFERED=1 \
     PYTHONDONTWRITEBYTECODE=1 \
     STATE_PATH=/data/posts.sqlite3
 COPY bot.py /app/bot.py
+COPY instagram.py render_reel.py /app/
+COPY examples /app/examples
 RUN mkdir -p /data
 VOLUME ["/data"]
 CMD ["python", "bot.py"]

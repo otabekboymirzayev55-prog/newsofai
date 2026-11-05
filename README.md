@@ -1,5 +1,10 @@
 # NewsofAI
 
+Instagram uchun Reels, subtitr, karusel, Stories va musiqa tavsiyalarini
+tayyorlash qo‘shildi. Kalitsiz sinov: `python instagram.py --demo`.
+To‘liq yo‘riqnoma: [INSTAGRAM.md](INSTAGRAM.md). Bu oqim materiallarni ko‘rib
+chiqish uchun saqlaydi, avtomatik Instagram nashrini bajarmaydi.
+
 AI yangiliklarini RSS manbalaridan oladi, Gemini orqali tabiiy o‘zbek tilida
 qisqartirib yozadi va Telegram kanalga joylaydi. Python 3.12+ kerak;
 qo‘shimcha Python paketlari talab qilinmaydi.
