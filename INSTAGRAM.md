@@ -1,5 +1,33 @@
 # @safeguard_on — Instagram oqimi
 
+## Yangi video shabloni
+
+Renderer endi yirik sarlavha, sahna hisoblagichi va uzun xatboshi o‘rniga
+to‘rt so‘zli subtitr bo‘laklarini chiqaradi. Subtitr vaqti sahna ichida so‘zlar
+sonidan taxmin qilinadi; bu avtomatik nutqni tanish yoki aniq forced alignment emas.
+Renderer video yoniga shu qisqa bo‘laklar bilan `.srt` faylini ham chiqaradi.
+
+Pack yonidagi `assets.json` orqali mahalliy demo kliplar ulanadi: har sahnaga
+bitta element yoki `null`. Masalan, besh sahna uchun:
+
+```json
+[
+  null,
+  {"path":"clips/demo.mp4","rights":"owned","credit":"O‘zimiz yozgan demo"},
+  null,
+  null,
+  null
+]
+```
+
+Kliplar manifest papkasi ichida bo‘lsin; mp4/mov/webm qabul qilinadi. `rights`
+qiymati `owned`, `licensed` yoki `permission`; `credit` manba yozuvidir.
+Klip ovozi ishlatilmaydi, asl narratsiya va fon musiqasi saqlanadi. Klip sahna
+vaqtiga joylashtiriladi va kerak bo‘lsa takrorlanadi; UI kesib tashlanmasligi uchun
+kadr sig‘dirilib, chetlari fon bilan to‘ldiriladi. `--assets` bilan alohida manifest
+ham berish mumkin. Klip topilmasa grafik karta ishlatiladi; haqiqiy mahsulot demosini
+avtomatik topish/yuklab olish bu o‘zgarishga kirmaydi.
+
 Profil bio’si va 14 kunlik reja: [SAFEGUARD_ON.md](SAFEGUARD_ON.md).
 Kod Telegram holat bazasini o‘zgartirmaydi. Metricool’dagi akkaunt ulanishi
 tasdiqlandi; birinchi tanishtiruv Reels 2026-11-06 10:00 Asia/Tashkent uchun

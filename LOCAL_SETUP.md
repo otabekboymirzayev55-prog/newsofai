@@ -1,5 +1,13 @@
 # Mahalliy Codex’da davom ettirish
 
+Video shabloni yangilandi: `reel_layout.py`, qisqa subtitrlar, sahna hisoblagichi,
+progress chizig‘i va mahalliy demo kliplar uchun `assets.json` qo‘llovi bor.
+32 ta host testi o‘tgan, shu jumladan ikki klipning turli sahnalarda to‘g‘ri
+chiqishi hamda narratsiya+musiqa aralashuvi. Subtitr so‘z vaqtlari taxminiy.
+Yangi modul Docker/installer nusxalash ro‘yxatlariga qo‘shilgan; eski ef0889c
+server image’i bu yangilanishni o‘z ichiga olmaydi. Serverda yangi image yig‘ib
+alohida preview bilan tekshirish kerak; mavjud Telegram xizmatlariga tegmang.
+
 Instagram tahririy oqimi ham qo‘shildi: `INSTAGRAM.md`ni o‘qing.
 `python prepare_reel.py --demo` tarmoqsiz musiqali vertikal video yaratadi (FFmpeg kerak).
 Haqiqiy yangilik va ovoz uchun mavjud Gemini environment sozlamalaridan foydalaniladi.

@@ -7,7 +7,7 @@ RUN --mount=type=secret,id=proxy_ca \
     && rm -rf /var/lib/apt/lists/*
 WORKDIR /app
 ENV PYTHONUNBUFFERED=1 PYTHONDONTWRITEBYTECODE=1
-COPY bot.py instagram.py render_reel.py reel_audio.py prepare_reel.py publish_instagram.py run_social_queue.py social_config.py configure_social.py /app/
+COPY bot.py instagram.py render_reel.py reel_layout.py reel_audio.py prepare_reel.py publish_instagram.py run_social_queue.py social_config.py configure_social.py /app/
 COPY examples /app/examples
 VOLUME ["/data"]
 CMD ["python", "prepare_reel.py", "--demo", "--out", "/data/reels"]
