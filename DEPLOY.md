@@ -13,7 +13,7 @@ Bir kanal uchun bitta instance ishlating.
 - Doimiy diskni `/data` ga ulang. `STATE_PATH=/data/posts.sqlite3` image
   ichida belgilangan. Qayta deploy paytida diskni saqlang.
 - Bitta replica, avtomatik qayta ishga tushirish yoqilgan bo‘lsin.
-- `POST_INTERVAL_HOURS=1.5` ixtiyoriy; Toshkent kuni uchun 15 ta limit qat’iy.
+- `POST_INTERVAL_HOURS=1.5` ixtiyoriy; Toshkent kuni uchun 18 ta limit qat’iy.
 - Bot kanalda post joylash huquqiga ega administrator bo‘lishi kerak.
 
 Avval shu image va sozlamalar bilan `python bot.py --dry-run` ni ishga
@@ -31,7 +31,11 @@ birinchi argument sifatida bering. Avval xizmat aynan shu env faylni
 ishlatayotganini tekshiring. `/data/posts.sqlite3` o‘zgartirilmaydi.
 Koddagi standartni o‘zgartirish mavjud `POST_INTERVAL_HOURS=2` ni bosmaydi.
 Bot 5 daqiqada tekshiradi: interval kamida 90 daqiqa, aniq soat kafolati emas.
-Kunlik 15 ta limitga yetgach keyingi Toshkent kunini kutadi.
+Kunlik 18 ta limitga yetgach keyingi Toshkent kunini kutadi.
+18 ta limit `bot.py` ichida: uni mavjud serverga qo‘llash uchun yangi bot
+image’ini yig‘ib, mavjud volume va env fayl bilan xizmatni qayta yaratish
+kerak. Faqat interval skriptini ishlatish eski image’dagi 15 ta limitni
+o‘zgartirmaydi. Jonli image va Quadlet sozlamasini tekshirmasdan almashtirmang.
 
 Quyidagi buyruqlarni loyiha katalogida bajaring. `secrets.env` faylini
 serverda checkout tashqarisida yarating, o‘qish huquqini faqat egasiga bering

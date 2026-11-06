@@ -25,7 +25,7 @@ qo‘shimcha Python paketlari talab qilinmaydi.
 
 `POST_INTERVAL_HOURS` standart qiymati 1.5 (90 daqiqa). Bot har 5 daqiqada tekshiradi;
 oxirgi yuborishdan kamida belgilangan vaqt o‘tishi kerak. Yangilik bo‘lmasa
-post yozmaydi. Toshkent vaqti bo‘yicha bir kunda **ko‘pi bilan 15 ta** post
+post yozmaydi. Toshkent vaqti bo‘yicha bir kunda **ko‘pi bilan 18 ta** post
 yuboriladi; bu chegara interval sozlamasidan qat’i nazar amal qiladi.
 Faqat oxirgi 3 kundagi maqolalar olinadi. Standart manbalar TechCrunch AI va
 The Verge AI; `FEED_URLS` orqali vergul bilan ajratilgan RSS/Atom URL’larini

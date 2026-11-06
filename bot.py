@@ -174,7 +174,7 @@ def run_once(db, dry_run=False):
                 "SELECT COUNT(*), MAX(sent_at) FROM posts WHERE status IN ('sent', 'pending') AND sent_at >= ?",
                 (midnight,),
             ).fetchone()
-            if count >= 15 or (last and time.time() - last < interval * 3600):
+            if count >= 18 or (last and time.time() - last < interval * 3600):
                 LOG.info('Daily limit or posting interval reached')
                 return
             claimed = db.execute('INSERT OR IGNORE INTO posts VALUES (?, ?, ?, ?)',

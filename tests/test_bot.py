@@ -60,11 +60,19 @@ class BotTests(unittest.TestCase):
         self.assertEqual(self.db.execute('SELECT COUNT(*) FROM posts').fetchone()[0], 0)
 
     def test_daily_limit(self):
-        for i in range(15):
+        for i in range(18):
             self.db.execute('INSERT INTO posts VALUES (?, ?, ?, ?)', (str(i), str(i), 'sent', bot.time.time() - 60))
         self.db.commit()
         self.assertEqual(self.cycle(), 0)
-        self.assertEqual(self.db.execute('SELECT COUNT(*) FROM posts').fetchone()[0], 15)
+        self.assertEqual(self.db.execute('SELECT COUNT(*) FROM posts').fetchone()[0], 18)
+
+    def test_eighteenth_post_allowed_after_interval(self):
+        for i in range(17):
+            self.db.execute('INSERT INTO posts VALUES (?, ?, ?, ?)',
+                            (str(i), str(i), 'sent', bot.time.time() - 60))
+        self.db.commit()
+        self.assertEqual(self.cycle(), 1)
+        self.assertEqual(self.db.execute('SELECT COUNT(*) FROM posts').fetchone()[0], 18)
 
     def test_uncertain_send_stays_pending(self):
         with self.assertRaises(RuntimeError):
