@@ -1,47 +1,50 @@
 # NewsofAI
 
-Instagram uchun Reels ssenariysi, subtitr, karusel/Stories matni, Gemini ovozi,
-original instrumental, vertikal video va tanlangan final videolarni nashr qilish
-oqimi bor. Kalitsiz musiqali sinov: `python prepare_reel.py --demo` (FFmpeg kerak).
-To‘liq yo‘riqnoma: [INSTAGRAM.md](INSTAGRAM.md). Nashr uchun Instagram ulanishi,
-final media hosting va alohida `--publish` buyrug‘i kerak.
+An Instagram workflow for Reels scripts, subtitles, carousel and Stories copy,
+Gemini narration, original instrumental music, vertical videos, and publishing
+selected final videos. Try the musical demo without an API key:
+`python prepare_reel.py --demo` (requires FFmpeg).
+See [INSTAGRAM.md](INSTAGRAM.md) for the full guide. Publishing requires an
+Instagram connection, hosting for the final media, and an explicit `--publish` command.
 
-AI yangiliklarini RSS manbalaridan oladi, Gemini orqali tabiiy o‘zbek tilida
-qisqartirib yozadi va Telegram kanalga joylaydi. Python 3.12+ kerak;
-qo‘shimcha Python paketlari talab qilinmaydi.
+The Telegram bot fetches AI news from RSS feeds, uses Gemini to summarize it in
+natural Uzbek, and publishes it to a Telegram channel. Requires Python 3.12+;
+the Telegram bot needs no additional Python packages.
 
-## Ishga tushirish
+## Getting started
 
-1. Telegram’da @BotFather orqali bot yarating va uni kanalingizga post yozish
-   huquqiga ega administrator qilib qo‘shing.
-2. Muhit sozlamalariga `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHANNEL_ID`
-   (`@kanal_nomi` yoki xususiy kanal uchun raqamli ID), `GEMINI_API_KEY` kiriting.
-   Kalitlarni chatga yoki Git’ga yozmang. `.env.example` faqat namuna;
-   dastur `.env` faylni avtomatik o‘qimaydi.
-3. Repozitoriy katalogida tekshiring: `python3 -m unittest discover -s tests -v`.
-4. Avval `python3 bot.py --dry-run` bilan matnni ko‘ring. Bu Gemini so‘rovini
-   bajaradi, kanalga yubormaydi va maqolani yuborilgan deb belgilamaydi.
-5. `python3 bot.py` doimiy ish rejimini boshlaydi. `--once` bitta siklni bajaradi.
+1. Create a Telegram bot with @BotFather and add it to your channel as an
+   administrator with permission to publish posts.
+2. Set the environment variables `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHANNEL_ID`
+   (`@channel_name` or a numeric ID for a private channel), and `GEMINI_API_KEY`.
+   Never put keys in chat or Git. `.env.example` is only a template;
+   the application does not load `.env` files automatically.
+3. Run the tests from the repository directory:
+   `python3 -m unittest discover -s tests -v`.
+4. Preview the generated text with `python3 bot.py --dry-run`. This calls Gemini
+   but does not send anything to the channel or mark the article as sent.
+5. Run `python3 bot.py` to start the continuous worker. Use `--once` to run a
+   single cycle.
 
-`POST_INTERVAL_HOURS` standart qiymati 1.5 (90 daqiqa). Bot har 5 daqiqada tekshiradi;
-oxirgi yuborishdan kamida belgilangan vaqt o‘tishi kerak. Yangilik bo‘lmasa
-post yozmaydi. Toshkent vaqti bo‘yicha bir kunda **ko‘pi bilan 18 ta** post
-yuboriladi; bu chegara interval sozlamasidan qat’i nazar amal qiladi.
-Faqat oxirgi 3 kundagi maqolalar olinadi. Standart manbalar TechCrunch AI va
-The Verge AI; `FEED_URLS` orqali vergul bilan ajratilgan RSS/Atom URL’larini
-berish mumkin. `GEMINI_MODEL` standarti `gemini-2.5-flash`.
+`POST_INTERVAL_HOURS` defaults to 1.5 (90 minutes). The bot checks every five
+minutes and waits at least the configured interval after the last post.
+It does not publish when there is no news. It publishes **at most 18 posts per
+Asia/Tashkent calendar day**, regardless of the interval setting.
+Only articles from the last three days are eligible. The default sources are
+TechCrunch AI and The Verge AI; set `FEED_URLS` to a comma-separated list of
+RSS/Atom URLs to use other sources. `GEMINI_MODEL` defaults to `gemini-2.5-flash`.
 
-SQLite holati `.local/posts.sqlite3` da saqlanadi (`STATE_PATH` bilan o‘zgaradi).
-Qayta ishga tushirishda shu faylni saqlang va bitta kanal uchun bitta umumiy
-baza ishlating. Bir xil URL qayta yuborilmaydi. Bir yangilik turli manbalarda
-chiqsa, mavzu bo‘yicha takrorlanishi mumkin.
+SQLite state is stored in `.local/posts.sqlite3` (override with `STATE_PATH`).
+Preserve this file across restarts and use one shared database per channel.
+The same URL will not be posted again. Coverage of the same story by different
+sources may still result in duplicate topics.
 
-Telegram so‘rovi javobsiz qolsa, maqola `pending` holatida qoladi va qayta
-avtomatik yuborilmaydi: kanalni tekshirib keyin qo‘lda hal qilish kerak.
-`pending` yozuvlar ham kunlik limitga kiradi. Tasdiqlanmagan AI xatolari
-bo‘lishi mumkin; ishga tushirishdan oldin sinov postlarini ko‘rib chiqing.
+If a Telegram request returns no response, the article remains `pending` and
+is not retried automatically. Check the channel before resolving it manually.
+`pending` records also count toward the daily limit. AI-generated content may
+contain errors; review test posts before starting the worker.
 
-Kerakli HTTPS manzillar: `techcrunch.com`, `www.theverge.com`,
-`generativelanguage.googleapis.com`, `api.telegram.org`.
-Jonli RSS olish, AI yaratish va Telegram yuborish tarmoq ruxsatlari hamda
-haqiqiy kalitlar bilan alohida tekshirilishi kerak.
+Required HTTPS destinations: `techcrunch.com`, `www.theverge.com`,
+`generativelanguage.googleapis.com`, and `api.telegram.org`.
+Live RSS retrieval, AI generation, and Telegram delivery must be verified
+separately with network access and valid credentials.
