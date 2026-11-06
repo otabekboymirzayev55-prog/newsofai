@@ -7,12 +7,19 @@
       "title": "AI yangiliklari ko‘p. Lekin qaysi biri sizga kerak?",
       "scheduled_for": "2026-11-06T10:00:00+05:00",
       "timezone": "Asia/Tashkent",
-      "status": "scheduled",
+      "status": "published",
       "metricool_post_id": "418101365",
       "metricool_post_uuid": "1136567647410604543",
       "local_media": "media/safeguard-on-intro.mp4",
       "narration": "none",
-      "music": "original procedural instrumental"
+      "music": "original procedural instrumental",
+      "public_url": "https://www.instagram.com/reel/DfYzwL0jjg9/",
+      "publication_verification": {
+        "checked_on": "2026-11-06",
+        "source": "Metricool explicit Instagram provider record",
+        "provider_status": "PUBLISHED",
+        "provider_detailed_status": "Published"
+      }
     },
     {
       "source_url": "https://techcrunch.com/2026/11/05/meta-says-us-users-can-now-video-chat-with-their-muse-ai-avatar/",

@@ -38,7 +38,7 @@ if [[ ! -f "$envfile" ]]; then
         echo 'Sozlamalar formati noto‘g‘ri; kalitlar saqlanmadi.' >&2
         exit 1
     fi
-    (umask 077; printf 'TELEGRAM_BOT_TOKEN=%s\nTELEGRAM_CHANNEL_ID=%s\nGEMINI_API_KEY=%s\nPOST_INTERVAL_HOURS=2\n' \
+    (umask 077; printf 'TELEGRAM_BOT_TOKEN=%s\nTELEGRAM_CHANNEL_ID=%s\nGEMINI_API_KEY=%s\nPOST_INTERVAL_HOURS=1.5\n' \
         "$telegram_token" "$channel" "$gemini_key" > "$envfile")
     unset telegram_token gemini_key
 fi

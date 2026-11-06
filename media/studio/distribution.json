@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "media": "media/studio/safeguard-javob-ortida.mp4",
+  "media_sha256": "4e0dfea2ef5334658db9579afaffe80ffc058b47512bd8850561aaad8f905caf",
+  "editorial_type": "evergreen_ai_literacy",
+  "platforms": {
+    "youtube": {
+      "status": "draft_account_not_connected",
+      "title_file": "media/studio/youtube-title.txt",
+      "description_file": "media/studio/youtube-description.txt"
+    },
+    "x": {
+      "status": "draft_account_not_connected",
+      "text_file": "media/studio/x-post.txt",
+      "characters": 223
+    },
+    "instagram": {
+      "status": "creative_ready_not_scheduled",
+      "caption_file": "media/studio/caption.txt"
+    }
+  },
+  "checked_on": "2026-11-06",
+  "connection_evidence": "Metricool brand 7904135 networksData lists Instagram only",
+  "schedule_changed": false
+}

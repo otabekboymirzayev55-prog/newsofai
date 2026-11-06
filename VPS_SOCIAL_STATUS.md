@@ -18,8 +18,9 @@ so no pronunciation approval is claimed.
 The voiced Muse Reel is scheduled in Metricool for 2026-11-07 10:00 Asia/Tashkent,
 post ID 418267504, UUID -1073533182792875628. A separate calendar query confirmed
 PENDING, autoPublish=true, isAiGenerated=true and media copied to Metricool.
-The introduction remains scheduled for 2026-11-06 at 10:00. These records confirm
-scheduling, not completed publication.
+On 2026-11-06 a fresh Metricool query explicitly returned PUBLISHED for the
+introduction, with public URL https://www.instagram.com/reel/DfYzwL0jjg9/.
+The Muse post remains PENDING; it is not yet confirmed published.
 
 The connected Metricool workflow does not need separate direct Meta API tokens.
 However, the VPS-to-Metricool automatic transfer is still not installed. This

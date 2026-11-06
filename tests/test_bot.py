@@ -39,6 +39,21 @@ class BotTests(unittest.TestCase):
         self.assertEqual(self.cycle(), 0)
         self.assertEqual(self.db.execute('SELECT status FROM posts').fetchone()[0], 'sent')
 
+    def test_default_ninety_minute_boundary(self):
+        # An explicit VPS setting overrides defaults; test the unset default.
+        with patch.dict(os.environ):
+            os.environ.pop('POST_INTERVAL_HOURS', None)
+            for status in ('sent', 'pending'):
+                with self.subTest(status=status):
+                    self.db.execute('DELETE FROM posts')
+                    self.db.execute('INSERT INTO posts VALUES (?, ?, ?, ?)',
+                                    ('previous', 'https://example.com/previous', status, 10000))
+                    self.db.commit()
+                    with patch('bot.time.time', return_value=15399):
+                        self.assertEqual(self.cycle(), 0)
+                    with patch('bot.time.time', return_value=15400):
+                        self.assertEqual(self.cycle(), 1)
+
     def test_dry_run_does_not_send_or_record(self):
         with patch('builtins.print'):
             self.assertEqual(self.cycle(dry=True), 0)

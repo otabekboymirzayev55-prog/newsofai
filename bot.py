@@ -137,7 +137,7 @@ def send_post(text):
 
 
 def run_once(db, dry_run=False):
-    interval = float(os.environ.get('POST_INTERVAL_HOURS', '2'))
+    interval = float(os.environ.get('POST_INTERVAL_HOURS', '1.5'))
     if interval <= 0:
         raise RuntimeError('POST_INTERVAL_HOURS must be positive')
     latest = db.execute("SELECT MAX(sent_at) FROM posts WHERE status IN ('sent', 'pending')").fetchone()[0]

@@ -1,3 +1,16 @@
+## 2026-11-06 yangilanishi
+
+Telegram uchun foydalanuvchi so‘ragan interval: 90 daqiqa
+(`POST_INTERVAL_HOURS=1.5`), Toshkent kuni uchun 15 ta limit saqlanadi.
+Kod, yangi deploy va namuna sozlamalari yangilandi. Mavjud VPS environment
+qiymati kod defaultidan ustun turadi: serverdagi intervalni ham yangilash
+kerak. Bu sessiyada VPS SSH ulanishi yo‘q; jonli o‘zgarish tasdiqlanmagan.
+
+Instagram tanishtiruv posti Metricool provider yozuvida PUBLISHED deb
+tekshirildi: https://www.instagram.com/reel/DfYzwL0jjg9/
+YouTube va X ulanmagan; ma’qullangan original studio video uchun platforma
+matnlari `media/studio/` ichida tayyorlandi. Ular hali nashr qilinmagan.
+
 # Mahalliy Codex’da davom ettirish
 
 Video shabloni yangilandi: `reel_layout.py`, qisqa subtitrlar, sahna hisoblagichi,

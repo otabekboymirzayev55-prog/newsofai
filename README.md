@@ -23,7 +23,7 @@ qo‘shimcha Python paketlari talab qilinmaydi.
    bajaradi, kanalga yubormaydi va maqolani yuborilgan deb belgilamaydi.
 5. `python3 bot.py` doimiy ish rejimini boshlaydi. `--once` bitta siklni bajaradi.
 
-`POST_INTERVAL_HOURS` standart qiymati 2. Bot har 5 daqiqada tekshiradi;
+`POST_INTERVAL_HOURS` standart qiymati 1.5 (90 daqiqa). Bot har 5 daqiqada tekshiradi;
 oxirgi yuborishdan kamida belgilangan vaqt o‘tishi kerak. Yangilik bo‘lmasa
 post yozmaydi. Toshkent vaqti bo‘yicha bir kunda **ko‘pi bilan 15 ta** post
 yuboriladi; bu chegara interval sozlamasidan qat’i nazar amal qiladi.
