@@ -21,7 +21,7 @@ MUTED=(136,149,155)
 
 
 class Denoiser:
-    def __init__(self, library, width, height):
+    def __init__(self, library, width, height, threads=1):
         self.lib=C.CDLL(str(Path(library).resolve()))
         api=self.lib
         ptr=C.c_void_p
@@ -40,7 +40,7 @@ class Denoiser:
             fn=getattr(api,name)
             fn.argtypes,fn.restype=inputs,result
         self.device=api.oidnNewDevice(1)
-        api.oidnSetDeviceInt(self.device,b'numThreads',1)
+        api.oidnSetDeviceInt(self.device,b'numThreads',max(1,threads))
         api.oidnCommitDevice(self.device)
         self.input=np.zeros((height,width,3),dtype=np.float32)
         self.output=np.zeros_like(self.input)
@@ -65,7 +65,7 @@ class Denoiser:
         return Image.fromarray(np.uint8(np.clip(self.output,0,1)*255))
 
 
-def denoise_all(root, library, count=54, watch=False):
+def denoise_all(root, library, count=54, watch=False, threads=1):
     engine=None
     for shot in range(4):
         target=root/'clean'/f'shot{shot}'
@@ -86,7 +86,7 @@ def denoise_all(root, library, count=54, watch=False):
                         raise RuntimeError(f'Missing/incomplete render: {source}')
                     time.sleep(1)
             if engine is None:
-                engine=Denoiser(library,image.width,image.height)
+                engine=Denoiser(library,image.width,image.height,threads=threads)
             clean=engine.run(image)
             clean.save(result)
             print(f'CLEAN shot={shot} frame={i+1}/{count}',flush=True)

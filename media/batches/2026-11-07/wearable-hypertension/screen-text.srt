@@ -1,0 +1,19 @@
+1
+00:00:00,000 --> 00:00:04,500
+Soat xavfni erta sezadimi?
+Google Research yangi tadqiqotni 5-noyabrda e’lon qildi.
+
+2
+00:00:04,500 --> 00:00:09,000
+Yorug‘lik signali. Harakat signali.
+AI soat sensorlarining bir necha kunlik ma’lumotlarini tahlil qiladi.
+
+3
+00:00:09,000 --> 00:00:13,500
+Yuqori bosim belgilarini topish.
+Tadqiqot 24 soatlik tibbiy monitoring bilan solishtirilgan.
+
+4
+00:00:13,500 --> 00:00:18,000
+Bu mustaqil tashxis emas.
+Tadqiqot klinik manjetli o‘lchov o‘rnini bosmaydi. Shifokor tekshiruvi zarur.

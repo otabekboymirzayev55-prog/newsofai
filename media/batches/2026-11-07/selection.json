@@ -1,0 +1,52 @@
+{
+  "checked_on": "2026-11-07",
+  "selected_ids": [
+    "genie4-worlds",
+    "wearable-hypertension",
+    "redwood-battery",
+    "ai-engineering-mazda",
+    "ibm-chicago-quantum",
+    "nasa-x70",
+    "antigravity-chemistry"
+  ],
+  "reserve_ids": [
+    "linux-security-pipeline",
+    "nvidia-6g-research",
+    "quantum-error-correction-platform",
+    "tohoku-quantum-hall",
+    "molecular-spin-photon",
+    "fusion-mast-upgrade",
+    "iss-final-solar-array",
+    "claude-drug-research",
+    "biobasicsbench",
+    "escapade-powered-flyby"
+  ],
+  "rejected": [
+    {
+      "topic": "NVIDIA Isaac reference humanoid",
+      "reason": "Asl e’lon 2026-10-21: 14 kundan eski."
+    },
+    {
+      "topic": "DeepMind/Singapore on-device scam detection",
+      "reason": "Asl e’lon 2026-10-14: indeksdagi yangi sana voqea sanasi emas."
+    },
+    {
+      "topic": "UK–US fusion supercomputer link",
+      "reason": "Asl e’lon 2026-09-14: qidiruvdagi yangi indeks sanasi chalg‘itadi."
+    },
+    {
+      "topic": "Photonic skyrmion chip",
+      "reason": "Nature asl nashri 2026-10-12; noyabrda qayta yoritilgan."
+    },
+    {
+      "topic": "Tohoku AI solid-electrolyte perspective",
+      "reason": "Asl maqola 2026-10-13; press reliz 2026-11-06 bo‘lsa ham voqea eski."
+    },
+    {
+      "topic": "NASA SPLICE landing demonstration",
+      "reason": "Sinov 2026-08-27; noyabr maqolasi yangi sinov emas."
+    }
+  ],
+  "publication_requires_source_refresh": true,
+  "scheduled": false
+}

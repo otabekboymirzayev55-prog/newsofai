@@ -62,3 +62,25 @@ Rollback uchun oldingi image saqlansin; yangi yordamchi jadvallar eski kodga
 xalaqit bermaydi. Mavjud env’dagi `POST_INTERVAL_HOURS` va `FEED_URLS`
 defaultdan ustun. Kerakli qiymat 1.5; eski faqat-AI RSS ro‘yxati berilgan
 bo‘lsa, yangilangan kengroq manbalarni ham alohida moslash kerak.
+
+Mavjud installer yaratgan root Podman/Quadlet o‘rnatilishi uchun tayyor yordamchi:
+
+```bash
+sudo bash upgrade-telegram-vps.sh
+```
+
+Uni faqat mavjud VPS’dagi tekshirilgan shu branch katalogidan ishga tushiring.
+`vps_quadlet.py` env yo‘li, container nomi va `/data` volume’ni tasdiqlaydi;
+mos kelmasa o‘zgarishsiz to‘xtaydi. Yordamchi yangi image yig‘ib, testlarni
+o‘tkazadi va vaqtinchalik bazada jonli Gemini/manba dry-run qiladi. Haqiqiy
+post chiqmasa, xizmatni almashtirmaydi. Keyin eski Quadlet’ni mode 600 bilan
+zaxiralaydi, faqat image va 90 daqiqalik intervalni almashtiradi; env fayli,
+SQLite volume, boshqa xizmatlar saqlanadi. Aktivatsiya xatosida eski Quadlet
+tiklanadi. Oldingi image o‘chirilmaydi. `FEED_URLS` berilgan bo‘lsa saqlanadi.
+
+Bu yordamchi **shu cloud sessiyasida VPS’ga bajarilmagan**: server hosti va
+autentifikatsiyalangan SSH ulanishi mavjud emas. 51 ta host testi o‘tgan;
+yangilangan Docker image yig‘ilgan. Yangi image ichidagi qo‘shimcha test
+ishga tushishi cloud disk joyi yetmasligi sabab boshlanmadi; avvalgi Telegram
+versiyasi container’da tekshirilgan. VPS’dagi jonli dry-run va xizmatning
+birinchi haqiqiy nashri hali tekshirilishi kerak. Kalitni chatga yubormang.

@@ -1,0 +1,46 @@
+{
+  "id": "genie4-worlds",
+  "topic": "world",
+  "title": "Genie 4: AI boshqariladigan olamlar",
+  "date": "2026-10-27",
+  "source": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+  "publisher": "Google DeepMind",
+  "suggested_slot": "2026-11-09T10:00:00+05:00",
+  "importance": 9,
+  "limitation": "Dastlabki tadqiqot talqini, cheklangan kirish; biz modelni sinamaganmiz.",
+  "scenes": [
+    [
+      "YANGI MODEL",
+      [
+        "AI endi",
+        "olam yaratadi?"
+      ],
+      "DeepMind Genie 4 ni 27-oktabrda e’lon qildi."
+    ],
+    [
+      "INTERAKTIV MUHIT",
+      [
+        "Voqeani siz",
+        "o‘zgartirasiz."
+      ],
+      "Model muhit, tovush va harakatni birga simulyatsiya qiladi."
+    ],
+    [
+      "NIMA UCHUN MUHIM?",
+      [
+        "Robotlarga",
+        "virtual mashq."
+      ],
+      "Bunday muhit robot va agentlarni o‘rgatishga yordam berishi mumkin."
+    ],
+    [
+      "CHEKLOV",
+      [
+        "Hozircha",
+        "cheklangan kirish."
+      ],
+      "Bu dastlabki tadqiqot talqini. Tasvirlarimiz — original konseptual 3D."
+    ]
+  ],
+  "caption": "Genie 4 — DeepMind’ning interaktiv dunyo simulyatsiyasi modeli. Uning tadqiqot talqini muhit, harakat va tovushni birga yaratishga qaratilgan. Bu robotlarni o‘rgatish va interaktiv tajribalar uchun imkoniyat bo‘lishi mumkin. Kirish hozircha cheklangan; biz modelni amalda sinamadik. Videoda Genie chiqishi emas, original konseptual animatsiyamiz ko‘rsatilgan. Siz uni o‘yinlar uchunmi yoki robotlarni o‘rgatish uchunmi ishlatardingiz?"
+}

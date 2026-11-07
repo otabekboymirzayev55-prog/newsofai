@@ -1,0 +1,19 @@
+1
+00:00:00,000 --> 00:00:04,500
+AI endi olam yaratadi?
+DeepMind Genie 4 ni 27-oktabrda e’lon qildi.
+
+2
+00:00:04,500 --> 00:00:09,000
+Voqeani siz o‘zgartirasiz.
+Model muhit, tovush va harakatni birga simulyatsiya qiladi.
+
+3
+00:00:09,000 --> 00:00:13,500
+Robotlarga virtual mashq.
+Bunday muhit robot va agentlarni o‘rgatishga yordam berishi mumkin.
+
+4
+00:00:13,500 --> 00:00:18,000
+Hozircha cheklangan kirish.
+Bu dastlabki tadqiqot talqini. Tasvirlarimiz — original konseptual 3D.

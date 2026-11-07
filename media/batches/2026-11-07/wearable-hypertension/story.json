@@ -1,0 +1,46 @@
+{
+  "id": "wearable-hypertension",
+  "topic": "watch",
+  "title": "Soat yuqori qon bosimi belgilarini sezadimi?",
+  "date": "2026-11-05",
+  "source": "https://research.google/blog/detecting-signs-of-hypertension-using-wearable-sensors/",
+  "publisher": "Google Research",
+  "suggested_slot": "2026-11-10T10:00:00+05:00",
+  "importance": 10,
+  "limitation": "Dastlabki tadqiqot; aniq bosim o‘lchovi yoki mustaqil tashxis emas.",
+  "scenes": [
+    [
+      "SALOMATLIK TEXNOLOGIYASI",
+      [
+        "Soat xavfni",
+        "erta sezadimi?"
+      ],
+      "Google Research yangi tadqiqotni 5-noyabrda e’lon qildi."
+    ],
+    [
+      "IKKITA SENSOR",
+      [
+        "Yorug‘lik signali.",
+        "Harakat signali."
+      ],
+      "AI soat sensorlarining bir necha kunlik ma’lumotlarini tahlil qiladi."
+    ],
+    [
+      "MAQSAD",
+      [
+        "Yuqori bosim",
+        "belgilarini topish."
+      ],
+      "Tadqiqot 24 soatlik tibbiy monitoring bilan solishtirilgan."
+    ],
+    [
+      "MUHIM CHEKLOV",
+      [
+        "Bu mustaqil",
+        "tashxis emas."
+      ],
+      "Tadqiqot klinik manjetli o‘lchov o‘rnini bosmaydi. Shifokor tekshiruvi zarur."
+    ]
+  ],
+  "caption": "Google Research soatning optik va harakat sensorlari orqali yuqori qon bosimi belgilarini aniqlashga qaratilgan tadqiqotni taqdim etdi. Usul bir necha kunlik signalni birlashtiradi; bir lahzadagi aniq qon bosimini o‘lchashni maqsad qilmaydi. Bu dastlabki tadqiqot, universal tayyor soat funksiyasi yoki mustaqil tashxis emas. Videodagi soat — konseptual model. Bunday passiv kuzatuv sizga foydali bo‘larmidi?"
+}
