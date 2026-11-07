@@ -84,6 +84,7 @@ def main():
     paths += [ROOT / name for name in ['media/news-pool.json', 'TELEGRAM_EDITORIAL.md',
                                       'batch_news/README.md', 'NEWS_SELECTION.md']]
     with zipfile.ZipFile(archive, 'w', compression=zipfile.ZIP_DEFLATED, compresslevel=1) as bundle:
+        bundle.writestr('BOSHLASH.html', '<!doctype html><meta charset="utf-8"><title>Mirabilis On — 7 video</title><meta http-equiv="refresh" content="0;url=media/batches/2026-11-07/index.html"><a href="media/batches/2026-11-07/index.html">7 ta video katalogini ochish</a>')
         for path in paths:
             bundle.write(path, path.relative_to(ROOT))
     print('ARCHIVE', archive, archive.stat().st_size, flush=True)

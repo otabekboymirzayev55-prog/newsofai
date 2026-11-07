@@ -1,0 +1,46 @@
+{
+  "id": "nasa-x70",
+  "topic": "plane",
+  "title": "NASA yangi X-70 tadqiqot samolyotini e’lon qildi",
+  "date": "2026-11-04",
+  "source": "https://www.nasa.gov/news-release/nasa-announces-x-70-experimental-aircraft-to-advance-flight-research/",
+  "publisher": "NASA",
+  "suggested_slot": "2026-11-16T10:00:00+05:00",
+  "importance": 8,
+  "limitation": "E’lon qilingan tajriba platformasi; NASA bayrog‘i ostidagi ilk parvoz hali kelajakda.",
+  "scenes": [
+    [
+      "AVIATSIYA",
+      [
+        "NASA’ning yangi",
+        "uchuvchi laboratoriyasi."
+      ],
+      "X-70 Fractal 4-noyabrda e’lon qilindi."
+    ],
+    [
+      "YANGI PLATFORMA",
+      [
+        "Sinovni o‘zgartir.",
+        "Yana tekshir."
+      ],
+      "Moslashuvchan boshqaruv va almashtiriladigan tajriba yuklari rejalashtirilgan."
+    ],
+    [
+      "MAQSAD",
+      [
+        "Yangi boshqaruvni",
+        "haqiqiy parvozda sinash."
+      ],
+      "Tajriba samolyoti aviatsiya texnologiyalarini tekshirishga mo‘ljallangan."
+    ],
+    [
+      "JORIY HOLAT",
+      [
+        "Ilk parvoz",
+        "hali oldinda."
+      ],
+      "NASA uni keyingi ikki yil ichida kutmoqda. Bu yerda konseptual model."
+    ]
+  ],
+  "caption": "NASA X-70 Fractal nomli ekipajli tadqiqot samolyotini e’lon qildi. Moslashuvchan platforma yangi parvoz boshqaruvi va boshqa aviatsiya texnologiyalarini tekshirish uchun mo‘ljallangan. NASA bayrog‘i ostidagi ilk parvoz keyingi ikki yil ichida kutilmoqda — uni allaqachon bajarilgan deb bermaymiz. Videodagi samolyot original umumiy konsept, X-70’ning aniq tashqi nusxasi emas. Siz qaysi aviatsiya texnologiyasini tezroq ko‘rishni istaysiz?"
+}

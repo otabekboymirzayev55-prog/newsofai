@@ -321,12 +321,15 @@
         ]
       ],
       "caption": "NASA X-70 Fractal nomli ekipajli tadqiqot samolyotini e’lon qildi. Moslashuvchan platforma yangi parvoz boshqaruvi va boshqa aviatsiya texnologiyalarini tekshirish uchun mo‘ljallangan. NASA bayrog‘i ostidagi ilk parvoz keyingi ikki yil ichida kutilmoqda — uni allaqachon bajarilgan deb bermaymiz. Videodagi samolyot original umumiy konsept, X-70’ning aniq tashqi nusxasi emas. Siz qaysi aviatsiya texnologiyasini tezroq ko‘rishni istaysiz?",
-      "status": "selected",
+      "status": "video_ready",
       "event_type": "announcement_or_first_public_progress_report",
       "batch": "2026-11-07",
       "valid_through": "2026-11-18",
       "checked_on": "2026-11-07",
-      "history": []
+      "history": [],
+      "video": "media/batches/2026-11-07/nasa-x70/video.mp4",
+      "sha256": "37e145463ee180d2181327717ed7e80b769d4ec5afe330ded20748ed5a99f8e6",
+      "scheduled": false
     },
     {
       "id": "antigravity-chemistry",

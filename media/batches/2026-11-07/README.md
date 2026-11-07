@@ -1,6 +1,6 @@
 # Mirabilis On: 7 video va 10 zaxira mavzu
 
-**Tayyor va ko‘rilgan video: 5/7. Zaxira: 10 ta.**
+**Tayyor va ko‘rilgan video: 6/7. Zaxira: 10 ta.**
 
 [Video katalogi](index.html) · [Tanlov qaydi](selection.json) · [10 ta zaxira tafsiloti](reserve.json) · [Doimiy mavzular ro‘yxati](../../news-pool.json)
 
@@ -15,7 +15,7 @@ konseptual 3D ishlatilgan; mahsulotning haqiqiy namoyishi emas.
 | 3 | Eski avtomobil batareyalariga ikkinchi vazifa | 2026-11-04 | 2026-11-12 | 2026-11-18 | [MP4](redwood-battery/video.mp4) · [post](redwood-battery/caption.txt) |
 | 4 | AI avtomobil muhandisligiga kirib kelmoqda | 2026-11-03 | 2026-11-13 | 2026-11-17 | [MP4](ai-engineering-mazda/video.mp4) · [post](ai-engineering-mazda/caption.txt) |
 | 5 | Chikagoda Quantum System Two ishga tushdi | 2026-11-06 | 2026-11-15 | 2026-11-20 | [MP4](ibm-chicago-quantum/video.mp4) · [post](ibm-chicago-quantum/caption.txt) |
-| 6 | NASA yangi X-70 tadqiqot samolyotini e’lon qildi | 2026-11-04 | 2026-11-16 | 2026-11-18 | Tugallanmagan |
+| 6 | NASA yangi X-70 tadqiqot samolyotini e’lon qildi | 2026-11-04 | 2026-11-16 | 2026-11-18 | [MP4](nasa-x70/video.mp4) · [post](nasa-x70/caption.txt) |
 | 7 | AI kimyoviy tadqiqot jarayonini tezlashtirmoqda | 2026-11-03 | 2026-11-17 | 2026-11-17 | Tugallanmagan |
 
 Taklif etilgan sanalar **jadvalga yozilmagan**. Nashrdan oldin har bir asl manba
