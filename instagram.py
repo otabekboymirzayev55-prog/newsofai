@@ -36,7 +36,7 @@ Faqat JSON: {"title":"...", "scenes":[{"duration":2,"screen":"...",
 
 
 def instagram_handle(value=None):
-    value = os.environ.get('INSTAGRAM_HANDLE', 'safeguard_on') if value is None else value
+    value = os.environ.get('INSTAGRAM_HANDLE', 'mirabilis_on') if value is None else value
     if not isinstance(value, str):
         raise ValueError('Invalid Instagram handle')
     value = value.removeprefix('@')

@@ -112,7 +112,7 @@ def create_frame(t, background, stars, fonts):
     d.text((55, 140), 'KONSEPTUAL ANIMATSIYA', font=fonts[1], fill=(133, 148, 179))
     headline = 'AI siz bilan\ngaplashsa-chi?' if t < 4 else 'Raqamli yordamchi.\nJonli taassurot.'
     d.multiline_text((55, 220), headline, font=fonts[2], fill=(240, 246, 255), spacing=12)
-    d.text((55, 1150), '@safeguard_on', font=fonts[0], fill=(112, 225, 236))
+    d.text((55, 1150), '@mirabilis_on', font=fonts[0], fill=(112, 225, 236))
     d.line((55, 1210, 55+610*min(t/8,1), 1210), fill=(82, 180, 213), width=3)
     # Fade in/out creates clean edit points; no prerecorded material is used.
     fade = min(1, t/.5, (8-t)/.6)

@@ -1,4 +1,4 @@
-# @safeguard_on — Instagram oqimi
+# @mirabilis_on — Instagram oqimi
 
 ## 18 soniyalik original 3D Reels
 
@@ -61,7 +61,7 @@ rejalashtirilgan (2026-11-05 tekshiruvida PENDING). Bu jonli nashr tasdig‘i em
 
 ## Hozir yoqilgan avtomatsiya
 
-`Safeguard On Reels` Codex vazifasi 2026-11-08 dan boshlab haftasiga besh marta
+`Mirabilis On Reels` Codex vazifasi 2026-11-08 dan boshlab haftasiga besh marta
 (dushanba, seshanba, payshanba, juma, yakshanba) Toshkent tongida ishlashga
 sozlangan. Har ishga tushishda ko‘pi bilan bitta yangi, tekshirilgan yangilikdan
 matnli va original musiqali Reels tayyorlash, Metricool’da kelajak vaqtga qo‘yish,
@@ -158,7 +158,7 @@ INSTAGRAM_GRAPH_VERSION (masalan v25.0, Meta ilovasida tekshiring)ni sozlang.
 python publish_instagram.py --env-file .local/social.env --check-account
 ```
 
-Haqiqiy username @safeguard_on’ga mosligi tekshiriladi. Meta videoni o‘zi yuklab
+Haqiqiy username @mirabilis_on’ga mosligi tekshiriladi. Meta videoni o‘zi yuklab
 oladi: aynan final MP4’ni ommaviy HTTPS manziliga joylang. Hosting/HTTPS’ni
 repozitoriy avtomatik tashkil qilmaydi. Masofadagi video mahalliy final bilan
 bir xil bo‘lishini ta’minlang; manifest mahalliy fayllarnigina tekshiradi.

@@ -199,7 +199,7 @@ class Typography:
             d.text((78,y+58+i*140),line,font=self.font(size,True),fill=WHITE if i==0 else GOLD)
         d.line((82,y+375,82+round(100*ease),y+375),fill=GOLD,width=3)
         d.text((82,y+400),sub,font=self.font(27),fill=(194,200,197))
-        d.text((82,1634),'@safeguard_on',font=self.font(29),fill=WHITE)
+        d.text((82,1634),'@mirabilis_on',font=self.font(29),fill=WHITE)
         d.text((82,1690),'Soddalashtirilgan konseptual 3D tasvir',font=self.font(21),fill=MUTED)
         d.text((82,1734),'SAVOL BERING.  MANBANI TEKSHIRING.',font=self.font(19,True),fill=GOLD)
         for i in range(4):

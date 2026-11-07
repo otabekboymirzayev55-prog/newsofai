@@ -55,3 +55,10 @@ Verification command:
 ```sh
 python studio_reel/verify.py media/studio/safeguard-javob-ortida.mp4
 ```
+
+## Account handle update — 2026-11-07
+
+The current Instagram handle is `@mirabilis_on`. The finisher now uses this
+footer. The existing delivered MP4 still contains `@safeguard_on`; preserve it
+as the historical creative reference and re-export before any new publication.
+The user changed the username only; the visible brand name has not been changed.

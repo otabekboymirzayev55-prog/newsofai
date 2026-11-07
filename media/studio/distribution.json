@@ -21,5 +21,8 @@
   },
   "checked_on": "2026-11-06",
   "connection_evidence": "Metricool brand 7904135 networksData lists Instagram only",
-  "schedule_changed": false
+  "schedule_changed": false,
+  "current_handle": "@mirabilis_on",
+  "rendered_handle": "@safeguard_on",
+  "requires_handle_refresh_before_publication": true
 }

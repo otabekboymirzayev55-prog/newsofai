@@ -14,7 +14,7 @@ def main():
     if target.exists() or target.is_symlink():
         print('Configuration already exists; preserved. Edit it privately if needed.')
         return 1
-    values = {'INSTAGRAM_HANDLE': 'safeguard_on'}
+    values = {'INSTAGRAM_HANDLE': 'mirabilis_on'}
     try:
         # getpass refuses to echo secrets on supported local terminals.
         import warnings

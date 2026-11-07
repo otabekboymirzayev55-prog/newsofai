@@ -1,4 +1,4 @@
-# @safeguard_on — ishga tushirish to‘plami
+# @mirabilis_on — ishga tushirish to‘plami
 
 Bu hujjat profil uchun taklif va tahririy reja. Instagram profiliga hali
 o‘zgartirish kiritilmagan, postlar rejalashtiruvchi xizmatga yuklanmagan.

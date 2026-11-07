@@ -36,5 +36,16 @@
       "music": "preserved from supplied preview",
       "audio_audition_verified": false
     }
-  ]
+  ],
+  "account": {
+    "instagram_handle": "@mirabilis_on",
+    "instagram_url": "https://www.instagram.com/mirabilis_on/",
+    "metricool_brand_id": "7904135",
+    "previous_handles": [
+      "@safeguard_on",
+      "@giraffe.96069430"
+    ],
+    "updated_on": "2026-11-07",
+    "identity_evidence": "User confirmed username change; Metricool still returns cached former username"
+  }
 }

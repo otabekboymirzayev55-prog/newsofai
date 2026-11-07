@@ -1,3 +1,18 @@
+## Instagram username — 2026-11-07
+
+Joriy Instagram username: **@mirabilis_on**. Foydalanuvchi o‘zgartirganini
+bildirdi; bu o‘sha akkaunt, Metricool brand ID `7904135`. Metricool eski
+`giraffe.96069430` nomini keshda qaytarmoqda. Ko‘rinadigan profil nomi uchun
+alohida o‘zgartirish so‘ralmagan. Yangi kontent va profil havolalarida joriy
+username ishlatilsin. Mavjud VPS/local env’da `INSTAGRAM_HANDLE` berilgan
+bo‘lsa, u kod defaultidan ustun: keyingi deployda `mirabilis_on` ga moslang.
+Avtomatsiya nomi va prompti yangilandi, jadval saqlandi.
+
+Oldin nashr qilingan video va captionlar tarix sifatida saqlandi. Tayyor
+`media/studio/safeguard-javob-ortida.mp4` hali eski handle bilan: uni yangi
+post sifatida tarqatishdan oldin yangilangan `studio_reel/finish.py` orqali
+qayta eksport qilish kerak. Video hozircha rejalashtirilmagan.
+
 ## 2026-11-06 yangilanishi
 
 Telegram uchun foydalanuvchi so‘ragan interval: 90 daqiqa
@@ -35,7 +50,7 @@ Yuborilgan ovozli Muse videosi 2026-11-07 10:00 Asia/Tashkent uchun Metricool’
 rejalashtirildi; holati PENDING, AI belgisi yoqilgan. VPS’dan tayyor videolarni
 Metricool’ga doimiy avtomatik uzatish hali o‘rnatilmagan.
 
-Doimiy Instagram matn+musiqa oqimi Codex’da `Safeguard On Reels` nomli
+Doimiy Instagram matn+musiqa oqimi Codex’da `Mirabilis On Reels` nomli
 avtomatsiya sifatida yoqilgan. Boshlanishi 2026-11-08; dushanba, seshanba,
 payshanba, juma va yakshanba tongida Asia/Tashkent bo‘yicha bajariladi.
 Vazifa yangi manbani tekshirib, modelning o‘zi o‘zbekcha ssenariy yozadi,
