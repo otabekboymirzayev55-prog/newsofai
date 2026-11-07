@@ -92,5 +92,18 @@
         19.6939
       ]
     }
+  ],
+  "publication_hold": true,
+  "editorial_status": "needs_format_revision",
+  "publication_hold_reason": "User rejected repetition of Blender object plus text; re-edit with story-specific real footage, demos, screen recording or suitable graphics before scheduling.",
+  "publish_ready_videos": 0,
+  "held_video_ids": [
+    "ai-engineering-mazda",
+    "antigravity-chemistry",
+    "genie4-worlds",
+    "ibm-chicago-quantum",
+    "nasa-x70",
+    "redwood-battery",
+    "wearable-hypertension"
   ]
 }

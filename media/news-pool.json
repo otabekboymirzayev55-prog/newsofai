@@ -54,7 +54,10 @@
       "history": [],
       "video": "media/batches/2026-11-07/genie4-worlds/video.mp4",
       "sha256": "b4f3ca9ef233f272cbeb8fecc6efa8bd7f4bc033fa8f9abf9e178ce7806ff1cf",
-      "scheduled": false
+      "scheduled": false,
+      "publication_hold": true,
+      "editorial_status": "needs_format_revision",
+      "publication_hold_reason": "User rejected repetition of Blender object plus text; re-edit with story-specific real footage, demos, screen recording or suitable graphics before scheduling."
     },
     {
       "id": "wearable-hypertension",
@@ -109,7 +112,10 @@
       "history": [],
       "video": "media/batches/2026-11-07/wearable-hypertension/video.mp4",
       "sha256": "8b22f6197a659b5a16f740b2b53ea45d01f1a735641e3632ccd1ca7f479d67c7",
-      "scheduled": false
+      "scheduled": false,
+      "publication_hold": true,
+      "editorial_status": "needs_format_revision",
+      "publication_hold_reason": "User rejected repetition of Blender object plus text; re-edit with story-specific real footage, demos, screen recording or suitable graphics before scheduling."
     },
     {
       "id": "redwood-battery",
@@ -164,7 +170,10 @@
       "history": [],
       "video": "media/batches/2026-11-07/redwood-battery/video.mp4",
       "sha256": "11e9efcaa89f459d5c25fcd317b63360adf84d0429388d74887e88053d086757",
-      "scheduled": false
+      "scheduled": false,
+      "publication_hold": true,
+      "editorial_status": "needs_format_revision",
+      "publication_hold_reason": "User rejected repetition of Blender object plus text; re-edit with story-specific real footage, demos, screen recording or suitable graphics before scheduling."
     },
     {
       "id": "ai-engineering-mazda",
@@ -219,7 +228,10 @@
       "history": [],
       "video": "media/batches/2026-11-07/ai-engineering-mazda/video.mp4",
       "sha256": "7c8864cd96c2756b03c7a484336043832bb1b4224da5192f860ec327ef939cdd",
-      "scheduled": false
+      "scheduled": false,
+      "publication_hold": true,
+      "editorial_status": "needs_format_revision",
+      "publication_hold_reason": "User rejected repetition of Blender object plus text; re-edit with story-specific real footage, demos, screen recording or suitable graphics before scheduling."
     },
     {
       "id": "ibm-chicago-quantum",
@@ -274,7 +286,10 @@
       "history": [],
       "video": "media/batches/2026-11-07/ibm-chicago-quantum/video.mp4",
       "sha256": "7754f4a49595a4799af5b680c05a599913c324ba3ea1482e08ea63c6b562437a",
-      "scheduled": false
+      "scheduled": false,
+      "publication_hold": true,
+      "editorial_status": "needs_format_revision",
+      "publication_hold_reason": "User rejected repetition of Blender object plus text; re-edit with story-specific real footage, demos, screen recording or suitable graphics before scheduling."
     },
     {
       "id": "nasa-x70",
@@ -329,7 +344,10 @@
       "history": [],
       "video": "media/batches/2026-11-07/nasa-x70/video.mp4",
       "sha256": "37e145463ee180d2181327717ed7e80b769d4ec5afe330ded20748ed5a99f8e6",
-      "scheduled": false
+      "scheduled": false,
+      "publication_hold": true,
+      "editorial_status": "needs_format_revision",
+      "publication_hold_reason": "User rejected repetition of Blender object plus text; re-edit with story-specific real footage, demos, screen recording or suitable graphics before scheduling."
     },
     {
       "id": "antigravity-chemistry",
@@ -384,7 +402,10 @@
       "history": [],
       "scheduled": false,
       "video": "media/batches/2026-11-07/antigravity-chemistry/video.mp4",
-      "sha256": "aa328ea9565ab4bb4dd6f6a4b964aa580a0e4a2b7c028961b60ce3ea80ca4818"
+      "sha256": "aa328ea9565ab4bb4dd6f6a4b964aa580a0e4a2b7c028961b60ce3ea80ca4818",
+      "publication_hold": true,
+      "editorial_status": "needs_format_revision",
+      "publication_hold_reason": "User rejected repetition of Blender object plus text; re-edit with story-specific real footage, demos, screen recording or suitable graphics before scheduling."
     },
     {
       "id": "linux-security-pipeline",

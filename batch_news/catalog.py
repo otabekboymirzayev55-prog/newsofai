@@ -12,6 +12,9 @@ OUT = ROOT / 'media/batches/2026-11-07'
 def build():
     stories = json.loads((ROOT / 'batch_news/stories.json').read_text())
     reserves = json.loads((OUT / 'reserve.json').read_text())
+    candidates = {c['id']: c for c in json.loads((ROOT / 'media/news-pool.json').read_text())['candidates']}
+    held = sum(bool(candidates.get(s['id'], {}).get('publication_hold')) for s in stories)
+    hold_note = f'{held} ta eksport yangi format uchun qayta ishlanishi kerak; shu nusxalar nashrga qo‘yilmasin.' if held else 'Nashrdan oldin manba va sifat yana tekshiriladi.'
     cards, rows = [], []
     ready = 0
     for index, story in enumerate(stories, 1):
@@ -24,6 +27,8 @@ def build():
                    and video.is_file() and hashlib.sha256(video.read_bytes()).hexdigest() == report.get('sha256'))
         ready += checked
         status = 'Tayyor, tekshirildi' if checked else 'Ishlab chiqarish / ko‘rik davom etmoqda'
+        if checked and candidates.get(ident, {}).get('publication_hold'):
+            status = 'Texnik eksport tayyor; format qayta ishlanishi kerak'
         title = escape(story['title'])
         expiry = (date.fromisoformat(story['date']) + timedelta(days=14)).isoformat()
         slot = story['suggested_slot'][:10]
@@ -48,7 +53,9 @@ def build():
         reserve_md.append(f"| {index} | [{item['title']}]({item['source']}) | {item['date']} | {expiry} |")
     (OUT / 'README.md').write_text(f'''# Mirabilis On: 7 video va 10 zaxira mavzu
 
-**Tayyor va ko‘rilgan video: {ready}/7. Zaxira: {len(reserves)} ta.**
+**Texnik eksport va kadr ko‘rigi: {ready}/7. Zaxira: {len(reserves)} ta.**
+
+{hold_note} [Amaldagi format yo‘nalishi](../../../INSTAGRAM_FORMATS.md).
 
 [Video katalogi](index.html) · [Tanlov qaydi](selection.json) · [10 ta zaxira tafsiloti](reserve.json) · [Doimiy mavzular ro‘yxati](../../news-pool.json)
 
@@ -92,7 +99,7 @@ autentifikatsiyalangan ulanish mavjud emas; jonli serverga o‘rnatilmadi.
 ''')
     (OUT / 'index.html').write_text(f'''<!doctype html><html lang="uz"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Mirabilis On — 7 video / 10 g‘oya</title>
 <style>:root{{color-scheme:dark;font-family:system-ui,sans-serif;color:#edf1ef;background:#0c1215}}body{{max-width:1180px;margin:auto;padding:28px}}a{{color:#ecc67d}}h1{{font-size:clamp(30px,5vw,56px)}}h2{{font-size:27px}}header{{padding:25px 0 40px}}.eyebrow{{color:#ecc67d;letter-spacing:.07em;font-size:13px}}.intro{{max-width:850px;color:#bec9ce;line-height:1.65}}article{{display:grid;grid-template-columns:270px 1fr;gap:35px;padding:30px 0;border-top:1px solid #344047}}video,.pending{{width:100%;aspect-ratio:9/16;display:block;background:#161e23;border-radius:12px}}.pending{{display:grid;place-content:center;color:#a6b4bb}}.copy{{line-height:1.7}}.limit{{color:#d6ba86}}details{{border-top:1px solid #344047;padding:20px 0;line-height:1.65}}summary{{font-size:19px;cursor:pointer}}footer{{margin-top:35px;border-top:1px solid #344047;color:#a6b4bb;padding-top:25px;line-height:1.7}}@media(max-width:700px){{body{{padding:18px}}article{{grid-template-columns:1fr}}video,.pending{{max-width:320px;margin:auto}}}}</style>
-<header><p class="eyebrow">MIRABILIS ON / 2026-11-07</p><h1>7 video. 10 ta keyingi g‘oya.</h1><p class="intro"><strong>{ready}/7 video tayyor va ko‘rilgan.</strong> Texnologiyaning muhim yangiliklari: voqea, foyda, dalil va cheklov. Har bir videoda original konseptual animatsiya. Videolar hozircha draft; ko‘rsatilgan sanalar nashr taklifi.</p><p><a href="README.md">Umumiy hisobot</a> · <a href="reserve.json">10 g‘oya JSON</a> · <a href="../../news-pool.json">Saqlangan mavzular</a></p></header>
+<header><p class="eyebrow">MIRABILIS ON / 2026-11-07</p><h1>7 video. 10 ta keyingi g‘oya.</h1><p class="intro"><strong>{ready}/7 texnik eksport ko‘rildi.</strong> {escape(hold_note)} <a href="../../../INSTAGRAM_FORMATS.md">Yangi format yo‘nalishi</a>. Texnologiyaning muhim yangiliklari: voqea, foyda, dalil va cheklov. Videolar draft; ko‘rsatilgan sanalar nashr taklifi.</p><p><a href="README.md">Umumiy hisobot</a> · <a href="reserve.json">10 g‘oya JSON</a> · <a href="../../news-pool.json">Saqlangan mavzular</a></p></header>
 {''.join(cards)}<h2>Keyingi tanlov uchun 10 ta zaxira</h2><p class="intro">Oldingi natijalar keyingi qidiruvda yo‘qolmaydi. Nashrdan oldin manba va 14 kunlik muddat yana tekshiriladi. Bu mavzular uchun hozir video yaratilmagan.</p>{''.join(reserve_html)}
 <footer>Har video: 18 soniya · 1080×1920 · H.264 / AAC · original instrumental · diktorsiz.<br>Native 3D: 432×768, 8 fps, 4 samples; denoise va 24 fps interpolatsiya. Yozuvlar native 1080×1920. Asl manbalar 7-noyabrda ochib tekshirildi.<br>Telegram yangilanishi kodda tayyor. Bu sessiyada VPS’ga ulanish yo‘q; serverga o‘rnatilgani tasdiqlanmadi.</footer></html>''')
     print(f'Catalogue: {ready}/7 visually reviewed, {len(reserves)} reserves')

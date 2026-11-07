@@ -1,5 +1,10 @@
 # Mirabilis On — 7 ta yangilik videosi
 
+**Amaldagi tahririy holat:** foydalanuvchi takroriy Blender tuzilishini tanqid
+qilgani sabab bu yettita eksport `needs_format_revision`, `publication_hold=true`.
+Texnik tekshiruvlar saqlanadi; shu nusxalarni avtomatik chiqarmang. Qayta montaj
+yo‘nalishi: [INSTAGRAM_FORMATS.md](../INSTAGRAM_FORMATS.md). Mavzular o‘chirilmaydi.
+
 Bu buyurtma: 7 ta original video va keyingi tanlov uchun 10 ta zaxira mavzu.
 Tanlov manbalari 2026-11-07 kuni ochib tekshirildi. Ommaboplik kafolatlanmaydi;
 ahamiyat, dalil va tomoshabinga foyda bo‘yicha tahririy baholandi.

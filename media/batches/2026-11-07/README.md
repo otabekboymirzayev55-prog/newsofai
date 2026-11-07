@@ -1,6 +1,8 @@
 # Mirabilis On: 7 video va 10 zaxira mavzu
 
-**Tayyor va ko‘rilgan video: 7/7. Zaxira: 10 ta.**
+**Texnik eksport va kadr ko‘rigi: 7/7. Zaxira: 10 ta.**
+
+7 ta eksport yangi format uchun qayta ishlanishi kerak; shu nusxalar nashrga qo‘yilmasin. [Amaldagi format yo‘nalishi](../../../INSTAGRAM_FORMATS.md).
 
 [Video katalogi](index.html) · [Tanlov qaydi](selection.json) · [10 ta zaxira tafsiloti](reserve.json) · [Doimiy mavzular ro‘yxati](../../news-pool.json)
 

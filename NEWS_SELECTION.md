@@ -40,6 +40,12 @@ topilmasa, shunchaki post sonini to‘ldirish uchun video chiqarilmang.
 
 ## Tanlovni qayd etish
 
+Video formati [INSTAGRAM_FORMATS.md](INSTAGRAM_FORMATS.md) bo‘yicha yangilikka
+qarab tanlanadi. Har safar bir xil Blender obyekt/yozuv shabloni ishlatilmaydi.
+`publication_hold=true` — tayyor MP4’ni chiqarish to‘xtatilganini bildiradi;
+mavzuning o‘zi yangi saralashda qoladi. Mavjud materialni ko‘chirishdan oldin
+foydalanish huquqi va haqiqiy namoyishligi tekshiriladi.
+
 Har post papkasidagi `selection.json`da nomzodlarning ochiq manba havolalari,
 voqea va e’lon sanalari, ta’siri, dalili, cheklovi hamda nima uchun yakuniy
 mavzu tanlangani qisqa qayd etilsin. Shaxsiy ma’lumot yoki kalit yozilmasin.

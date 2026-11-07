@@ -21,4 +21,15 @@ class PoolTests(unittest.TestCase):
   self.assertEqual(len(news_pool.eligible(data,'2026-11-15')),1)
   self.assertEqual(news_pool.eligible(data,'2026-11-16'),[])
   self.assertEqual(len(news_pool.read(self.p)['candidates']),1)
+ def test_format_hold_survives_search_without_losing_important_story(self):
+  item=self.item('event');item.update(status='video_ready',video='draft.mp4',sha256='a'*64,publication_hold=True,editorial_status='needs_format_revision')
+  news_pool.merge(self.p,[item],'2026-11-07')
+  refresh=self.item('event');refresh['publication_hold']=False
+  data=news_pool.merge(self.p,[refresh],'2026-11-08')
+  self.assertEqual(len(news_pool.eligible(data,'2026-11-09')),1)
+  self.assertTrue(data['candidates'][0]['publication_hold'])
+  self.assertEqual(data['candidates'][0]['editorial_status'],'needs_format_revision')
+  self.assertEqual(news_pool.publishable_videos(data,'2026-11-09'),[])
+  data['candidates'][0]['publication_hold']=False
+  self.assertEqual(len(news_pool.publishable_videos(data,'2026-11-09')),1)
 if __name__=='__main__':unittest.main()

@@ -270,5 +270,8 @@
     "redwood-battery": "4-noyabr sanasi rasmiy yangiliklar indeksida ko‘rilgan.",
     "nasa-x70": "Reliz voqeasi 4-noyabr; sahifa 5-noyabrda yangilangan.",
     "molecular-spin-photon": "28-oktabr — peer-review nashri; preprint eski. Nature to‘liq matni olinmadi, muallif kompaniyaning asl bayoni o‘qildi."
-  }
+  },
+  "export_editorial_status": "needs_format_revision",
+  "format_direction": "../../../INSTAGRAM_FORMATS.md",
+  "existing_exports_publication_hold": true
 }

@@ -74,7 +74,11 @@ def main():
         print('DELIVERY CHECKED', story['id'], flush=True)
     news_pool.save(ROOT / 'media/news-pool.json', pool)
     build()
+    held = [c['id'] for c in pool['candidates'] if c['id'] in {s['id'] for s in stories} and c.get('publication_hold')]
     manifest = {'checked_on': '2026-11-07', 'ready_videos': len(reports), 'saved_reserves': 10,
+                'publication_hold': bool(held), 'held_video_ids': held,
+                'editorial_status': 'needs_format_revision' if held else 'reviewed',
+                'publish_ready_videos': len(reports)-len(held),
                 'scheduled': False, 'published': False, 'telegram_vps_deployed': False,
                 'telegram_blocker': 'No server host or authenticated SSH access in this session',
                 'source_refresh_before_publication_required': True, 'videos': reports}
@@ -82,7 +86,7 @@ def main():
     archive = ROOT / '.local/mirabilis-7-video-2026-11-07.zip'
     paths = sorted(p for p in OUT.rglob('*') if p.is_file())
     paths += [ROOT / name for name in ['media/news-pool.json', 'TELEGRAM_EDITORIAL.md',
-                                      'batch_news/README.md', 'NEWS_SELECTION.md']]
+                                      'batch_news/README.md', 'NEWS_SELECTION.md', 'INSTAGRAM_FORMATS.md']]
     with zipfile.ZipFile(archive, 'w', compression=zipfile.ZIP_DEFLATED, compresslevel=1) as bundle:
         bundle.writestr('BOSHLASH.html', '<!doctype html><meta charset="utf-8"><title>Mirabilis On — 7 video</title><meta http-equiv="refresh" content="0;url=media/batches/2026-11-07/index.html"><a href="media/batches/2026-11-07/index.html">7 ta video katalogini ochish</a>')
         for path in paths:

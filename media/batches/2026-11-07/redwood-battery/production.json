@@ -29,5 +29,8 @@
     14.1317,
     14.5754
   ],
-  "motion_check_note": "Mean absolute RGB change between 1s and 3.5s in each shot, excluding headline/footer. Checks motion presence, not subjective animation quality."
+  "motion_check_note": "Mean absolute RGB change between 1s and 3.5s in each shot, excluding headline/footer. Checks motion presence, not subjective animation quality.",
+  "publication_hold": true,
+  "editorial_status": "needs_format_revision",
+  "publication_hold_reason": "User rejected repetition of Blender object plus text; re-edit with story-specific real footage, demos, screen recording or suitable graphics before scheduling."
 }

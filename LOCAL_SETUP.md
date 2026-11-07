@@ -1,3 +1,17 @@
+## Eng yangi format tuzatishi — 2026-11-07
+
+Foydalanuvchi bir xil Blender ko‘rinishining takrorlanishini tanqid qildi.
+Amaldagi yo‘nalish: [INSTAGRAM_FORMATS.md](INSTAGRAM_FORMATS.md). Har yangilik
+uchun asl demo, ekran yozuvi, rasmiy kadr/foto, infografika yoki kerakli joydagi
+2D/3D tanlanadi. Bitta studio namunasi barcha postlarga shablon emas.
+Instagram to‘liq ochilmagani va kuzatilgan ochiq manbalar ushbu hujjatda aniq
+ajratilgan; Reels’lar to‘liq tomosha qilindi degan da’vo yo‘q.
+
+Quyidagi yettita MP4 texnik eksport sifatida saqlanadi, lekin formatni qayta
+ishlash uchun `publication_hold=true`, `editorial_status=needs_format_revision`.
+Shu nusxalar avtomatik navbatga qo‘yilmasin. Mavzular va 10 ta zaxira saqlanadi.
+8-noyabr uchun alohida kelishilgan mavjud postga o‘zgarish kiritilmadi.
+
 ## 7 ta yangilik videosi va 10 ta zaxira — 2026-11-07
 
 7 ta yangilik videosi tayyorlandi; har birining to‘rtta yakuniy sahna kadri
