@@ -48,3 +48,11 @@ mavzu tanlangani qisqa qayd etilsin. Shaxsiy ma’lumot yoki kalit yozilmasin.
 istisno. Undan keyingi Mirabilis videolari shu yangilik mezoniga amal qiladi.
 Mavjud jadval, bepul tarif kvotasi, takroriy post himoyasi va sifat tekshiruvi
 saqlanadi. Bu hujjat tayyor yangi video yoki uning nashri tasdig‘i emas.
+
+## Telegram’dagi joriy amalga oshirish
+
+Xuddi shu tahririy mezon `news_selection.py` orqali Telegram kodiga qo‘shilgan.
+RSS tarixi yig‘iladi, 80 tagacha lead saralanadi, kuchli nomzodlar manbasi
+ko‘rib chiqiladi. Telegram auditini `selection.json` emas, mavjud SQLite’dagi
+`editorial_runs` saqlaydi. Cheklov va deploy holati `TELEGRAM_EDITORIAL.md`da.
+VPS’ga hali qo‘llanmagan; Instagram va Telegram hali alohida ijrochilar.

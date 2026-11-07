@@ -23,7 +23,10 @@ class BotTests(unittest.TestCase):
         self.tmp.cleanup()
 
     def cycle(self, dry=False, send_error=None):
+        selection = bot.news_selection.Selection(self.article, 'example-important-event-2026-11-07',
+                                                {'primary_url': self.article.url}, 'Verified facts')
         with patch('bot.request', return_value=b'<rss/>'), patch('bot.parse_feed', return_value=[self.article]), \
+             patch('bot.news_selection.select', return_value=selection), \
              patch('bot.generate_post', return_value='Uzbek post'), patch('bot.send_post', side_effect=send_error) as send:
             bot.run_once(self.db, dry)
             return send.call_count
@@ -46,6 +49,7 @@ class BotTests(unittest.TestCase):
             for status in ('sent', 'pending'):
                 with self.subTest(status=status):
                     self.db.execute('DELETE FROM posts')
+                    self.db.execute('DELETE FROM news_events')
                     self.db.execute('INSERT INTO posts VALUES (?, ?, ?, ?)',
                                     ('previous', 'https://example.com/previous', status, 10000))
                     self.db.commit()
