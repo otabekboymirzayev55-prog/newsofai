@@ -1,0 +1,5 @@
+Genie 4 — DeepMind’ning interaktiv dunyo simulyatsiyasi modeli. Uning tadqiqot talqini muhit, harakat va tovushni birga yaratishga qaratilgan. Bu robotlarni o‘rgatish va interaktiv tajribalar uchun imkoniyat bo‘lishi mumkin. Kirish hozircha cheklangan; biz modelni amalda sinamadik. Videoda Genie chiqishi emas, original konseptual animatsiyamiz ko‘rsatilgan. Siz uni o‘yinlar uchunmi yoki robotlarni o‘rgatish uchunmi ishlatardingiz?
+
+Manba: https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/
+
+#Texnologiya #Yangiliklar #Ozbekcha #MirabilisOn

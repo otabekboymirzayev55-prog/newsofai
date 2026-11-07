@@ -1,0 +1,46 @@
+{
+  "id": "ibm-chicago-quantum",
+  "topic": "quantum",
+  "title": "Chikagoda Quantum System Two ishga tushdi",
+  "date": "2026-11-06",
+  "source": "https://newsroom.ibm.com/2026-11-06-ibm-unveils-its-most-advanced-quantum-computer-in-chicago,-marking-a-milestone-for-illinoiss-quantum-future",
+  "publisher": "IBM",
+  "suggested_slot": "2026-11-15T10:00:00+05:00",
+  "importance": 9,
+  "limitation": "Tadqiqot platformasi; barcha vazifalarda oddiy kompyuterdan tez degani emas.",
+  "scenes": [
+    [
+      "KVANT HISOBLASH",
+      [
+        "Kvant kompyuter",
+        "endi Chikagoda."
+      ],
+      "IBM 6-noyabrda Quantum System Two tizimini taqdim etdi."
+    ],
+    [
+      "JORIY HOLAT",
+      [
+        "Hyde Park Labs’da",
+        "ishga tushgan."
+      ],
+      "Tizim University of Chicago mezbonligida joylashgan."
+    ],
+    [
+      "NIMA UCHUN MUHIM?",
+      [
+        "Yangi algoritmlar.",
+        "Ilmiy tajribalar."
+      ],
+      "Platforma kvant tadqiqotlari va amaliyotlarini rivojlantirishga xizmat qiladi."
+    ],
+    [
+      "CHEKLOV",
+      [
+        "Oddiy kompyuterning",
+        "universal o‘rnini bosmaydi."
+      ],
+      "Bu tadqiqot tizimi. 3D sxema haqiqiy qurilmaning aniq nusxasi emas."
+    ]
+  ],
+  "caption": "IBM Quantum System Two Chikagodagi Hyde Park Labs’da ishga tushirilgani e’lon qilindi. University of Chicago mezbonligidagi tizim kvant algoritmlari va ilovalarini rivojlantirishga qaratilgan. Kelajakdagi qo‘llanmalar uchun tadqiqot infratuzilmasi muhim, ammo bu barcha hisoblashlarda oddiy kompyuterdan ustunlik degani emas. Videodagi geometriya — tushuntiruvchi konsept, IBM qurilmasining texnik chizmasi emas. Qaysi sohada kvant hisoblashdan ko‘proq natija kutasiz?"
+}

@@ -1,0 +1,3 @@
+# Optional procedural motion sample only; not required by the news bot.
+Pillow>=10,<13
+numpy>=1.26,<3

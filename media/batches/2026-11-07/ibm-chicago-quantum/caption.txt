@@ -1,0 +1,5 @@
+IBM Quantum System Two Chikagodagi Hyde Park Labs’da ishga tushirilgani e’lon qilindi. University of Chicago mezbonligidagi tizim kvant algoritmlari va ilovalarini rivojlantirishga qaratilgan. Kelajakdagi qo‘llanmalar uchun tadqiqot infratuzilmasi muhim, ammo bu barcha hisoblashlarda oddiy kompyuterdan ustunlik degani emas. Videodagi geometriya — tushuntiruvchi konsept, IBM qurilmasining texnik chizmasi emas. Qaysi sohada kvant hisoblashdan ko‘proq natija kutasiz?
+
+Manba: https://newsroom.ibm.com/2026-11-06-ibm-unveils-its-most-advanced-quantum-computer-in-chicago,-marking-a-milestone-for-illinoiss-quantum-future
+
+#Texnologiya #Yangiliklar #Ozbekcha #MirabilisOn

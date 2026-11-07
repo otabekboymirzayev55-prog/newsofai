@@ -1,3 +1,6 @@
 *
 !Dockerfile
-!bot.py
+!Dockerfile.social
+!*.py
+!examples/
+!examples/*.json

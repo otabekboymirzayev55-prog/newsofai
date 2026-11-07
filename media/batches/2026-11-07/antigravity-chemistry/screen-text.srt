@@ -1,0 +1,19 @@
+1
+00:00:00,000 --> 00:00:04,500
+Molekula izlashda yangi yordamchi.
+DeepMind 3-noyabrda Antigravity kimyo vositalarini ko‘rsatdi.
+
+2
+00:00:04,500 --> 00:00:09,000
+Minglab birikma. Bitta ish jarayoni.
+Agent ma’lumotlarni izlash va yangi variantlarni taklif qilishga yordam beradi.
+
+3
+00:00:09,000 --> 00:00:13,500
+AI boshqaradi. Kimyo vositasi hisoblaydi.
+Workflow RDKit, ChEMBL va PubChem kabi resurslarga tayanadi.
+
+4
+00:00:13,500 --> 00:00:18,000
+Nomzod molekula tayyor dori emas.
+Laboratoriya va klinik tekshiruvlar o‘rnini bosmaydi. Molekula tasviri konseptual.

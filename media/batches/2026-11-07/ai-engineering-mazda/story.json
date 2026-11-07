@@ -1,0 +1,46 @@
+{
+  "id": "ai-engineering-mazda",
+  "topic": "car",
+  "title": "AI avtomobil muhandisligiga kirib kelmoqda",
+  "date": "2026-11-03",
+  "source": "https://openai.com/index/accelerating-engineering-for-the-physical-world/",
+  "publisher": "OpenAI",
+  "suggested_slot": "2026-11-13T10:00:00+05:00",
+  "importance": 9,
+  "limitation": "Tadqiqot hamkorligi; tayyor mustaqil AI avtomobili yoki tasdiqlangan iqtisod ko‘rsatkichi emas.",
+  "scenes": [
+    [
+      "MUHANDISLIK",
+      [
+        "AI mashina",
+        "loyihalaydimi?"
+      ],
+      "OpenAI 3-noyabrda Mazda bilan yangi tadqiqot hamkorligini e’lon qildi."
+    ],
+    [
+      "VAZIFA",
+      [
+        "Shaklni o‘zgartir.",
+        "Havo oqimini tekshir."
+      ],
+      "Jamoalar aerodinamika va konstruksiya simulyatsiyalarini o‘rganmoqda."
+    ],
+    [
+      "FOYDA",
+      [
+        "Ko‘proq g‘oya.",
+        "Tezroq taqqoslash."
+      ],
+      "Maqsad — muhandislarga yangi variantlarni baholashda yordam berish."
+    ],
+    [
+      "CHEKLOV",
+      [
+        "Qarorni muhandis",
+        "tekshiradi."
+      ],
+      "Bu tadqiqot hamkorligi. Animatsiya hisoblangan CFD natijasi emas."
+    ]
+  ],
+  "caption": "OpenAI va Mazda avtomobil aerodinamikasi hamda konstruktiv xatti-harakatni baholashda AI’dan foydalanishni tadqiq qilmoqda. Maqsad — yangi dizayn variantlarini simulyatsiyalar orqali o‘rganish. Bu tayyor AI avtomobili yoki xavfsizligi mustaqil isbotlangan avtonom muhandis emas. Videodagi avtomobil va oqimlar — biz yaratgan konsept; Mazda materiali yoki haqiqiy CFD natijasi emas. Sizga chiroyli dizayn muhimmi yoki tejamkorlik?"
+}

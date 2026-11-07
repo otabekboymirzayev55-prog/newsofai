@@ -19,7 +19,9 @@ fi
 dnf install -y podman
 install -d -m 700 "$appdir" /etc/newsofai
 touch "$appdir/.newsofai-installer"
-install -m 600 bot.py Dockerfile .dockerignore "$appdir/"
+install -m 600 bot.py news_selection.py news_pool.py vps_quadlet.py instagram.py render_reel.py reel_layout.py reel_audio.py prepare_reel.py publish_instagram.py run_social_queue.py social_config.py configure_social.py Dockerfile .dockerignore "$appdir/"
+install -d -m 700 "$appdir/examples"
+install -m 600 examples/*.json "$appdir/examples/"
 podman build -t localhost/newsofai:latest "$appdir"
 # Run the functional unit tests in the same image used for the service.
 podman run --rm --network none -v "$PWD/tests:/tests:ro,Z" \
@@ -36,7 +38,7 @@ if [[ ! -f "$envfile" ]]; then
         echo 'Sozlamalar formati noto‘g‘ri; kalitlar saqlanmadi.' >&2
         exit 1
     fi
-    (umask 077; printf 'TELEGRAM_BOT_TOKEN=%s\nTELEGRAM_CHANNEL_ID=%s\nGEMINI_API_KEY=%s\nPOST_INTERVAL_HOURS=2\n' \
+    (umask 077; printf 'TELEGRAM_BOT_TOKEN=%s\nTELEGRAM_CHANNEL_ID=%s\nGEMINI_API_KEY=%s\nPOST_INTERVAL_HOURS=1.5\n' \
         "$telegram_token" "$channel" "$gemini_key" > "$envfile")
     unset telegram_token gemini_key
 fi

@@ -1,0 +1,96 @@
+{
+  "checked_on": "2026-11-07",
+  "ready_videos": 7,
+  "saved_reserves": 10,
+  "scheduled": false,
+  "published": false,
+  "telegram_vps_deployed": false,
+  "telegram_blocker": "No server host or authenticated SSH access in this session",
+  "source_refresh_before_publication_required": true,
+  "videos": [
+    {
+      "id": "genie4-worlds",
+      "video": "media/batches/2026-11-07/genie4-worlds/video.mp4",
+      "sha256": "b4f3ca9ef233f272cbeb8fecc6efa8bd7f4bc033fa8f9abf9e178ce7806ff1cf",
+      "bytes": 4734396,
+      "motion_by_shot": [
+        25.8133,
+        25.287,
+        24.4922,
+        26.3984
+      ]
+    },
+    {
+      "id": "wearable-hypertension",
+      "video": "media/batches/2026-11-07/wearable-hypertension/video.mp4",
+      "sha256": "8b22f6197a659b5a16f740b2b53ea45d01f1a735641e3632ccd1ca7f479d67c7",
+      "bytes": 2925392,
+      "motion_by_shot": [
+        9.8053,
+        9.6137,
+        9.1384,
+        9.6367
+      ]
+    },
+    {
+      "id": "redwood-battery",
+      "video": "media/batches/2026-11-07/redwood-battery/video.mp4",
+      "sha256": "11e9efcaa89f459d5c25fcd317b63360adf84d0429388d74887e88053d086757",
+      "bytes": 3501362,
+      "motion_by_shot": [
+        13.6602,
+        14.0443,
+        14.1317,
+        14.5754
+      ]
+    },
+    {
+      "id": "ai-engineering-mazda",
+      "video": "media/batches/2026-11-07/ai-engineering-mazda/video.mp4",
+      "sha256": "7c8864cd96c2756b03c7a484336043832bb1b4224da5192f860ec327ef939cdd",
+      "bytes": 4543831,
+      "motion_by_shot": [
+        21.4382,
+        22.3364,
+        22.7299,
+        21.8125
+      ]
+    },
+    {
+      "id": "ibm-chicago-quantum",
+      "video": "media/batches/2026-11-07/ibm-chicago-quantum/video.mp4",
+      "sha256": "7754f4a49595a4799af5b680c05a599913c324ba3ea1482e08ea63c6b562437a",
+      "bytes": 3726850,
+      "motion_by_shot": [
+        9.3569,
+        10.0023,
+        10.211,
+        10.4243
+      ]
+    },
+    {
+      "id": "nasa-x70",
+      "video": "media/batches/2026-11-07/nasa-x70/video.mp4",
+      "sha256": "37e145463ee180d2181327717ed7e80b769d4ec5afe330ded20748ed5a99f8e6",
+      "bytes": 3010030,
+      "motion_by_shot": [
+        14.4578,
+        17.5592,
+        16.221,
+        17.2941
+      ]
+    },
+    {
+      "id": "antigravity-chemistry",
+      "video": "media/batches/2026-11-07/antigravity-chemistry/video.mp4",
+      "sha256": "aa328ea9565ab4bb4dd6f6a4b964aa580a0e4a2b7c028961b60ce3ea80ca4818",
+      "bytes": 3414514,
+      "motion_by_shot": [
+        14.2422,
+        23.9364,
+        19.1409,
+        19.6939
+      ]
+    }
+  ]
+}

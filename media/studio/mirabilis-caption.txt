@@ -1,0 +1,14 @@
+AI javobi ravon chiqsa, unga ishonish oson. Lekin ravonlikning o‘zi aniqlik kafolati emas.
+
+Matn yaratadigan til modeli matnni tokenlar deb ataladigan bo‘laklar orqali qayta ishlaydi va o‘rgangan bog‘lanishlariga tayangan holda keyingi bo‘lakni bashorat qiladi. Bu video jarayonning soddalashtirilgan, konseptual 3D tasviri — haqiqiy model arxitekturasi diagrammasi emas.
+
+Muhim javobni ishlatishdan oldin manbasi, sanasi va asosiy faktlarini tekshiring.
+
+Siz AI javobini tekshirish uchun qaysi usuldan foydalanasiz?
+
+Manbalar:
+https://help.openai.com/en/articles/7842364-how-chatgpt-and-our-foundation-models-are-developed
+https://platform.openai.com/tokenizer
+https://openai.com/index/why-language-models-hallucinate/
+
+#SuniyIntellekt #AISavodxonligi #OzbekchaAI #Texnologiya #MirabilisOn

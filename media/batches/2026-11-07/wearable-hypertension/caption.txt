@@ -1,0 +1,5 @@
+Google Research soatning optik va harakat sensorlari orqali yuqori qon bosimi belgilarini aniqlashga qaratilgan tadqiqotni taqdim etdi. Usul bir necha kunlik signalni birlashtiradi; bir lahzadagi aniq qon bosimini o‘lchashni maqsad qilmaydi. Bu dastlabki tadqiqot, universal tayyor soat funksiyasi yoki mustaqil tashxis emas. Videodagi soat — konseptual model. Bunday passiv kuzatuv sizga foydali bo‘larmidi?
+
+Manba: https://research.google/blog/detecting-signs-of-hypertension-using-wearable-sensors/
+
+#Texnologiya #Yangiliklar #Ozbekcha #MirabilisOn

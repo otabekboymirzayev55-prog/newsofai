@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "media": "media/studio/mirabilis-ai-javobi.mp4",
+  "media_sha256": "8c605418bc1d4d32d56d275ba638f3b7352b291a9453d437a545d2f7f98eb356",
+  "editorial_type": "evergreen_ai_literacy",
+  "platforms": {
+    "youtube": {
+      "status": "draft_account_not_connected",
+      "title_file": "media/studio/youtube-title.txt",
+      "description_file": "media/studio/youtube-description.txt"
+    },
+    "x": {
+      "status": "draft_account_not_connected",
+      "text_file": "media/studio/x-post.txt",
+      "characters": 223
+    },
+    "instagram": {
+      "status": "scheduled",
+      "caption_file": "media/studio/mirabilis-caption.txt",
+      "metricool_post_uuid": "9192951298047626537",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7904135&openWithPostUuid=9192951298047626537",
+      "metricool_post_id": "419924440",
+      "auto_publish": true,
+      "previously_scheduled_for": "2026-11-08T10:00:00+05:00",
+      "scheduled_for": "2026-11-08T10:00:00+05:00",
+      "editorial_exception": "User confirmed Nov 8 studio film, then technology news only for Mirabilis"
+    }
+  },
+  "checked_on": "2026-11-06",
+  "connection_evidence": "Metricool brand 7904135 networksData lists Instagram only",
+  "schedule_changed": false,
+  "current_handle": "@mirabilis_on",
+  "rendered_handle": "@mirabilis_on",
+  "requires_handle_refresh_before_publication": false,
+  "cover": "media/studio/mirabilis-ai-cover.jpg",
+  "technical_report": "media/studio/mirabilis-ai-production.json",
+  "visible_brand": "MIRABILIS ON",
+  "object_engraving": "MIRABILIS"
+}

@@ -23,7 +23,10 @@ class BotTests(unittest.TestCase):
         self.tmp.cleanup()
 
     def cycle(self, dry=False, send_error=None):
+        selection = bot.news_selection.Selection(self.article, 'example-important-event-2026-11-07',
+                                                {'primary_url': self.article.url}, 'Verified facts')
         with patch('bot.request', return_value=b'<rss/>'), patch('bot.parse_feed', return_value=[self.article]), \
+             patch('bot.news_selection.select', return_value=selection), \
              patch('bot.generate_post', return_value='Uzbek post'), patch('bot.send_post', side_effect=send_error) as send:
             bot.run_once(self.db, dry)
             return send.call_count
@@ -39,17 +42,41 @@ class BotTests(unittest.TestCase):
         self.assertEqual(self.cycle(), 0)
         self.assertEqual(self.db.execute('SELECT status FROM posts').fetchone()[0], 'sent')
 
+    def test_default_ninety_minute_boundary(self):
+        # An explicit VPS setting overrides defaults; test the unset default.
+        with patch.dict(os.environ):
+            os.environ.pop('POST_INTERVAL_HOURS', None)
+            for status in ('sent', 'pending'):
+                with self.subTest(status=status):
+                    self.db.execute('DELETE FROM posts')
+                    self.db.execute('DELETE FROM news_events')
+                    self.db.execute('INSERT INTO posts VALUES (?, ?, ?, ?)',
+                                    ('previous', 'https://example.com/previous', status, 10000))
+                    self.db.commit()
+                    with patch('bot.time.time', return_value=15399):
+                        self.assertEqual(self.cycle(), 0)
+                    with patch('bot.time.time', return_value=15400):
+                        self.assertEqual(self.cycle(), 1)
+
     def test_dry_run_does_not_send_or_record(self):
         with patch('builtins.print'):
             self.assertEqual(self.cycle(dry=True), 0)
         self.assertEqual(self.db.execute('SELECT COUNT(*) FROM posts').fetchone()[0], 0)
 
     def test_daily_limit(self):
-        for i in range(15):
+        for i in range(18):
             self.db.execute('INSERT INTO posts VALUES (?, ?, ?, ?)', (str(i), str(i), 'sent', bot.time.time() - 60))
         self.db.commit()
         self.assertEqual(self.cycle(), 0)
-        self.assertEqual(self.db.execute('SELECT COUNT(*) FROM posts').fetchone()[0], 15)
+        self.assertEqual(self.db.execute('SELECT COUNT(*) FROM posts').fetchone()[0], 18)
+
+    def test_eighteenth_post_allowed_after_interval(self):
+        for i in range(17):
+            self.db.execute('INSERT INTO posts VALUES (?, ?, ?, ?)',
+                            (str(i), str(i), 'sent', bot.time.time() - 60))
+        self.db.commit()
+        self.assertEqual(self.cycle(), 1)
+        self.assertEqual(self.db.execute('SELECT COUNT(*) FROM posts').fetchone()[0], 18)
 
     def test_uncertain_send_stays_pending(self):
         with self.assertRaises(RuntimeError):

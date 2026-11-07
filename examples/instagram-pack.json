@@ -1,0 +1,19 @@
+{
+  "title": "DEMO: AI javobiga ishonishdan oldin",
+  "scenes": [
+    {"duration": 2, "screen": "AI ham adashadi", "voiceover": "AI javobi doim to‘g‘rimi?", "visual": "DEMO belgili sarlavha; haqiqiy mahsulot da’vosi yo‘q."},
+    {"duration": 6, "screen": "Avval asl manbani oching", "voiceover": "Ishonchli eshitilgan javob ham xato bo‘lishi mumkin. Avval uning asl manbasini ochib ko‘ring.", "visual": "O‘zingiz tayyorlagan misolda manbani ochish jarayonini yozib oling."},
+    {"duration": 6, "screen": "Sana va raqamlarni solishtiring", "voiceover": "Keyin sana va muhim raqamlarni solishtiring. Eski ma’lumot bugungi holatga mos kelmasligi mumkin.", "visual": "Namunadagi sana va raqamlarni ajratib ko‘rsating."},
+    {"duration": 6, "screen": "Maxfiy ma’lumotni yubormang", "voiceover": "Shaxsiy yoki ishga oid maxfiy ma’lumotlarni ommaviy AI xizmatiga yuborishdan oldin o‘ylab ko‘ring.", "visual": "Haqiqiy shaxsiy ma’lumotlarsiz, sun’iy namuna ishlating."},
+    {"duration": 6, "screen": "Siz javoblarni qanday tekshirasiz?", "voiceover": "Bu odat o‘qishda ham, ishda ham foydali. Siz AI javobini qanday tekshirasiz? Izohda yozing.", "visual": "Savol kartasi; izohga tabiiy taklif."}
+  ],
+  "caption": "DEMO — haqiqiy yangilik emas. AI javobini ishlatishdan oldin manbasi, sanasi va raqamlarini tekshirish foydali. Saqlab qo‘ying. Siz qaysi usuldan foydalanasiz? #SuniyIntellekt #Texnologiya #OzbekchaAI",
+  "carousel": ["AI javobiga ishonishdan oldin", "Asl manbani oching.", "Sana va raqamlarni solishtiring.", "Maxfiy ma’lumotlarni himoya qiling.", "Siz javobni qanday tekshirasiz?"],
+  "stories": ["AI javobini tekshirasizmi? So‘rovnoma: Ha / Har doim emas", "Bugungi eslatma: manba, sana, raqam.", "Qaysi AI mavzusini sinab ko‘raylik? Savollar oynasi."],
+  "music": {
+    "mood": "Sokin elektron instrumental, vokalsiz.",
+    "search_terms": "minimal ambient tech instrumental no vocals",
+    "reason": "Tushuntirishga mos sokin fon. Instagram kutubxonasida akkauntingizga mos audio tanlang; huquqini tekshiring."
+  },
+  "checks": ["DEMO belgisi saqlansin; buni haqiqiy yangilik deb joylamang.", "Haqiqiy mahsulotga oid da’vo qo‘shilsa, asl manba va demo bilan tekshiring."]
+}

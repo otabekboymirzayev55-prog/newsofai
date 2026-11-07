@@ -1,0 +1,46 @@
+{
+  "id": "antigravity-chemistry",
+  "topic": "molecule",
+  "title": "AI kimyoviy tadqiqot jarayonini tezlashtirmoqda",
+  "date": "2026-11-03",
+  "source": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/",
+  "publisher": "Google DeepMind",
+  "suggested_slot": "2026-11-17T10:00:00+05:00",
+  "importance": 9,
+  "limitation": "Hisoblash workflow namoyishi; yangi davolash usuli yoki klinik tasdiq emas.",
+  "scenes": [
+    [
+      "ILM-FAN",
+      [
+        "Molekula izlashda",
+        "yangi yordamchi."
+      ],
+      "DeepMind 3-noyabrda Antigravity kimyo vositalarini ko‘rsatdi."
+    ],
+    [
+      "VAZIFA",
+      [
+        "Minglab birikma.",
+        "Bitta ish jarayoni."
+      ],
+      "Agent ma’lumotlarni izlash va yangi variantlarni taklif qilishga yordam beradi."
+    ],
+    [
+      "QANDAY?",
+      [
+        "AI boshqaradi.",
+        "Kimyo vositasi hisoblaydi."
+      ],
+      "Workflow RDKit, ChEMBL va PubChem kabi resurslarga tayanadi."
+    ],
+    [
+      "CHEKLOV",
+      [
+        "Nomzod molekula",
+        "tayyor dori emas."
+      ],
+      "Laboratoriya va klinik tekshiruvlar o‘rnini bosmaydi. Molekula tasviri konseptual."
+    ]
+  ],
+  "caption": "Google Antigravity uchun yangi kimyo vositalari ilmiy ma’lumot izlash, molekulalarni taqqoslash va nomzod variantlar taklif qilishni birlashtiradi. AI jarayonni boshqaradi, maxsus kimyo dasturlari hisob-kitob qiladi. Bu ilmiy ishni tezlashtirish imkoniyati; yangi dori yaratildi yoki davolash tasdiqlandi degani emas. Videodagi molekula umumiy konseptual shakl, haqiqiy dori nomzodi emas. AI olimning qaysi ishini yengillashtirishi kerak deb o‘ylaysiz?"
+}

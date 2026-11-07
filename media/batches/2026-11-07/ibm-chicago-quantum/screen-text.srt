@@ -1,0 +1,19 @@
+1
+00:00:00,000 --> 00:00:04,500
+Kvant kompyuter endi Chikagoda.
+IBM 6-noyabrda Quantum System Two tizimini taqdim etdi.
+
+2
+00:00:04,500 --> 00:00:09,000
+Hyde Park Labs’da ishga tushgan.
+Tizim University of Chicago mezbonligida joylashgan.
+
+3
+00:00:09,000 --> 00:00:13,500
+Yangi algoritmlar. Ilmiy tajribalar.
+Platforma kvant tadqiqotlari va amaliyotlarini rivojlantirishga xizmat qiladi.
+
+4
+00:00:13,500 --> 00:00:18,000
+Oddiy kompyuterning universal o‘rnini bosmaydi.
+Bu tadqiqot tizimi. 3D sxema haqiqiy qurilmaning aniq nusxasi emas.

@@ -1,0 +1,16 @@
+AI javobi ravon chiqishi uning to‘g‘riligini kafolatlamaydi.
+
+Ushbu 18 soniyalik original animatsiya matn yaratadigan til modelining ishlashini soddalashtirib tasvirlaydi. Bu haqiqiy model arxitekturasi yoki mahsulot namoyishi emas.
+
+Muhim javobni ishlatishdan oldin manbasi, sanasi va asosiy faktlarini tekshiring.
+Siz AI javobini qanday tekshirasiz?
+
+Manbalar:
+https://help.openai.com/en/articles/7842364-how-chatgpt-and-our-foundation-models-are-developed
+https://platform.openai.com/tokenizer
+https://openai.com/index/why-language-models-hallucinate/
+
+Mirabilis On — texnologiyani o‘zbekcha tushuntiramiz.
+Instagram: https://www.instagram.com/mirabilis_on/
+
+#SuniyIntellekt #OzbekchaAI #Texnologiya

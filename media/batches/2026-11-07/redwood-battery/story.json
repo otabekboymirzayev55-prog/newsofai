@@ -1,0 +1,46 @@
+{
+  "id": "redwood-battery",
+  "topic": "battery",
+  "title": "Eski avtomobil batareyalariga ikkinchi vazifa",
+  "date": "2026-11-04",
+  "source": "https://www.redwoodmaterials.com/news/inside-the-pack-manager-the-power-electronics-behind-redwood-s-universal-battery-translator/",
+  "publisher": "Redwood Materials",
+  "suggested_slot": "2026-11-12T10:00:00+05:00",
+  "importance": 9,
+  "limitation": "Ishlab chiqaruvchi hisoboti; turli batareyalar shunchaki to‘g‘ridan-to‘g‘ri ulanmaydi.",
+  "scenes": [
+    [
+      "ENERGIYA",
+      [
+        "Eski batareya.",
+        "Yangi vazifa."
+      ],
+      "Redwood 4-noyabrda Pack Manager ishlab chiqarishi haqida yangilanish berdi."
+    ],
+    [
+      "MUAMMO",
+      [
+        "Turli batareyalar.",
+        "Turli kuchlanish."
+      ],
+      "Avtomobillarning batareya bloklari bir xil qilib yaratilmagan."
+    ],
+    [
+      "YECHIM",
+      [
+        "Har blokka",
+        "alohida konvertor."
+      ],
+      "Pack Manager bloklarni umumiy energiya tizimiga moslashtiradi."
+    ],
+    [
+      "MIQYOS",
+      [
+        "Haftasiga",
+        "1 000 dan ortiq."
+      ],
+      "Kompaniya shuncha Pack Manager ishlab chiqarayotganini bildirgan. Bu uning hisoboti."
+    ]
+  ],
+  "caption": "Redwood Materials turli avtomobillarning batareya bloklarini energiya saqlash tizimida birga ishlatishga xizmat qiluvchi Pack Manager haqida texnik yangilanish berdi. Har blok umumiy shina bilan alohida konvertor orqali ishlaydi. Kompaniya haftasiga 1 000 dan ortiq qurilma ishlab chiqarayotganini aytmoqda. Bu ishlab chiqaruvchining hisoboti; o‘zimizning sinovimiz emas. Batareyalarning ikkinchi hayoti energiya ta’minotiga yordam bera oladimi?"
+}

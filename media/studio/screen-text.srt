@@ -1,0 +1,19 @@
+1
+00:00:00,000 --> 00:00:04,500
+AI javobi qanday tug‘iladi?
+
+2
+00:00:04,500 --> 00:00:09,000
+Matn avval bo‘laklanadi. Bu bo‘laklar «token» deyiladi.
+
+3
+00:00:09,000 --> 00:00:13,500
+Keyingi bo‘lak bashorat qilinadi. Model o‘rgangan bog‘lanishlarga tayanadi.
+
+4
+00:00:13,500 --> 00:00:16,100
+Ishonchli ko‘rinish. Xato bo‘lishi mumkin.
+
+5
+00:00:16,100 --> 00:00:18,000
+Manbani ham tekshiring. AI bilan ishlang. Tanqidiy fikrlang.

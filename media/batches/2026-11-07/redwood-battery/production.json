@@ -1,0 +1,33 @@
+{
+  "file": "video.mp4",
+  "duration_seconds": 18,
+  "width": 1080,
+  "height": 1920,
+  "fps": 24,
+  "video_frames": 432,
+  "video_codec": "h264",
+  "audio_codec": "aac",
+  "audio_rate": 48000,
+  "audio_channels": 2,
+  "mean_volume_db": -17.6,
+  "peak_volume_db": -1.3,
+  "sha256": "11e9efcaa89f459d5c25fcd317b63360adf84d0429388d74887e88053d086757",
+  "bytes": 3501362,
+  "narration": false,
+  "paid_generation_api_used": false,
+  "native_3d_render": "432x768, 8 fps, 4 Cycles samples; OIDN denoised and interpolated independently per shot to 24 fps",
+  "typography": "native 1080x1920",
+  "shot_frames_sampled": 4,
+  "status": "technical_checks_passed",
+  "rights": "Original procedural geometry, typography and locally synthesized music",
+  "visual_review": "assistant inspected all four final shots: branding, text fit, event date, isolated converters and attributed production claim",
+  "scheduled": false,
+  "full_decode": "passed: all video and audio decoded without FFmpeg errors",
+  "visual_region_motion_mad_0_255": [
+    13.6602,
+    14.0443,
+    14.1317,
+    14.5754
+  ],
+  "motion_check_note": "Mean absolute RGB change between 1s and 3.5s in each shot, excluding headline/footer. Checks motion presence, not subjective animation quality."
+}

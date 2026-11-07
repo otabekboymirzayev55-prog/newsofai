@@ -1,0 +1,19 @@
+1
+00:00:00,000 --> 00:00:04,500
+AI mashina loyihalaydimi?
+OpenAI 3-noyabrda Mazda bilan yangi tadqiqot hamkorligini e’lon qildi.
+
+2
+00:00:04,500 --> 00:00:09,000
+Shaklni o‘zgartir. Havo oqimini tekshir.
+Jamoalar aerodinamika va konstruksiya simulyatsiyalarini o‘rganmoqda.
+
+3
+00:00:09,000 --> 00:00:13,500
+Ko‘proq g‘oya. Tezroq taqqoslash.
+Maqsad — muhandislarga yangi variantlarni baholashda yordam berish.
+
+4
+00:00:13,500 --> 00:00:18,000
+Qarorni muhandis tekshiradi.
+Bu tadqiqot hamkorligi. Animatsiya hisoblangan CFD natijasi emas.
