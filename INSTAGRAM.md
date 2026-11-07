@@ -1,5 +1,9 @@
 # @mirabilis_on — Instagram oqimi
 
+Amaldagi yangilik tanlash siyosati: [NEWS_SELECTION.md](NEWS_SELECTION.md).
+Oxirgi 14 kun ichidagi eng muhim voqea saralanadi; ahamiyat sanadan ustun.
+
+
 ## 18 soniyalik original 3D Reels
 
 `media/studio/safeguard-javob-ortida.mp4` — AI savodxonligi mavzusidagi alohida

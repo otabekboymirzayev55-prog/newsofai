@@ -1,3 +1,13 @@
+## Yangilik saralash mezoni — 2026-11-07
+
+Eng yangi bo‘lishidan ko‘ra ahamiyati ustun. Nashr paytida 14 kundan
+oshmagan, katta ta’sirga ega yoki asoslangan muhim imkoniyat yaratadigan
+texnologiya voqealari tanlansin. Har safar imkon qadar 5–8 nomzod
+solishtirilsin. Batafsil amaldagi mezon: `NEWS_SELECTION.md`.
+Kunlik mayda yangilanish bilan kvota to‘ldirilmasin; 1–2 haftalik kuchli
+voqea bugungi ahamiyatsiz xabardan ustun. Birinchi avtomatik ishlab
+chiqarish hali tasdiqlanmagan; bu saralash ko‘rsatmalarining yangilanishi.
+
 ## Eng so‘nggi kelishuv — 2026-11-07
 
 Foydalanuvchi 8-noyabrda tayyor studio videosi, undan keyin Mirabilis uchun
@@ -19,7 +29,7 @@ hali tasdiqlanmagan. Alohida ta’lim sahifasi hozircha ochilmagan/ulanmagan.
 Mirabilis On — o‘zbekcha TEXNOLOGIYA YANGILIKLARI sahifasi.
 Obuna va’dasi: texnologiyada nima yangilik bo‘layotganini muntazam,
 tekshirilgan va sodda shaklda yetkazish. Har videoda avval haqiqiy so‘nggi
-72 soatdagi yangilik tanlanadi, so‘ng nima o‘zgardi, nima qila oladi,
+14 kun ichidagi muhim yangilik tanlanadi, so‘ng nima o‘zgardi, nima qila oladi,
 kimga foydali va cheklovi nima degan savollarga javob yoziladi. Animatsiya
 aynan o‘sha voqeaga moslanadi. Yangi model, mahsulot, robot, qurilma yoki
 muhim yangilanish — mavzu yangilikning o‘zidan kelib chiqadi.
