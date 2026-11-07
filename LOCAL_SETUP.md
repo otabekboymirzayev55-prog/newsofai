@@ -1,7 +1,8 @@
 ## 7 ta yangilik videosi va 10 ta zaxira — 2026-11-07
 
-Foydalanuvchi 7 ta yangilik videosini oldindan tayyorlash va yana 10 ta muhim
-mavzuni saqlashni buyurdi. Fayllar, amaldagi tayyorlik va taklif sanalari:
+7 ta yangilik videosi tayyorlandi; har birining to‘rtta yakuniy sahna kadri
+ko‘rildi. Yana 10 ta muhim mavzu zaxirada saqlandi. Fayllar, haqiqiy texnik
+hisobotlar va taklif sanalari:
 [katalog](media/batches/2026-11-07/README.md). Bu yangi batch avtomatik ravishda
 Instagram navbatiga yozilgan degani emas. 8-noyabr 10:00 uchun mavjud studio
 posti saqlanadi. Keyingi nashrda tayyor videolar, zaxira va muhim yangi xabarlar
@@ -48,7 +49,7 @@ Kunlik mayda yangilanish bilan kvota to‘ldirilmasin; 1–2 haftalik kuchli
 voqea bugungi ahamiyatsiz xabardan ustun. Birinchi avtomatik ishlab
 chiqarish hali tasdiqlanmagan; bu saralash ko‘rsatmalarining yangilanishi.
 
-## Eng so‘nggi kelishuv — 2026-11-07
+## 8-noyabr posti bo‘yicha saqlangan kelishuv — 2026-11-07
 
 Foydalanuvchi 8-noyabrda tayyor studio videosi, undan keyin Mirabilis uchun
 texnologiya yangiliklari chiqishini tanladi. Shu sabab studio posti navbatga
@@ -77,16 +78,19 @@ muhim yangilanish — mavzu yangilikning o‘zidan kelib chiqadi.
 
 «AI qanday ishlaydi?» kabi umumiy darslar yangilik o‘rniga chiqarilmasin.
 AI javobini tekshirish haqidagi keyingi dars foydalanuvchi tomonidan to‘xtatilgan.
-Studio film faqat vizual sifat namunasi sifatida saqlanadi.
+8-noyabrdagi bir martalik nashrdan keyin studio film vizual sifat namunasi
+sifatida saqlanadi; keyingi muntazam videolar yangiliklar haqida bo‘ladi.
 
-«AI javobi qanday tug‘iladi?» posti Metricool’da qoralamaga qaytarildi:
+Tarixiy harakat: «AI javobi qanday tug‘iladi?» posti avval qoralamaga qaytarilgan:
 UUID 9192951298047626537, yangi ID 419920106, draft=true, autoPublish=false;
-alohida so‘rov bilan tekshirildi. 8-noyabr 10:00 da avtomatik chiqmaydi.
-Avvalgi jadval haqidagi pastdagi qaydlar tarixiy; amaldagi holat indeksda.
-Yangi yangilik videosi hali tayyorlanmagan yoki rejalashtirilmagan.
-Avtomatik vazifaga yo‘nalish tuzatishi kiritildi; nashrga tayyor natija hali yo‘q.
+alohida so‘rov bilan tekshirilgan. Keyingi foydalanuvchi ko‘rsatmasi bilan bu
+o‘zgarish bekor qilindi va post 8-noyabr 10:00 ga qayta faollashtirildi:
+joriy ID 419924440, o‘sha UUID, draft=false, autoPublish=true, PENDING.
+Amaldagi yozuv `media/publication-index.json`da. Yangi yangilik videolarining
+tayyorlik holati yuqoridagi batch katalogida; eski «hali tayyorlanmagan» qaydi
+amaldagi holatni ifodalamaydi.
 
-## Oldingi nashr rejasi — qoralamaga qaytarilgan
+## Oldingi nashr rejasining tarixiy qaydi
 
 «AI javobi qanday tug‘iladi?» — `media/studio/mirabilis-ai-javobi.mp4`.
 2026-11-08 10:00 Asia/Tashkent uchun Metricool’da autoPublish=true,

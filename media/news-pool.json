@@ -376,12 +376,15 @@
         ]
       ],
       "caption": "Google Antigravity uchun yangi kimyo vositalari ilmiy ma’lumot izlash, molekulalarni taqqoslash va nomzod variantlar taklif qilishni birlashtiradi. AI jarayonni boshqaradi, maxsus kimyo dasturlari hisob-kitob qiladi. Bu ilmiy ishni tezlashtirish imkoniyati; yangi dori yaratildi yoki davolash tasdiqlandi degani emas. Videodagi molekula umumiy konseptual shakl, haqiqiy dori nomzodi emas. AI olimning qaysi ishini yengillashtirishi kerak deb o‘ylaysiz?",
-      "status": "selected",
+      "status": "video_ready",
       "event_type": "announcement_or_first_public_progress_report",
       "batch": "2026-11-07",
       "valid_through": "2026-11-17",
       "checked_on": "2026-11-07",
-      "history": []
+      "history": [],
+      "scheduled": false,
+      "video": "media/batches/2026-11-07/antigravity-chemistry/video.mp4",
+      "sha256": "aa328ea9565ab4bb4dd6f6a4b964aa580a0e4a2b7c028961b60ce3ea80ca4818"
     },
     {
       "id": "linux-security-pipeline",
