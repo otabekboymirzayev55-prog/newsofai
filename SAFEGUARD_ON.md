@@ -1,3 +1,8 @@
+> Joriy yo‘nalish: yangi texnologiya voqealari haqida o‘zbekcha axborot.
+> Har Reel avval tekshirilgan yangilikdan boshlanadi; ssenariy va vizual
+> o‘sha yangilikka moslanadi. Quyidagi eski boshlang‘ich rejaning umumiy AI
+> savodxonligi darslari hozirgi avtomatik nashr topshirig‘i emas.
+
 # @mirabilis_on — ishga tushirish to‘plami
 
 Bu hujjat profil uchun taklif va tahririy reja. Instagram profiliga hali

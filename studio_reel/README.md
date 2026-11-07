@@ -1,3 +1,10 @@
+> EDITORIAL UPDATE (2026-11-07): This evergreen film is now a retained visual
+> reference only. Its Metricool post UUID 9192951298047626537 was moved to
+> draft=true, autoPublish=false (new ID 419920106), independently verified.
+> It will not automatically publish at its former November 8 slot. Current
+> production must cover verified fresh technology news, with story-specific
+> scripts and visuals. Any earlier schedule notes below are historical.
+
 # Mirabilis On — current delivery
 
 Use `media/studio/mirabilis-ai-javobi.mp4`, `mirabilis-ai-cover.jpg`,

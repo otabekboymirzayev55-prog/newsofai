@@ -1,4 +1,25 @@
-## Keyingi tasdiqlangan nashr
+## Joriy tahririy yo‘nalish — 2026-11-07
+
+Mirabilis On — o‘zbekcha TEXNOLOGIYA YANGILIKLARI sahifasi.
+Obuna va’dasi: texnologiyada nima yangilik bo‘layotganini muntazam,
+tekshirilgan va sodda shaklda yetkazish. Har videoda avval haqiqiy so‘nggi
+72 soatdagi yangilik tanlanadi, so‘ng nima o‘zgardi, nima qila oladi,
+kimga foydali va cheklovi nima degan savollarga javob yoziladi. Animatsiya
+aynan o‘sha voqeaga moslanadi. Yangi model, mahsulot, robot, qurilma yoki
+muhim yangilanish — mavzu yangilikning o‘zidan kelib chiqadi.
+
+«AI qanday ishlaydi?» kabi umumiy darslar yangilik o‘rniga chiqarilmasin.
+AI javobini tekshirish haqidagi keyingi dars foydalanuvchi tomonidan to‘xtatilgan.
+Studio film faqat vizual sifat namunasi sifatida saqlanadi.
+
+«AI javobi qanday tug‘iladi?» posti Metricool’da qoralamaga qaytarildi:
+UUID 9192951298047626537, yangi ID 419920106, draft=true, autoPublish=false;
+alohida so‘rov bilan tekshirildi. 8-noyabr 10:00 da avtomatik chiqmaydi.
+Avvalgi jadval haqidagi pastdagi qaydlar tarixiy; amaldagi holat indeksda.
+Yangi yangilik videosi hali tayyorlanmagan yoki rejalashtirilmagan.
+Avtomatik vazifaga yo‘nalish tuzatishi kiritildi; nashrga tayyor natija hali yo‘q.
+
+## Oldingi nashr rejasi — qoralamaga qaytarilgan
 
 «AI javobi qanday tug‘iladi?» — `media/studio/mirabilis-ai-javobi.mp4`.
 2026-11-08 10:00 Asia/Tashkent uchun Metricool’da autoPublish=true,
