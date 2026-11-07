@@ -6,7 +6,9 @@ publication. Masthead: MIRABILIS ON; physical chip engraving: MIRABILIS;
 account footer: @mirabilis_on. The two chip shots were rendered again with the
 updated lettering, including its animated layer attachment. Shots 3–4 reused
 the original clean geometry frames. All four final shots were inspected and
-decoded audio hashes match the original. See the publication index for schedule.
+decoded audio hashes match the original. Scheduled for 2026-11-08 10:00 Asia/Tashkent, Metricool UUID
+9192951298047626537; independently confirmed PENDING, autoPublish=true.
+This is a scheduled post, not confirmation of publication.
 The earlier MP4s below are historical exports, not the current publishable file.
 
 # Javob ortida — original 3D Instagram film

@@ -15,8 +15,11 @@
       "characters": 223
     },
     "instagram": {
-      "status": "ready_not_scheduled",
-      "caption_file": "media/studio/mirabilis-caption.txt"
+      "status": "scheduled",
+      "caption_file": "media/studio/mirabilis-caption.txt",
+      "scheduled_for": "2026-11-08T10:00:00+05:00",
+      "metricool_post_uuid": "9192951298047626537",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7904135&openWithPostUuid=9192951298047626537"
     }
   },
   "checked_on": "2026-11-06",

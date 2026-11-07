@@ -1,3 +1,11 @@
+## Keyingi tasdiqlangan nashr
+
+«AI javobi qanday tug‘iladi?» — `media/studio/mirabilis-ai-javobi.mp4`.
+2026-11-08 10:00 Asia/Tashkent uchun Metricool’da autoPublish=true,
+PENDING holatida saqlandi va alohida kalendar so‘rovi bilan tekshirildi.
+Post ID 419874061, UUID 9192951298047626537. Shu sanaga ikkinchi Reel
+rejalashtirilmasin. Bu nashr bo‘ldi degani emas.
+
 ## To‘liq video brendi — 2026-11-07
 
 Joriy tayyor nusxa: `media/studio/mirabilis-ai-javobi.mp4`.
