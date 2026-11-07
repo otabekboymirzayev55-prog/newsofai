@@ -29,11 +29,11 @@ def quarantine(path):
 def run():
  stories=json.loads((ROOT/'batch_news/stories.json').read_text())
  oidn=ROOT/'.local/tools/oidn-2.5.1.x86_64.linux/lib/libOpenImageDenoise.so'
- if not oidn.is_file():raise RuntimeError('Required local OIDN library unavailable')
  for i,story in enumerate(stories):
   work=ROOT_WORK/story['id'];work.mkdir(exist_ok=True);dest=ROOT/'media/batches/2026-11-07'/story['id']
   if valid_video(dest/'video.mp4') and (dest/'story.json').exists() and json.loads((dest/'story.json').read_text())==story:
    print('VIDEO DONE',i+1,story['id'],'(verified existing export)',flush=True);continue
+  if not oidn.is_file():raise RuntimeError('Required local OIDN library unavailable for unfinished video')
   quarantine(dest/'video.mp4')
   for part in ('frames','clean'):
    for path in (work/part).glob('shot*/*.png'):

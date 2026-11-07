@@ -1,12 +1,108 @@
 [
- {"id":"linux-security-pipeline","title":"AI Linux xavfsizligidagi yuzlab nuqsonlarni tekshirdi","date":"2026-11-04","source":"https://openai.com/index/a-thousand-fewer-paths-to-root/","importance":10,"event_type":"first_public_research_report","note":"OpenAI izolyatsiyalangan tadqiqot pipeline’i va 948 alohida local privilege escalation natijasi haqida hisobot berdi.","limitation":"Kompaniya tadqiqoti; barcha Linux tizimlari bir xil zaif degani emas. Ekspluatatsiya yo‘riqnomasi berilmaydi; himoya va patchlashga urg‘u."},
- {"id":"nvidia-6g-research","title":"AI yordamida aloqa tarmog‘i va robot reaksiyasini yaxshilash","date":"2026-11-06","source":"https://blogs.nvidia.com/blog/telco-open-source-tools-research-6g-networks/","importance":9,"event_type":"new_research_progress_report","note":"NVIDIA Aerial/Sionna bilan tadqiqot natijalari va foydalanish miqyosi haqida yangilanish chiqardi.","limitation":"6G ommaviy ishga tushdi degani emas. Vositalar oldin ochilgan; yangi xabar — tadqiqotlar haqidagi yangilanish. Tajriba natijasini barcha tarmoqlarga umumlashtirmaslik."},
- {"id":"quantum-error-correction-platform","title":"IBM, AMD va Oak Ridge kvant xatolarini tuzatish platformasini boshladi","date":"2026-11-05","source":"https://newsroom.ibm.com/2026-11-05-oak-ridge-national-lab,-ibm,-and-amd-launch-new-co-design-platform-for-quantum-error-correction","importance":9,"event_type":"platform_announcement","note":"Kvant tizimi va klassik yuqori unumli hisoblashni birlashtiruvchi co-design tadqiqot platformasi taqdim etildi.","limitation":"Xatolarga chidamli universal kvant kompyuter tayyor bo‘ldi degani emas; 2028 maqsadlari hali kelajakdagi maqsad."},
- {"id":"tohoku-quantum-hall","title":"Magnitdagi kvant javobini elektr toki bilan boshqarish","date":"2026-11-04","source_date":"2026-11-05","source":"https://www.tohoku.ac.jp/en/press/electrical_control_of_an_unconventional_quantum_transport_state_in_magnets_demonstrated.html","importance":8,"event_type":"research_publication","note":"Tohoku/JAEA tajribasida Mn3Sn asosidagi kvant-geometrik nolinear Hall javobi elektr impulslari bilan boshqarilgan. Newton maqolasi 4-noyabrda chiqqan.","limitation":"Laboratoriya natijasi. Kelajakdagi signalni qayta ishlash imkoniyati bor, ammo tayyor yangi chip mahsuloti emas."},
- {"id":"molecular-spin-photon","title":"Bitta molekula: yorug‘lik bilan boshqariladigan kubit","date":"2026-10-28","source":"https://www.nvision-quantum.com/blog/designed-not-discovered-a-molecule-built-to-be-a-qubit","paper":"https://www.nature.com/articles/s41586-026-11147-6","importance":9,"event_type":"peer_reviewed_publication","note":"NVision Nature’da chop etilgan molekulyar spin–foton interfeysi haqida xabar berdi. Molekulaning spinini optik tayyorlash va o‘qish ko‘rsatilgan.","limitation":"Yangi peer-review nashri — 28-oktabr; preprint ilgari mavjud bo‘lgan. Bu tayyor kvant interneti emas. Nature to‘liq sahifasi login redirect bilan cheklangan; birlamchi muallif kompaniya izohi o‘qilgan."},
- {"id":"fusion-mast-upgrade","title":"Termoyadro tadqiqotiga 12 tonnalik yangi qurilma","date":"2026-11-03","source":"https://www.gov.uk/government/news/giant-12-tonne-box-lowered-into-place-for-fusion-upgrade","importance":9,"event_type":"engineering_milestone","note":"UKAEA MAST Upgrade uchun double beam box komponentini o‘rnatish bosqichini e’lon qildi. Kelajakda neytral nur bilan isitish quvvatini oshirishga qaratilgan.","limitation":"Isitish quvvati oshishi hali reja; tajribalar 2028 ga mo‘ljallangan. Hozir elektr tarmog‘iga fusion energiyasi uzatilyapti degani emas."},
- {"id":"iss-final-solar-array","title":"ISS energiya tizimining oxirgi quyosh paneli o‘rnatildi","date":"2026-11-05","source":"https://www.nasa.gov/blogs/spacestation/2026/11/05/spacewalkers-install-final-roll-out-solar-array/","importance":8,"event_type":"completed_installation","note":"NASA/CSA sakkizinchi va oxirgi IROSA paneli o‘rnatilib ochilganini bildirdi; yangilanish orbital stansiyaning quvvat ishlab chiqarish imkoniyatini oshiradi.","limitation":"Bu ISS’ning aniq quvvat yangilanishi; Yer energetikasiga tayyor yangi yechim yoki yangi stansiya emas."},
- {"id":"claude-drug-research","title":"Claude dori tadqiqotining bir nechta bosqichiga kirib bormoqda","date":"2026-10-27","source":"https://www.anthropic.com/research/early-progress-drug-development","importance":9,"event_type":"first_public_progress_report","note":"Anthropic oltita tashkilot bilan dori tadqiqoti bo‘yicha hamkorliklari va ichki dasturlarining dastlabki natijalarini e’lon qildi.","limitation":"Ko‘p ishlar preklinik bosqichda. Sichqondagi natijani inson davosi yoki yangi tasdiqlangan dori deb bermaslik; keyingi ma’lumot kerak."},
- {"id":"biobasicsbench","title":"AI laboratoriya dalillarini qanchalik to‘g‘ri tushunadi?","date":"2026-11-06","source":"https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science/","importance":8,"event_type":"benchmark_publication","note":"OpenAI va Ligo BioBasicsBench’da 100 ta kundalik laboratoriya tahlili topshirig‘ini taqdim etdi.","limitation":"Benchmark muvaffaqiyati mustaqil olim o‘rnini bosish yoki klinik samaradorlik dalili emas. Baholar aynan shu topshiriq va sharoitga tegishli."},
- {"id":"escapade-powered-flyby","title":"Mars tomon yo‘lda Yerning kuchidan foydalanadigan ikki apparat","date":"2026-11-02","source":"https://science.nasa.gov/blogs/escapade/2026/11/02/nasas-twin-escapade-spacecraft-to-slingshot-past-earth-on-way-to-mars/","importance":9,"event_type":"mission_maneuver_schedule","note":"NASA ESCAPADE apparatlarining 7 va 9-noyabrga rejalangan powered Earth flyby manevrlari haqida yangi tafsilot berdi.","limitation":"7-noyabrdagi birinchi manevr natijasi va 9-noyabrdagi ikkinchisining joriy holati ishlab chiqarishdan OLDIN yangi NASA xabari bilan tekshirilsin. Reja muvaffaqiyatli bajarildi degani emas.","requires_special_refresh":true}
+  {
+    "id": "linux-security-pipeline",
+    "title": "AI Linux xavfsizligidagi yuzlab nuqsonlarni tekshirdi",
+    "date": "2026-11-04",
+    "source": "https://openai.com/index/a-thousand-fewer-paths-to-root/",
+    "importance": 10,
+    "event_type": "first_public_research_report",
+    "note": "OpenAI izolyatsiyalangan tadqiqot pipeline’i va 948 alohida local privilege escalation natijasi haqida hisobot berdi.",
+    "limitation": "Kompaniya tadqiqoti; barcha Linux tizimlari bir xil zaif degani emas. Ekspluatatsiya yo‘riqnomasi berilmaydi; himoya va patchlashga urg‘u."
+  },
+  {
+    "id": "nvidia-6g-research",
+    "title": "AI yordamida aloqa tarmog‘i va robot reaksiyasini yaxshilash",
+    "date": "2026-11-06",
+    "source": "https://blogs.nvidia.com/blog/telco-open-source-tools-research-6g-networks/",
+    "importance": 9,
+    "event_type": "new_research_progress_report",
+    "note": "NVIDIA Aerial/Sionna bilan tadqiqot natijalari va foydalanish miqyosi haqida yangilanish chiqardi.",
+    "limitation": "6G ommaviy ishga tushdi degani emas. Vositalar oldin ochilgan; yangi xabar — tadqiqotlar haqidagi yangilanish. Tajriba natijasini barcha tarmoqlarga umumlashtirmaslik."
+  },
+  {
+    "id": "quantum-error-correction-platform",
+    "title": "IBM, AMD va Oak Ridge kvant xatolarini tuzatish platformasini boshladi",
+    "date": "2026-11-05",
+    "source": "https://newsroom.ibm.com/2026-11-05-oak-ridge-national-lab,-ibm,-and-amd-launch-new-co-design-platform-for-quantum-error-correction",
+    "importance": 9,
+    "event_type": "platform_announcement",
+    "note": "Kvant tizimi va klassik yuqori unumli hisoblashni birlashtiruvchi co-design tadqiqot platformasi taqdim etildi.",
+    "limitation": "Xatolarga chidamli universal kvant kompyuter tayyor bo‘ldi degani emas; 2028 maqsadlari hali kelajakdagi maqsad."
+  },
+  {
+    "id": "tohoku-quantum-hall",
+    "title": "Magnitdagi kvant javobini elektr toki bilan boshqarish",
+    "date": "2026-11-04",
+    "source_date": "2026-11-05",
+    "source": "https://www.tohoku.ac.jp/en/press/electrical_control_of_an_unconventional_quantum_transport_state_in_magnets_demonstrated.html",
+    "importance": 8,
+    "event_type": "research_publication",
+    "note": "Tohoku/JAEA tajribasida Mn3Sn asosidagi kvant-geometrik nolinear Hall javobi elektr impulslari bilan boshqarilgan. Newton maqolasi 4-noyabrda chiqqan.",
+    "limitation": "Laboratoriya natijasi. Kelajakdagi signalni qayta ishlash imkoniyati bor, ammo tayyor yangi chip mahsuloti emas."
+  },
+  {
+    "id": "molecular-spin-photon",
+    "title": "Bitta molekula: yorug‘lik bilan boshqariladigan kubit",
+    "date": "2026-10-28",
+    "source": "https://www.nvision-quantum.com/blog/designed-not-discovered-a-molecule-built-to-be-a-qubit",
+    "paper": "https://www.nature.com/articles/s41586-026-11147-6",
+    "importance": 9,
+    "event_type": "peer_reviewed_publication",
+    "note": "NVision Nature’da chop etilgan molekulyar spin–foton interfeysi haqida xabar berdi. Molekulaning spinini optik tayyorlash va o‘qish ko‘rsatilgan.",
+    "limitation": "Yangi peer-review nashri — 28-oktabr; preprint ilgari mavjud bo‘lgan. Bu tayyor kvant interneti emas. Nature to‘liq sahifasi login redirect bilan cheklangan; birlamchi muallif kompaniya izohi o‘qilgan."
+  },
+  {
+    "id": "fusion-mast-upgrade",
+    "title": "Termoyadro tadqiqotiga 12 tonnalik yangi qurilma",
+    "date": "2026-11-03",
+    "source": "https://www.gov.uk/government/news/giant-12-tonne-box-lowered-into-place-for-fusion-upgrade",
+    "importance": 9,
+    "event_type": "engineering_milestone",
+    "note": "UKAEA MAST Upgrade uchun double beam box komponentini o‘rnatish bosqichini e’lon qildi. Kelajakda neytral nur bilan isitish quvvatini oshirishga qaratilgan.",
+    "limitation": "Isitish quvvati oshishi hali reja; tajribalar 2028 ga mo‘ljallangan. Hozir elektr tarmog‘iga fusion energiyasi uzatilyapti degani emas."
+  },
+  {
+    "id": "iss-final-solar-array",
+    "title": "ISS energiya tizimining oxirgi quyosh paneli o‘rnatildi",
+    "date": "2026-11-05",
+    "source": "https://www.nasa.gov/blogs/spacestation/2026/11/05/spacewalkers-install-final-roll-out-solar-array/",
+    "importance": 8,
+    "event_type": "completed_installation",
+    "note": "NASA/CSA sakkizinchi va oxirgi IROSA paneli o‘rnatilib ochilganini bildirdi; yangilanish orbital stansiyaning quvvat ishlab chiqarish imkoniyatini oshiradi.",
+    "limitation": "Bu ISS’ning aniq quvvat yangilanishi; Yer energetikasiga tayyor yangi yechim yoki yangi stansiya emas."
+  },
+  {
+    "id": "claude-drug-research",
+    "title": "Claude dori tadqiqotining bir nechta bosqichiga kirib bormoqda",
+    "date": "2026-10-27",
+    "source": "https://www.anthropic.com/research/early-progress-drug-development",
+    "importance": 9,
+    "event_type": "first_public_progress_report",
+    "note": "Anthropic oltita tashkilot bilan dori tadqiqoti bo‘yicha hamkorliklari va ichki dasturlarining dastlabki natijalarini e’lon qildi.",
+    "limitation": "Ko‘p ishlar preklinik bosqichda. Sichqondagi natijani inson davosi yoki yangi tasdiqlangan dori deb bermaslik; keyingi ma’lumot kerak."
+  },
+  {
+    "id": "biobasicsbench",
+    "title": "AI laboratoriya dalillarini qanchalik to‘g‘ri tushunadi?",
+    "date": "2026-11-06",
+    "source": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science/",
+    "importance": 8,
+    "event_type": "benchmark_publication",
+    "note": "OpenAI va Ligo BioBasicsBench’da 100 ta kundalik laboratoriya tahlili topshirig‘ini taqdim etdi.",
+    "limitation": "Benchmark muvaffaqiyati mustaqil olim o‘rnini bosish yoki klinik samaradorlik dalili emas. Baholar aynan shu topshiriq va sharoitga tegishli."
+  },
+  {
+    "id": "escapade-powered-flyby",
+    "title": "Mars tomon yo‘lda Yerning kuchidan foydalanadigan ikki apparat",
+    "date": "2026-11-02",
+    "source": "https://science.nasa.gov/blogs/escapade/2026/11/02/nasas-twin-escapade-spacecraft-to-slingshot-past-earth-on-way-to-mars/",
+    "importance": 9,
+    "event_type": "mission_maneuver_schedule",
+    "note": "NASA ESCAPADE apparatlarining 7 va 9-noyabrga rejalangan powered Earth flyby manevrlari haqida yangi tafsilot berdi.",
+    "limitation": "7-noyabrdagi birinchi manevr natijasi va 9-noyabrdagi ikkinchisining joriy holati ishlab chiqarishdan OLDIN yangi NASA xabari bilan tekshirilsin. Reja muvaffaqiyatli bajarildi degani emas.",
+    "requires_special_refresh": true,
+    "followup_checked_on": "2026-11-07",
+    "followup_source": "https://science.nasa.gov/blogs/escapade/2026/11/",
+    "followup_result": "7-noyabrdagi qayta tekshiruvda NASA noyabr blog arxivida faqat 2-noyabr reja xabari ko‘rindi. Tekshirilgan manbada manevr muvaffaqiyati tasdiqlanmadi; bu uning bajarilmagani dalili emas."
+  }
 ]

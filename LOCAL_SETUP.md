@@ -1,3 +1,20 @@
+## 7 ta yangilik videosi va 10 ta zaxira — 2026-11-07
+
+Foydalanuvchi 7 ta yangilik videosini oldindan tayyorlash va yana 10 ta muhim
+mavzuni saqlashni buyurdi. Fayllar, amaldagi tayyorlik va taklif sanalari:
+[katalog](media/batches/2026-11-07/README.md). Bu yangi batch avtomatik ravishda
+Instagram navbatiga yozilgan degani emas. 8-noyabr 10:00 uchun mavjud studio
+posti saqlanadi. Keyingi nashrda tayyor videolar, zaxira va muhim yangi xabarlar
+solishtiriladi; manba va 14 kunlik muddat nashr paytida yana tekshiriladi.
+
+`media/news-pool.json` keyingi qidiruvlarda ham avvalgi topilmalarni saqlaydi.
+Yangi qidiruv ro‘yxatni almashtirmaydi; nashr tarixi va eskirgan yozuvlar qoladi.
+Original sahnalar/renderni davom ettirish: [batch_news/README.md](batch_news/README.md).
+Mavjud **Mirabilis On Reels** vazifasiga keyingi jadvaldagi ishga tushishda
+tugallanmagan batch’dan davom etish ko‘rsatmasi yozildi va qayta o‘qib tekshirildi.
+U Mo/Tu/Th/Fr/Su 08:00 Asia/Tashkent jadvalida qolgan. Limit tiklangan zahoti
+uyg‘onish triggeri yo‘q; avtonom render sikli amalda kuzatilgani da’vo qilinmaydi.
+
 ## Telegram saralash kodi — 2026-11-07
 
 Telegram uchun ham `news_selection.py` qo‘shildi: 14 kunlik RSS arxivi,
@@ -8,13 +25,16 @@ bilan kvota to‘ldirilmaydi. URL/tracking nusxalari va model chiqargan voqea
 kaliti asosida takrorlar kamaytiriladi. Pending himoyasi va mavjud posts
 jadvali saqlanadi. Batafsil: `TELEGRAM_EDITORIAL.md`.
 
-Hostda 45 test o‘tdi. Docker asosiy image yig‘ildi: 45 testdan 43 tasi o‘tdi,
-FFmpeg yo‘qligi uchun 2 tasi skip. Haqiqiy Gemini/manba/Telegram jonli sinovi
+Hostda 51 test o‘tdi. Yangilangan Docker asosiy image yig‘ildi; yangi image’da
+test container boshlanishi cloud disk joyi yetmasligi sabab bajarilmadi.
+Oldingi Telegram image’da 45 testdan 43 tasi o‘tgan, 2 FFmpeg testi skip.
+Haqiqiy Gemini/manba/Telegram jonli sinovi
 kalitlar va tarmoq kirishi yo‘qligi sabab bajarilmadi. VPS uchun SSH ulanishi
 bu sessiyada mavjud emas; yangi saralash va interval/limitning jonli serverda
 ishlashi hali tasdiqlanmagan. Bu kodni jo‘natish server deploy’i degani emas.
 Yangi modul Dockerfile, Dockerfile.social va installer copy ro‘yxatlarida bor.
-Mavjud xizmatning env va DB volume’ini saqlab yangi image’ga yangilash kerak.
+Mavjud xizmatning env va DB volume’ini saqlab yangi image’ga yangilash uchun
+`upgrade-telegram-vps.sh` va tekshirilgan `vps_quadlet.py` tayyorlandi.
 Telegram auditi SQLite’da, Instagram tanlovi Codex vazifasida qoladi; bular
 hali bitta umumiy ijrochi yoki umumiy cross-platform voqea bazasi emas.
 
@@ -39,8 +59,9 @@ qaydlari tarixiy bo‘lib, bu eng so‘nggi kelishuv bilan almashtirilgan.
 
 8-noyabrdagi avtomatik vazifa mavjud postni tekshiradi; yangi post yasamaydi.
 Keyingi yangilik videosi uchun vazifa 9-noyabr ertalab 08:00 atrofidagi
-rejadagi ishga tushishda avval yangi manbani tanlaydi, keyin ssenariy va
-mavzuga mos video yaratadi. Nashr mo‘ljali 10:00, ammo haqiqiy tayyor natija
+rejadagi ishga tushishda tayyor batch va saqlangan mavzularni yangi xabarlar
+bilan solishtirib, asl manbani yangidan tekshiradi. Zarur bo‘lsa yangi ssenariy
+va mavzuga mos video yaratiladi. Nashr mo‘ljali 10:00, ammo haqiqiy tayyor natija
 va tekshiruvsiz nashr qilinmaydi. Birinchi avtomatik yangilik ishlab chiqarish
 hali tasdiqlanmagan. Alohida ta’lim sahifasi hozircha ochilmagan/ulanmagan.
 

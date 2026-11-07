@@ -27,7 +27,9 @@ arxitekturaga mos denoiser va render muhiti alohida tayyorlanishi kerak.
 Repo ildizidan ikki terminalda:
 
 ```bash
-python batch_news/run_batch.py
+mkdir -p .local/news-batch
+python batch_news/run_batch.py >> .local/news-batch/batch.log 2>&1
+# Ikkinchi terminalda:
 python batch_news/monitor.py
 ```
 
@@ -49,6 +51,18 @@ Yakuniy 18 soniya: H.264 1080×1920 24 fps, AAC 48 kHz stereo.
 Bu native 1080p 3D render emas. `production.json` texnik hisobot;
 `visual_review` faqat har bir sahna haqiqatan ko‘rilgandan keyin yangilanadi.
 Texnik ovoz tekshiruvi musiqa subyektiv eshitib baholangani degani emas.
+
+Hamma video haqiqatdan ko‘rib chiqilgandan keyin:
+
+```bash
+python batch_news/delivery.py
+```
+
+Bu to‘liq video/audio decode, har sahnadagi tasvir harakati, fayl SHA va
+ssenariy mosligini tekshiradi. Katalog, `delivery.json` va
+`.local/mirabilis-7-video-2026-11-07.zip` yig‘iladi. Instagramga yuklamaydi.
+`catalog.py` istalgan vaqtda faqat mavjud, ko‘rilgan eksportlar katalogini
+yangilashi mumkin.
 
 ## Avtomatik qayta boshlash chegarasi
 

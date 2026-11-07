@@ -7,6 +7,13 @@ selected final videos. Try the musical demo without an API key:
 See [INSTAGRAM.md](INSTAGRAM.md) for the full guide. Publishing requires an
 Instagram connection, hosting for the final media, and an explicit `--publish` command.
 
+The commissioned Mirabilis On batch has seven story-specific news films and
+ten saved reserve ideas: [review catalogue](media/batches/2026-11-07/README.md).
+It records actual export/review state, primary sources, event dates and proposed
+slots. These new drafts have not been queued on Instagram. The persistent
+[news pool](media/news-pool.json) retains earlier findings across later searches;
+[batch instructions](batch_news/README.md) explain interruption recovery.
+
 The Telegram bot fetches AI news from RSS feeds, uses Gemini to summarize it in
 natural Uzbek, and publishes it to a Telegram channel. Requires Python 3.12+;
 the Telegram bot needs no additional Python packages.

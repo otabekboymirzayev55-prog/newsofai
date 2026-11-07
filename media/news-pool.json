@@ -46,12 +46,15 @@
         ]
       ],
       "caption": "Genie 4 — DeepMind’ning interaktiv dunyo simulyatsiyasi modeli. Uning tadqiqot talqini muhit, harakat va tovushni birga yaratishga qaratilgan. Bu robotlarni o‘rgatish va interaktiv tajribalar uchun imkoniyat bo‘lishi mumkin. Kirish hozircha cheklangan; biz modelni amalda sinamadik. Videoda Genie chiqishi emas, original konseptual animatsiyamiz ko‘rsatilgan. Siz uni o‘yinlar uchunmi yoki robotlarni o‘rgatish uchunmi ishlatardingiz?",
-      "status": "selected",
+      "status": "video_ready",
       "event_type": "announcement_or_first_public_progress_report",
       "batch": "2026-11-07",
       "valid_through": "2026-11-10",
       "checked_on": "2026-11-07",
-      "history": []
+      "history": [],
+      "video": "media/batches/2026-11-07/genie4-worlds/video.mp4",
+      "sha256": "b4f3ca9ef233f272cbeb8fecc6efa8bd7f4bc033fa8f9abf9e178ce7806ff1cf",
+      "scheduled": false
     },
     {
       "id": "wearable-hypertension",
@@ -208,12 +211,15 @@
         ]
       ],
       "caption": "OpenAI va Mazda avtomobil aerodinamikasi hamda konstruktiv xatti-harakatni baholashda AI’dan foydalanishni tadqiq qilmoqda. Maqsad — yangi dizayn variantlarini simulyatsiyalar orqali o‘rganish. Bu tayyor AI avtomobili yoki xavfsizligi mustaqil isbotlangan avtonom muhandis emas. Videodagi avtomobil va oqimlar — biz yaratgan konsept; Mazda materiali yoki haqiqiy CFD natijasi emas. Sizga chiroyli dizayn muhimmi yoki tejamkorlik?",
-      "status": "selected",
+      "status": "video_ready",
       "event_type": "announcement_or_first_public_progress_report",
       "batch": "2026-11-07",
       "valid_through": "2026-11-17",
       "checked_on": "2026-11-07",
-      "history": []
+      "history": [],
+      "video": "media/batches/2026-11-07/ai-engineering-mazda/video.mp4",
+      "sha256": "7c8864cd96c2756b03c7a484336043832bb1b4224da5192f860ec327ef939cdd",
+      "scheduled": false
     },
     {
       "id": "ibm-chicago-quantum",
@@ -522,7 +528,20 @@
       "batch": "2026-11-07",
       "valid_through": "2026-11-16",
       "checked_on": "2026-11-07",
-      "history": []
+      "history": [
+        {
+          "checked_on": "2026-11-07",
+          "title": "Mars tomon yo‘lda Yerning kuchidan foydalanadigan ikki apparat",
+          "source": "https://science.nasa.gov/blogs/escapade/2026/11/02/nasas-twin-escapade-spacecraft-to-slingshot-past-earth-on-way-to-mars/",
+          "importance": 9,
+          "date": "2026-11-02",
+          "note": "NASA ESCAPADE apparatlarining 7 va 9-noyabrga rejalangan powered Earth flyby manevrlari haqida yangi tafsilot berdi.",
+          "limitation": "7-noyabrdagi birinchi manevr natijasi va 9-noyabrdagi ikkinchisining joriy holati ishlab chiqarishdan OLDIN yangi NASA xabari bilan tekshirilsin. Reja muvaffaqiyatli bajarildi degani emas."
+        }
+      ],
+      "followup_checked_on": "2026-11-07",
+      "followup_source": "https://science.nasa.gov/blogs/escapade/2026/11/",
+      "followup_result": "7-noyabrdagi qayta tekshiruvda NASA noyabr blog arxivida faqat 2-noyabr reja xabari ko‘rindi. Tekshirilgan manbada manevr muvaffaqiyati tasdiqlanmadi; bu uning bajarilmagani dalili emas."
     }
   ],
   "updated_on": "2026-11-07"

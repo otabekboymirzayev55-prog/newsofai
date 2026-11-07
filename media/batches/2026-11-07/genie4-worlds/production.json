@@ -20,6 +20,6 @@
   "shot_frames_sampled": 4,
   "status": "technical_checks_passed",
   "rights": "Original procedural geometry, typography and locally synthesized music",
-  "visual_review": "pending_human_or_assistant_frame_review",
+  "visual_review": "assistant inspected all four final shots: updated branding, title fit, primary-source date and clear conceptual/research limitations",
   "scheduled": false
 }
