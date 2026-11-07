@@ -1,3 +1,13 @@
+## LOYIHA TO‘XTATILGAN — foydalanuvchining eng so‘nggi qarori
+
+2026-11-07: foydalanuvchi Mirabilis va media yo‘nalishini bekor qildi.
+Oldingi rejalar tarixiy. Yangi aniq buyurtmasiz kontent tayyorlamang, nashr
+qilmang, avtomatik vazifani yoqmang yoki media botini deploy qilmang.
+Mirabilis On Reels avtomatik vazifasi o‘chirildi; 8-noyabr posti qoralamaga
+qaytarildi (draft=true, autoPublish=false), qayta so‘rov bilan tekshirildi.
+Fayllar, akkauntlar va oldingi nashrlar o‘chirilmagan. VPS Telegram xizmatiga
+SSH ulanishi yo‘q; uning to‘xtatilgani tasdiqlanmagan.
+
 ## Eng yangi format tuzatishi — 2026-11-07
 
 Foydalanuvchi bir xil Blender ko‘rinishining takrorlanishini tanqid qildi.

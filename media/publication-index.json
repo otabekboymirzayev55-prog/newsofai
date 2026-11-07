@@ -28,20 +28,21 @@
       "title": "AI bilan yuzma-yuz suhbat? Meta Muse avatariga ovoz berdi.",
       "scheduled_for": "2026-11-07T10:00:00+05:00",
       "timezone": "Asia/Tashkent",
-      "status": "scheduled",
+      "status": "published",
       "metricool_post_id": "418267504",
       "metricool_post_uuid": "-1073533182792875628",
       "local_media": "media/posts/ce33817e4026d3a9fdfa52a7/muse-voice.mp4",
       "narration": "Gemini TTS from supplied VPS preview",
       "music": "preserved from supplied preview",
-      "audio_audition_verified": false
+      "audio_audition_verified": false,
+      "public_url": "https://www.instagram.com/reel/DfbYh5XAO0e/"
     },
     {
       "source_url": "https://help.openai.com/en/articles/7842364-how-chatgpt-and-our-foundation-models-are-developed",
       "topic": "AI literacy: tokens, next-token prediction and verifying fluent answers",
       "title": "AI javobi qanday tug‘iladi?",
       "editorial_type": "evergreen_explainer",
-      "status": "scheduled",
+      "status": "draft_cancelled_by_user",
       "local_media": "media/studio/mirabilis-ai-javobi.mp4",
       "media_sha256": "8c605418bc1d4d32d56d275ba638f3b7352b291a9453d437a545d2f7f98eb356",
       "caption_file": "media/studio/mirabilis-caption.txt",
@@ -49,14 +50,15 @@
       "narration": "none",
       "music": "original procedural instrumental",
       "timezone": "Asia/Tashkent",
-      "metricool_post_id": "419924440",
+      "metricool_post_id": "420176744",
       "metricool_post_uuid": "9192951298047626537",
       "planner_url": "https://app.metricool.com/planner/calendar?blogId=7904135&openWithPostUuid=9192951298047626537",
       "metricool_media_url": "https://static.metricool.com/planner/202611/7904135-file-17669750206794379576.mp4",
-      "auto_publish": true,
+      "auto_publish": false,
       "previously_scheduled_for": "2026-11-08T10:00:00+05:00",
-      "scheduled_for": "2026-11-08T10:00:00+05:00",
-      "editorial_exception": "User confirmed Nov 8 studio film, then technology news only for Mirabilis"
+      "editorial_exception": "User confirmed Nov 8 studio film, then technology news only for Mirabilis",
+      "draft": true,
+      "cancellation_reason": "User cancelled Mirabilis and media direction"
     }
   ],
   "account": {
@@ -69,5 +71,7 @@
     ],
     "updated_on": "2026-11-07",
     "identity_evidence": "User confirmed username change; Metricool still returns cached former username"
-  }
+  },
+  "project_status": "stopped_by_user",
+  "automation_enabled": false
 }

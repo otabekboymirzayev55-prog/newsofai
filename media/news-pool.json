@@ -56,8 +56,8 @@
       "sha256": "b4f3ca9ef233f272cbeb8fecc6efa8bd7f4bc033fa8f9abf9e178ce7806ff1cf",
       "scheduled": false,
       "publication_hold": true,
-      "editorial_status": "needs_format_revision",
-      "publication_hold_reason": "User rejected repetition of Blender object plus text; re-edit with story-specific real footage, demos, screen recording or suitable graphics before scheduling."
+      "editorial_status": "project_stopped",
+      "publication_hold_reason": "User cancelled Mirabilis and the media direction"
     },
     {
       "id": "wearable-hypertension",
@@ -114,8 +114,8 @@
       "sha256": "8b22f6197a659b5a16f740b2b53ea45d01f1a735641e3632ccd1ca7f479d67c7",
       "scheduled": false,
       "publication_hold": true,
-      "editorial_status": "needs_format_revision",
-      "publication_hold_reason": "User rejected repetition of Blender object plus text; re-edit with story-specific real footage, demos, screen recording or suitable graphics before scheduling."
+      "editorial_status": "project_stopped",
+      "publication_hold_reason": "User cancelled Mirabilis and the media direction"
     },
     {
       "id": "redwood-battery",
@@ -172,8 +172,8 @@
       "sha256": "11e9efcaa89f459d5c25fcd317b63360adf84d0429388d74887e88053d086757",
       "scheduled": false,
       "publication_hold": true,
-      "editorial_status": "needs_format_revision",
-      "publication_hold_reason": "User rejected repetition of Blender object plus text; re-edit with story-specific real footage, demos, screen recording or suitable graphics before scheduling."
+      "editorial_status": "project_stopped",
+      "publication_hold_reason": "User cancelled Mirabilis and the media direction"
     },
     {
       "id": "ai-engineering-mazda",
@@ -230,8 +230,8 @@
       "sha256": "7c8864cd96c2756b03c7a484336043832bb1b4224da5192f860ec327ef939cdd",
       "scheduled": false,
       "publication_hold": true,
-      "editorial_status": "needs_format_revision",
-      "publication_hold_reason": "User rejected repetition of Blender object plus text; re-edit with story-specific real footage, demos, screen recording or suitable graphics before scheduling."
+      "editorial_status": "project_stopped",
+      "publication_hold_reason": "User cancelled Mirabilis and the media direction"
     },
     {
       "id": "ibm-chicago-quantum",
@@ -288,8 +288,8 @@
       "sha256": "7754f4a49595a4799af5b680c05a599913c324ba3ea1482e08ea63c6b562437a",
       "scheduled": false,
       "publication_hold": true,
-      "editorial_status": "needs_format_revision",
-      "publication_hold_reason": "User rejected repetition of Blender object plus text; re-edit with story-specific real footage, demos, screen recording or suitable graphics before scheduling."
+      "editorial_status": "project_stopped",
+      "publication_hold_reason": "User cancelled Mirabilis and the media direction"
     },
     {
       "id": "nasa-x70",
@@ -346,8 +346,8 @@
       "sha256": "37e145463ee180d2181327717ed7e80b769d4ec5afe330ded20748ed5a99f8e6",
       "scheduled": false,
       "publication_hold": true,
-      "editorial_status": "needs_format_revision",
-      "publication_hold_reason": "User rejected repetition of Blender object plus text; re-edit with story-specific real footage, demos, screen recording or suitable graphics before scheduling."
+      "editorial_status": "project_stopped",
+      "publication_hold_reason": "User cancelled Mirabilis and the media direction"
     },
     {
       "id": "antigravity-chemistry",
@@ -404,8 +404,8 @@
       "video": "media/batches/2026-11-07/antigravity-chemistry/video.mp4",
       "sha256": "aa328ea9565ab4bb4dd6f6a4b964aa580a0e4a2b7c028961b60ce3ea80ca4818",
       "publication_hold": true,
-      "editorial_status": "needs_format_revision",
-      "publication_hold_reason": "User rejected repetition of Blender object plus text; re-edit with story-specific real footage, demos, screen recording or suitable graphics before scheduling."
+      "editorial_status": "project_stopped",
+      "publication_hold_reason": "User cancelled Mirabilis and the media direction"
     },
     {
       "id": "linux-security-pipeline",
@@ -420,7 +420,10 @@
       "batch": "2026-11-07",
       "valid_through": "2026-11-18",
       "checked_on": "2026-11-07",
-      "history": []
+      "history": [],
+      "publication_hold": true,
+      "editorial_status": "project_stopped",
+      "publication_hold_reason": "User cancelled Mirabilis and the media direction"
     },
     {
       "id": "nvidia-6g-research",
@@ -435,7 +438,10 @@
       "batch": "2026-11-07",
       "valid_through": "2026-11-20",
       "checked_on": "2026-11-07",
-      "history": []
+      "history": [],
+      "publication_hold": true,
+      "editorial_status": "project_stopped",
+      "publication_hold_reason": "User cancelled Mirabilis and the media direction"
     },
     {
       "id": "quantum-error-correction-platform",
@@ -450,7 +456,10 @@
       "batch": "2026-11-07",
       "valid_through": "2026-11-19",
       "checked_on": "2026-11-07",
-      "history": []
+      "history": [],
+      "publication_hold": true,
+      "editorial_status": "project_stopped",
+      "publication_hold_reason": "User cancelled Mirabilis and the media direction"
     },
     {
       "id": "tohoku-quantum-hall",
@@ -466,7 +475,10 @@
       "batch": "2026-11-07",
       "valid_through": "2026-11-18",
       "checked_on": "2026-11-07",
-      "history": []
+      "history": [],
+      "publication_hold": true,
+      "editorial_status": "project_stopped",
+      "publication_hold_reason": "User cancelled Mirabilis and the media direction"
     },
     {
       "id": "molecular-spin-photon",
@@ -482,7 +494,10 @@
       "batch": "2026-11-07",
       "valid_through": "2026-11-11",
       "checked_on": "2026-11-07",
-      "history": []
+      "history": [],
+      "publication_hold": true,
+      "editorial_status": "project_stopped",
+      "publication_hold_reason": "User cancelled Mirabilis and the media direction"
     },
     {
       "id": "fusion-mast-upgrade",
@@ -497,7 +512,10 @@
       "batch": "2026-11-07",
       "valid_through": "2026-11-17",
       "checked_on": "2026-11-07",
-      "history": []
+      "history": [],
+      "publication_hold": true,
+      "editorial_status": "project_stopped",
+      "publication_hold_reason": "User cancelled Mirabilis and the media direction"
     },
     {
       "id": "iss-final-solar-array",
@@ -512,7 +530,10 @@
       "batch": "2026-11-07",
       "valid_through": "2026-11-19",
       "checked_on": "2026-11-07",
-      "history": []
+      "history": [],
+      "publication_hold": true,
+      "editorial_status": "project_stopped",
+      "publication_hold_reason": "User cancelled Mirabilis and the media direction"
     },
     {
       "id": "claude-drug-research",
@@ -527,7 +548,10 @@
       "batch": "2026-11-07",
       "valid_through": "2026-11-10",
       "checked_on": "2026-11-07",
-      "history": []
+      "history": [],
+      "publication_hold": true,
+      "editorial_status": "project_stopped",
+      "publication_hold_reason": "User cancelled Mirabilis and the media direction"
     },
     {
       "id": "biobasicsbench",
@@ -542,7 +566,10 @@
       "batch": "2026-11-07",
       "valid_through": "2026-11-20",
       "checked_on": "2026-11-07",
-      "history": []
+      "history": [],
+      "publication_hold": true,
+      "editorial_status": "project_stopped",
+      "publication_hold_reason": "User cancelled Mirabilis and the media direction"
     },
     {
       "id": "escapade-powered-flyby",
@@ -571,8 +598,12 @@
       ],
       "followup_checked_on": "2026-11-07",
       "followup_source": "https://science.nasa.gov/blogs/escapade/2026/11/",
-      "followup_result": "7-noyabrdagi qayta tekshiruvda NASA noyabr blog arxivida faqat 2-noyabr reja xabari ko‘rindi. Tekshirilgan manbada manevr muvaffaqiyati tasdiqlanmadi; bu uning bajarilmagani dalili emas."
+      "followup_result": "7-noyabrdagi qayta tekshiruvda NASA noyabr blog arxivida faqat 2-noyabr reja xabari ko‘rindi. Tekshirilgan manbada manevr muvaffaqiyati tasdiqlanmadi; bu uning bajarilmagani dalili emas.",
+      "publication_hold": true,
+      "editorial_status": "project_stopped",
+      "publication_hold_reason": "User cancelled Mirabilis and the media direction"
     }
   ],
-  "updated_on": "2026-11-07"
+  "updated_on": "2026-11-07",
+  "project_status": "stopped_by_user"
 }
