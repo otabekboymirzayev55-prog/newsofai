@@ -266,12 +266,15 @@
         ]
       ],
       "caption": "IBM Quantum System Two Chikagodagi Hyde Park Labs’da ishga tushirilgani e’lon qilindi. University of Chicago mezbonligidagi tizim kvant algoritmlari va ilovalarini rivojlantirishga qaratilgan. Kelajakdagi qo‘llanmalar uchun tadqiqot infratuzilmasi muhim, ammo bu barcha hisoblashlarda oddiy kompyuterdan ustunlik degani emas. Videodagi geometriya — tushuntiruvchi konsept, IBM qurilmasining texnik chizmasi emas. Qaysi sohada kvant hisoblashdan ko‘proq natija kutasiz?",
-      "status": "selected",
+      "status": "video_ready",
       "event_type": "announcement_or_first_public_progress_report",
       "batch": "2026-11-07",
       "valid_through": "2026-11-20",
       "checked_on": "2026-11-07",
-      "history": []
+      "history": [],
+      "video": "media/batches/2026-11-07/ibm-chicago-quantum/video.mp4",
+      "sha256": "7754f4a49595a4799af5b680c05a599913c324ba3ea1482e08ea63c6b562437a",
+      "scheduled": false
     },
     {
       "id": "nasa-x70",
