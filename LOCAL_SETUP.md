@@ -1,3 +1,12 @@
+## To‘liq video brendi — 2026-11-07
+
+Joriy tayyor nusxa: `media/studio/mirabilis-ai-javobi.mp4`.
+Tepada MIRABILIS ON, chipda MIRABILIS, pastda @mirabilis_on.
+Dastlabki ikki 3D sahna qayta render qilindi; 3–4 sahna asl geometriyadan
+qayta foydalanadi. To‘rtta yakuniy kadr tekshirildi, audio original bilan bir xil.
+Caption: `media/studio/mirabilis-caption.txt`. Oldingi ikki MP4 tarixiy nusxa;
+yangi postga ular yuklanmasin. Nashr holati `media/publication-index.json`da.
+
 ## Instagram username — 2026-11-07
 
 Joriy Instagram username: **@mirabilis_on**. Foydalanuvchi o‘zgartirganini

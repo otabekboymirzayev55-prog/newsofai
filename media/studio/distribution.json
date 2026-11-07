@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "media": "media/studio/mirabilis-javob-ortida.mp4",
-  "media_sha256": "28369e62aaad02b58a04e4a2308b0ed5c090541fb59142c38041ddc92623c573",
+  "media": "media/studio/mirabilis-ai-javobi.mp4",
+  "media_sha256": "8c605418bc1d4d32d56d275ba638f3b7352b291a9453d437a545d2f7f98eb356",
   "editorial_type": "evergreen_ai_literacy",
   "platforms": {
     "youtube": {
@@ -15,8 +15,8 @@
       "characters": 223
     },
     "instagram": {
-      "status": "creative_ready_not_scheduled",
-      "caption_file": "media/studio/caption.txt"
+      "status": "ready_not_scheduled",
+      "caption_file": "media/studio/mirabilis-caption.txt"
     }
   },
   "checked_on": "2026-11-06",
@@ -25,6 +25,8 @@
   "current_handle": "@mirabilis_on",
   "rendered_handle": "@mirabilis_on",
   "requires_handle_refresh_before_publication": false,
-  "cover": "media/studio/mirabilis-cover.jpg",
-  "technical_report": "media/studio/mirabilis-production.json"
+  "cover": "media/studio/mirabilis-ai-cover.jpg",
+  "technical_report": "media/studio/mirabilis-ai-production.json",
+  "visible_brand": "MIRABILIS ON",
+  "object_engraving": "MIRABILIS"
 }

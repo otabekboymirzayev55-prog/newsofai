@@ -47,7 +47,7 @@ def render(pack_dir, output, voice=None, music=None, font=None, final=False, tex
         filters = ['drawbox=x=80:y=280:w=920:h=8:color=0x40dfba:t=fill',
                    'drawbox=x=80:y=560:w=920:h=600:color=0x172842:t=fill',
                    f"drawbox=x=80:y=1640:w=920:h=4:color=0x283b56:t=fill",
-                   f"drawtext=fontfile=font.ttf:text='Safeguard On':fontsize=28:fontcolor=0xc7d3e6:x=80:y=1600",
+                   f"drawtext=fontfile=font.ttf:text='Mirabilis On':fontsize=28:fontcolor=0xc7d3e6:x=80:y=1600",
                    "drawtext=fontfile=font.ttf:textfile=label.txt:expansion=none:fontsize=30:fontcolor=0x40dfba:x=80:y=210"]
         if 'account' in metadata:
             (work / 'account.txt').write_text(instagram_handle(metadata['account']), encoding='utf-8')

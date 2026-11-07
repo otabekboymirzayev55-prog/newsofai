@@ -169,7 +169,7 @@ def build_chip(M):
                 dims=[.018,1.68,.012]
             cube('Core light',loc,dims,M['mint'],.007,group)
     title = text('AI',(0,0,.372),.72,M['white'],group)
-    text('S A F E G U A R D',(0,-.58,.373),.13,M['gold'],group)
+    text('M I R A B I L I S',(0,-.58,.373),.13,M['gold'],group)
     screws=[]
     for x,y in [(-1.5,-1.5),(1.5,-1.5),(1.5,1.5),(-1.5,1.5)]:
         screws.append(sphere((x,y,-.05),.06,M['silver'],group))
@@ -247,7 +247,7 @@ def animate(shot,u,objects):
         for ob in group.children:
             if ob.name.startswith('Core light'):
                 ob.location.z=.365+eased*1.05
-            elif ob.name.startswith('S A F E'):
+            elif ob.name.startswith('M I R A'):
                 ob.location.z=.373+eased*1.05
         for tile,a in movers:
             tile.location=(math.cos(a+u*.35)*2.1, math.sin(a+u*.35)*2.1, .5+math.sin(a)*.2+eased*.6)

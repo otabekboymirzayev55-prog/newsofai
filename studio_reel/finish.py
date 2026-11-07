@@ -176,7 +176,7 @@ class Typography:
         # Consistent editorial masthead and precise safe margins.
         d.line((82,127,99,100),fill=GOLD,width=4)
         d.line((94,127,111,100),fill=GOLD,width=4)
-        d.text((137,91),'SAFEGUARD ON',font=self.font(28,True),fill=WHITE)
+        d.text((137,91),'MIRABILIS ON',font=self.font(28,True),fill=WHITE)
         d.text((82,157),'AI SAVODXONLIGI  /  01',font=self.font(21),fill=MUTED)
         d.text((890,101),f'0{shot+1}',font=self.font(26),fill=GOLD)
         sequence=[

@@ -1,3 +1,14 @@
+# Mirabilis On — current delivery
+
+Use `media/studio/mirabilis-ai-javobi.mp4`, `mirabilis-ai-cover.jpg`,
+`mirabilis-ai-production.json` and `mirabilis-caption.txt` for the current
+publication. Masthead: MIRABILIS ON; physical chip engraving: MIRABILIS;
+account footer: @mirabilis_on. The two chip shots were rendered again with the
+updated lettering, including its animated layer attachment. Shots 3–4 reused
+the original clean geometry frames. All four final shots were inspected and
+decoded audio hashes match the original. See the publication index for schedule.
+The earlier MP4s below are historical exports, not the current publishable file.
+
 # Javob ortida — original 3D Instagram film
 
 An 18-second original Uzbek AI-literacy Reel for Safeguard On. Four physically

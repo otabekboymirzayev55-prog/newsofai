@@ -108,7 +108,7 @@ def create_frame(t, background, stars, fonts):
         px = cx + math.sin(p*math.pi*4+t)*30
         py = 830-p*180
         d.ellipse((px-2,py-2,px+2,py+2), fill=(90, 200, 255, 150))
-    d.text((55, 100), 'SAFEGUARD ON', font=fonts[0], fill=(112, 225, 236))
+    d.text((55, 100), 'MIRABILIS ON', font=fonts[0], fill=(112, 225, 236))
     d.text((55, 140), 'KONSEPTUAL ANIMATSIYA', font=fonts[1], fill=(133, 148, 179))
     headline = 'AI siz bilan\ngaplashsa-chi?' if t < 4 else 'Raqamli yordamchi.\nJonli taassurot.'
     d.multiline_text((55, 220), headline, font=fonts[2], fill=(240, 246, 255), spacing=12)

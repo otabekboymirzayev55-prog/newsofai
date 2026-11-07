@@ -35,6 +35,19 @@
       "narration": "Gemini TTS from supplied VPS preview",
       "music": "preserved from supplied preview",
       "audio_audition_verified": false
+    },
+    {
+      "source_url": "https://help.openai.com/en/articles/7842364-how-chatgpt-and-our-foundation-models-are-developed",
+      "topic": "AI literacy: tokens, next-token prediction and verifying fluent answers",
+      "title": "AI javobi qanday tug‘iladi?",
+      "editorial_type": "evergreen_explainer",
+      "status": "ready_not_scheduled",
+      "local_media": "media/studio/mirabilis-ai-javobi.mp4",
+      "media_sha256": "8c605418bc1d4d32d56d275ba638f3b7352b291a9453d437a545d2f7f98eb356",
+      "caption_file": "media/studio/mirabilis-caption.txt",
+      "account": "@mirabilis_on",
+      "narration": "none",
+      "music": "original procedural instrumental"
     }
   ],
   "account": {

@@ -5,7 +5,7 @@ o‘zgartirish kiritilmagan, postlar rejalashtiruvchi xizmatga yuklanmagan.
 
 ## Profil
 
-Ko‘rinadigan nom: **Safeguard On | AI va texnologiya**
+Ko‘rinadigan nom: **Mirabilis On | AI va texnologiya**
 
 Bio taklifi:
 
