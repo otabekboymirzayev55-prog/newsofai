@@ -62,3 +62,12 @@ The current Instagram handle is `@mirabilis_on`. The finisher now uses this
 footer. The existing delivered MP4 still contains `@safeguard_on`; preserve it
 as the historical creative reference and re-export before any new publication.
 The user changed the username only; the visible brand name has not been changed.
+
+## Current delivery — username refresh
+
+`media/studio/mirabilis-javob-ortida.mp4` is the new 18-second export with
+`@mirabilis_on` in all four shot footers. Its cover is `mirabilis-cover.jpg`
+and verification report is `mirabilis-production.json` in the same directory.
+Decoded PCM audio SHA256 matches the original film exactly. Four final frames
+and their footer crops were visually inspected. This revision is not scheduled.
+The original MP4 remains unchanged as a historical reference.

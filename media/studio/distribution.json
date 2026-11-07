@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "media": "media/studio/safeguard-javob-ortida.mp4",
-  "media_sha256": "4e0dfea2ef5334658db9579afaffe80ffc058b47512bd8850561aaad8f905caf",
+  "media": "media/studio/mirabilis-javob-ortida.mp4",
+  "media_sha256": "28369e62aaad02b58a04e4a2308b0ed5c090541fb59142c38041ddc92623c573",
   "editorial_type": "evergreen_ai_literacy",
   "platforms": {
     "youtube": {
@@ -23,6 +23,8 @@
   "connection_evidence": "Metricool brand 7904135 networksData lists Instagram only",
   "schedule_changed": false,
   "current_handle": "@mirabilis_on",
-  "rendered_handle": "@safeguard_on",
-  "requires_handle_refresh_before_publication": true
+  "rendered_handle": "@mirabilis_on",
+  "requires_handle_refresh_before_publication": false,
+  "cover": "media/studio/mirabilis-cover.jpg",
+  "technical_report": "media/studio/mirabilis-production.json"
 }
