@@ -41,7 +41,7 @@
       "topic": "AI literacy: tokens, next-token prediction and verifying fluent answers",
       "title": "AI javobi qanday tug‘iladi?",
       "editorial_type": "evergreen_explainer",
-      "status": "draft",
+      "status": "scheduled",
       "local_media": "media/studio/mirabilis-ai-javobi.mp4",
       "media_sha256": "8c605418bc1d4d32d56d275ba638f3b7352b291a9453d437a545d2f7f98eb356",
       "caption_file": "media/studio/mirabilis-caption.txt",
@@ -49,13 +49,14 @@
       "narration": "none",
       "music": "original procedural instrumental",
       "timezone": "Asia/Tashkent",
-      "metricool_post_id": "419920106",
+      "metricool_post_id": "419924440",
       "metricool_post_uuid": "9192951298047626537",
       "planner_url": "https://app.metricool.com/planner/calendar?blogId=7904135&openWithPostUuid=9192951298047626537",
       "metricool_media_url": "https://static.metricool.com/planner/202611/7904135-file-17669750206794379576.mp4",
-      "auto_publish": false,
-      "draft_reason": "User clarified news-first editorial direction; evergreen AI literacy is not the next commissioned post",
-      "previously_scheduled_for": "2026-11-08T10:00:00+05:00"
+      "auto_publish": true,
+      "previously_scheduled_for": "2026-11-08T10:00:00+05:00",
+      "scheduled_for": "2026-11-08T10:00:00+05:00",
+      "editorial_exception": "User confirmed Nov 8 studio film, then technology news only for Mirabilis"
     }
   ],
   "account": {

@@ -1,3 +1,11 @@
+> LATEST USER DECISION (2026-11-07): The user retained this studio film for
+> Mirabilis on November 8, then technology news only. Restored to scheduled,
+> draft=false, autoPublish=true; current Metricool ID 419924440, stable UUID
+> 9192951298047626537; independently verified PENDING for November 8 at 10:00
+> Asia/Tashkent. Earlier withdrawal notes below are superseded. Subsequent
+> news production is intended for the November 9 morning automation run;
+> no subsequent topic or final video exists yet.
+
 > EDITORIAL UPDATE (2026-11-07): This evergreen film is now a retained visual
 > reference only. Its Metricool post UUID 9192951298047626537 was moved to
 > draft=true, autoPublish=false (new ID 419920106), independently verified.

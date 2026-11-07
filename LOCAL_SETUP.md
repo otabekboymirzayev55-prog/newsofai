@@ -1,3 +1,19 @@
+## Eng so‘nggi kelishuv — 2026-11-07
+
+Foydalanuvchi 8-noyabrda tayyor studio videosi, undan keyin Mirabilis uchun
+texnologiya yangiliklari chiqishini tanladi. Shu sabab studio posti navbatga
+QAYTARILDI: 2026-11-08 10:00 Asia/Tashkent; draft=false, autoPublish=true,
+PENDING; joriy ID 419924440, o‘zgarmas UUID 9192951298047626537.
+Alohida kalendar so‘rovi bilan tasdiqlandi. Pastdagi qoralamaga qaytarish
+qaydlari tarixiy bo‘lib, bu eng so‘nggi kelishuv bilan almashtirilgan.
+
+8-noyabrdagi avtomatik vazifa mavjud postni tekshiradi; yangi post yasamaydi.
+Keyingi yangilik videosi uchun vazifa 9-noyabr ertalab 08:00 atrofidagi
+rejadagi ishga tushishda avval yangi manbani tanlaydi, keyin ssenariy va
+mavzuga mos video yaratadi. Nashr mo‘ljali 10:00, ammo haqiqiy tayyor natija
+va tekshiruvsiz nashr qilinmaydi. Birinchi avtomatik yangilik ishlab chiqarish
+hali tasdiqlanmagan. Alohida ta’lim sahifasi hozircha ochilmagan/ulanmagan.
+
 ## Joriy tahririy yo‘nalish — 2026-11-07
 
 Mirabilis On — o‘zbekcha TEXNOLOGIYA YANGILIKLARI sahifasi.
